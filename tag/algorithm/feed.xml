@@ -1,0 +1,2209 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" >
+  <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
+  <link href="https://egeg1212.github.io/tag/algorithm/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="https://egeg1212.github.io/" rel="alternate" type="text/html" />
+  <updated>2021-07-17T10:28:30+09:00</updated>
+  <id>https://egeg1212.github.io/tag/algorithm/feed.xml</id>
+
+  
+  
+  
+
+  
+    <title type="html">2021 정은경의 코딩일지 | </title>
+  
+
+  
+    <subtitle>A person who studies voice chatbots.</subtitle>
+  
+
+  
+
+  
+    
+      
+    
+  
+
+  
+  
+
+  
+    <entry>
+      <title type="html">블록체인 기술적 특징과 비즈니스 이해</title>
+      <link href="https://egeg1212.github.io/blockchain" rel="alternate" type="text/html" title="블록체인 기술적 특징과 비즈니스 이해" />
+      <published>2021-05-23T01:40:00+09:00</published>
+      <updated>2021-05-23T01:40:00+09:00</updated>
+      <id>https://egeg1212.github.io/blockchain</id>
+      <content type="html" xml:base="https://egeg1212.github.io/blockchain">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Algorithm LIST &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm_comprehension&quot;&gt;컴퓨터 알고리즘 이해&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm_beginning&quot;&gt;컴퓨터 알고리즘 초급&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm_intermediate&quot;&gt;컴퓨터 알고리즘 중급&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm_pythoncoding&quot;&gt;기초 알고리즘과 파이썬코딩&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm_ml&quot;&gt;인공지능을 위한 머신러닝 알고리즘&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./blockchain&quot;&gt;블록체인 기술적 특징과 비즈니스 이해&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;블록체인-기술적-특징과-비즈니스-이해&quot;&gt;블록체인 기술적 특징과 비즈니스 이해&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;블록체인 궁금하다궁금해!! 두근두근&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강좌정보&lt;/strong&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;&lt;a href=&quot;https://tacademy.skplanet.com/live/player/onlineLectureDetail.action?seq=139&quot;&gt;Tacademy강좌링크&lt;/a&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습내용&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;1. 블록체인의 등장배경과 개념에 대해 알아본다.&lt;br /&gt;2. 블록체인의 네트워크, 보안, 작업증명, 이중지불방지 등 주요 요소기술에 대해 알아본다.&lt;br /&gt;3. 스마트 계약(이더리움)과 신뢰서비스의 작동원리에 대해 알아본다.&lt;br /&gt;4. 다양한 블록체인 비즈니스 사례와 가능성에 대해 알아본다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강사&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;고덕윤 수석연구원 (피노텍) 2018.07.05 강의&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습기간&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;2021.05.22~2021.05.25 &lt;strong&gt;이수완료&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습시간&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;strong&gt;02:51:53&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강의목록&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[1강] 블록체인의 개념&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[2강] 블록체인 기술의 이해&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[3강] 스마트 계약(이더리움)과 신뢰서비스&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[4강] 블록체인 비즈니스 사례&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;GitHub&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;None&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;**&lt;사전학습자료&gt;**
+▶ 블록체인 한번에 이해하기(뒤태지존님의 블로그)
+&amp;lt;https://homoefficio.github.io/2017/11/19/%EB%B8%94%EB%A1%9D%EC%B2%B4%EC%9D%B8-%ED%95%9C-%EB%B2%88%EC%97%90-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0/&amp;gt;&lt;/사전학습자료&gt;&lt;/p&gt;
+
+&lt;p&gt;▶ 비트코인과 블록체인 기술(NAVER D2)
+&lt;a href=&quot;https://d2.naver.com/helloworld/8237898&quot;&gt;https://d2.naver.com/helloworld/8237898&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;NAVER AI NOW&lt;/strong&gt;
+&lt;a href=&quot;https://naver-ai-now.kr/&quot;&gt;https://naver-ai-now.kr/&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;peer to peer네트워크 위변조방지
+APK (개인키,공개키)생산주체명확하게,부인방지
+타원암호알고리즘(ECC : Elliptic-curve cryptography)&lt;/p&gt;
+
+&lt;p&gt;블록체인 데이터의 진실성(BITCOIN)&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;정보의 합의 도축&lt;/li&gt;
+  &lt;li&gt;출처의 명확성&lt;/li&gt;
+  &lt;li&gt;불가역적 데이터저장(한번쓴 데이터는 수정이 불가능하다.)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;3강-스마트-계약이더리움과-신뢰서비스&quot;&gt;[3강] 스마트 계약(이더리움)과 신뢰서비스&lt;/h2&gt;
+
+&lt;p&gt;특정 검증된 프로그램에 따라 지불됨.
+(중개업이 없어짐)&lt;/p&gt;
+
+&lt;p&gt;에스크로서비스
+ICO
+알트코인&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;strong&gt;스마트자산ex.&lt;/strong&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;4강내용추가&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;금융&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;해외송금veem&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;금융&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;ABRA-ATM기찾으러 시내안나가고 옆사람에게&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;다이아몬드이력&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;일련번호, 소유자, 특징, 감정서, 소유권이전&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;부동산산업&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;집주인에대한정보, 담보내역 등등&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;미술&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;저작권&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;음악&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;저작권&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;자동차매매,자전거&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;도난여부, 수리여부, 주인변경이력&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;식품&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;사료, 농장, 도축, 운반, 판매, 보관&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;에너지(충전)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;정치&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;선거,의결권&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;4강-블록체인-비즈니스-사례&quot;&gt;[4강] 블록체인 비즈니스 사례&lt;/h2&gt;
+
+&lt;p&gt;하이퍼렛져의 프리미엄 회원사 (IT, 금융, 종합, 의료&lt;em&gt;CHANGE&lt;/em&gt;, 항공&lt;em&gt;AIRBUS&lt;/em&gt;, 자동차&lt;em&gt;DAIMEER&lt;/em&gt;)&lt;/p&gt;
+
+&lt;p&gt;Practical Byzantine Fault Tolerance
+||PoW|PBFT|
+|:-:|:-:|:-:|
+|통신비용|단일노드의 통신비용은 낮음|다수의 통신을 하므로 높음|
+|CPU연산비용|높음|낮음|
+|최종|합의가 최종이 아닐 수 있음|과반의 의한 최종 합의|
+|참가조건|아무나 참가 가능|허락된 서버만 참가 가능|
+|비밀보호|사전 신뢰한 암호 사용|공개키 암호 사용|
+|전력소모|매우 큼|적음|&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;자전거블록체인&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;자전거 등록&lt;/li&gt;
+  &lt;li&gt;소유자 등록&lt;/li&gt;
+  &lt;li&gt;잠금 유무 상태, 위치&lt;/li&gt;
+  &lt;li&gt;도난여부&lt;/li&gt;
+  &lt;li&gt;주인 변경 등록&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;식품안정성 확보차원(월마트, IBM, 칭화대학교)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;사료, 농장, 도축, 운반, 판매, 보관 모두 기록&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;해운MAERSK LINE&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;리플Ripple(은행을위한)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;아랍의 하왈라 시스템에서 영감을 얻음&lt;/li&gt;
+  &lt;li&gt;국제간 신용 송금을 위한 코인&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;무료 페이팔 시스템&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;송금 시간을 3일에서 1시간 이내로 줄임&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;은행의 송금서비스를 위한 코인&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;진정한 탈중앙화는 아니라는 주장이 있음.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;데이터 시장의 탈중앙화(Steemit)스팀잇&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;스팀잇은 게시자에게 접근 권한을 부여하고
+제 3자의 광고 없이 콘텐츠로 수익을 창출할 수 있도록 했다.
+우리의 주된 목표는 좋은 사람을 플랫폼으로 끌어들여 더 긍적적인 온라인 커뮤니티를 구축하는것이다 -네드스캇, 스팀잇CEO-&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;기존 블로그에 글을올려 광고다는것과 다른 방법.
+글올리면 코인을 줌.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;저작권 관리와 유통을 위한 암호화폐(KodakCoin)&lt;/strong&gt;
+음원과 저작권 유통에서 중개업자의 비용이 큼
+(재생시 수익: 제작자44%&amp;gt;유통사40%&amp;gt;저작권자10%&amp;gt;실연권자6%)
+암호화폐를 이용하여 중개비용을 최소화 하기 위한 노력&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;의료정보의 활용을 위한 화폐 Medibloc메디블록&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;파편화된 연구용 의료 데이터 문제&lt;/li&gt;
+  &lt;li&gt;의료 정보 공유의 어려움&lt;/li&gt;
+  &lt;li&gt;프라이버시 문제&lt;/li&gt;
+  &lt;li&gt;안전한 의료 데이터 제공&lt;/li&gt;
+  &lt;li&gt;효율적인 의료 데이터 공유&lt;/li&gt;
+  &lt;li&gt;암호화폐를 이용한 의료 생태계 조성&lt;/li&gt;
+&lt;/ul&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>egeg1212</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="algorithm" />
+      
+
+      
+        <summary type="html">Algorithm LIST 컴퓨터 알고리즘 이해 컴퓨터 알고리즘 초급 컴퓨터 알고리즘 중급 기초 알고리즘과 파이썬코딩 인공지능을 위한 머신러닝 알고리즘 블록체인 기술적 특징과 비즈니스 이해</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">인공지능을 위한 머신러닝 알고리즘</title>
+      <link href="https://egeg1212.github.io/algorithm_ml" rel="alternate" type="text/html" title="인공지능을 위한 머신러닝 알고리즘" />
+      <published>2021-05-11T01:40:00+09:00</published>
+      <updated>2021-05-11T01:40:00+09:00</updated>
+      <id>https://egeg1212.github.io/algorithm_ml</id>
+      <content type="html" xml:base="https://egeg1212.github.io/algorithm_ml">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Algorithm LIST &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm_comprehension&quot;&gt;컴퓨터 알고리즘 이해&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm_beginning&quot;&gt;컴퓨터 알고리즘 초급&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm_intermediate&quot;&gt;컴퓨터 알고리즘 중급&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm_pythoncoding&quot;&gt;기초 알고리즘과 파이썬코딩&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm_ml&quot;&gt;인공지능을 위한 머신러닝 알고리즘&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./blockchain&quot;&gt;블록체인 기술적 특징과 비즈니스 이해&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;인공지능을-위한-머신러닝-알고리즘&quot;&gt;인공지능을 위한 머신러닝 알고리즘&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;머신러닝 그래도 구면이라 다행이다ㅎㅎ &lt;br /&gt;알고리즘은..계속 듣다보면 언젠간 알게되겠지.. 하하하&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강좌정보&lt;/strong&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;&lt;a href=&quot;https://tacademy.skplanet.com/live/player/onlineLectureDetail.action?seq=103&quot;&gt;Tacademy강좌링크&lt;/a&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습내용&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;인공지능의 개념을 이해하여 머신러닝과 딥러닝을 알 수 있습니다.&lt;br /&gt;머신러닝과 딥러닝의 기본 개념과 적용 사례, 알고리즘 실습을 통해 이해할 수 있습니다.&lt;br /&gt;지도학습과 비지도 학습의 이론과 알고리즘을 이해할 수 있습니다.&lt;br /&gt;Weka와 Theano및 Keras를 통한 실습으로 머신러닝, 딥러닝 알고리즘을 구현할 수 있습니다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강사&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;김경민&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습기간&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;2021.05.10~2021.05.22 + 평가&lt;strong&gt;이수완료&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습시간&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;strong&gt;07:01:42&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강의목록&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[1강] 머신러닝 개요&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[2강] 선형 회귀 모델&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[3강] 로지스틱 회귀 모델&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[4강] 결정 트리&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[5강] 서포트 벡터 머신&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[6강] 신경망&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[7강] 역전파&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[8강] 비지도 학습&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[9강] 컨볼루션 신경망&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[10강] 재현 신경망&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[11강] 메모리 네트워크&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[12강] 딥러닝 응용사례&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[13강] Weka를 이용한 머신러닝 실습&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[14강] Theano를 통한 머신러닝 구현&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[15강] Keras를 통한 딥러닝 구현 및 실습&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;GitHub&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;None&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h1 id=&quot;1강-머신러닝-개요&quot;&gt;[1강] 머신러닝 개요&lt;/h1&gt;
+
+&lt;h3 id=&quot;인공지능과-머신러닝&quot;&gt;인공지능과 머신러닝&lt;/h3&gt;
+
+&lt;p&gt;머신러닝은 인공지능을 구현하기 위한 하나의 방법
+지식을 구현하기 위한 두 가지 대립적 방법&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;지식공학(합리주의자/이성주의자): 지식을 사람이 직접 컴퓨터에게 제공&lt;/li&gt;
+  &lt;li&gt;머신러닝(경험주의자): 컴퓨터가 데이터로부터 지식을 직접 학습(현재의 딥러닝)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;머신러닝-알고리즘의-분류&quot;&gt;머신러닝 알고리즘의 분류&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;지도학습(Supervised Learnig): 학습 데이터마다 레이블을 가지고 있음&lt;/strong&gt;
+분류(Classification):이산적(Discrete)일때
+회귀(regression):연속적(Continuous)일때
+추정(Estimation):확률일때
+&lt;strong&gt;특징1&lt;/strong&gt; 딥러닝이 대표적인 예
+&lt;strong&gt;특징2&lt;/strong&gt; 사용할 수 있는 데이터에 한계가 있음
+&lt;strong&gt;특징3&lt;/strong&gt; 데이터를 생성하는데 비용이 많이 듦&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;비지도학습(Unsupervised Learning): 학습 데이터마다 레이블을 가지고 있지 않음&lt;/strong&gt;
+입력만 있고 출력은 없는 상태.
+클러스터링이 주로 사용됨
+지도학습에 비해서 학습하기 어려움
+유튜브 추천
+비디오 항목 자동 분류기&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;준지도학습(Semi-Supervised Learning): 학습 데이터가 약간의 레이블을 가지고 있음&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;강화학습(Reinforcement Learning): 최종 출력이 바로 주어지지 않고 시간이 지나서 주어지는 경우&lt;/strong&gt;
+바둑: 승/패의 결과
+게임, 미로찾기
+대화-상점에서 주문, 고객상담 등..
+좋은대학에 입학하기 위한 전략은?
+축구를 잘하는 로봇을 만들려면?&lt;/p&gt;
+
+&lt;h3 id=&quot;머신러닝의-구성요소&quot;&gt;머신러닝의 구성요소&lt;/h3&gt;
+
+&lt;p&gt;데이터준비: 훈련/검증/테스트 데이터 집합으로 분리
+모델 표현: 기호/신경망/유추/베이지안/유전 기반 알고리즘 존재
+모델 평가 방법: 정확도/에러제곱/우도 등 각 상황에 맞는 평가 방법 선택&lt;/p&gt;
+
+&lt;h1 id=&quot;2강-선형-회귀-모델&quot;&gt;[2강] 선형 회귀 모델&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;선형회귀모델&lt;/strong&gt;
+한 개의 종속 변수와 다수의 설명 변수들 사이의 관계를 선형 방정식으로 모델링
+계단함수를 사용하여 선형문제를 해결한다.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;선형 문제로는 풀리지 않는 문제들&lt;/strong&gt;
+종속변수와 설명변수 사이 비선형 관계 존재&lt;/p&gt;
+
+&lt;h1 id=&quot;3강-로지스틱-회귀-모델&quot;&gt;[3강] 로지스틱 회귀 모델&lt;/h1&gt;
+
+&lt;h3 id=&quot;로지logit함수&quot;&gt;로지(logit)함수&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;오즈(odds)&lt;/strong&gt;
+어떠한 사건의 확률이 p일 때, 그 사건의 오즈는
+\(odds = p / (1-p)\)
+&lt;strong&gt;로짓은 오즈의 자연로그&lt;/strong&gt;
+\(logit(p)=In(odds)=In(p/(1-p))\)&lt;/p&gt;
+
+&lt;h3 id=&quot;로지스틱-회귀-모델&quot;&gt;로지스틱 회귀 모델&lt;/h3&gt;
+
+&lt;p&gt;(시그모이드함수) 0 또는 1
+오즈의 로그(로짓)은 설명변수 x와 선형적인 관계
+일반적 선형 회귀 문제처럼 접근 가능
+종속변수 p와 X는 비선형 관계&lt;/p&gt;
+
+&lt;h3 id=&quot;로지스틱-회귀-모델의-파라미터-추정&quot;&gt;로지스틱 회귀 모델의 파라미터 추정&lt;/h3&gt;
+
+&lt;p&gt;우도함수 사용
+ex) 동전 던지기 문제&lt;/p&gt;
+
+&lt;h1 id=&quot;4강-결정-트리&quot;&gt;[4강] 결정 트리&lt;/h1&gt;
+
+&lt;h3 id=&quot;의사-결정-트리와-분류-문제&quot;&gt;의사 결정 트리와 분류 문제&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;의사결정 트리는 구조의 분류기&lt;/strong&gt;
+노드: 단일 특성에 대해 데이터를 테스트
+말단 노드: 클래스를 나타냄(데이터의 개수)
+엣지: 하나의 특성 값을 분류
+경로: 최종 분류 결정을 하기 위한 룰들의 논리합&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;분류(classification)&lt;/strong&gt;
+특성 값, 클래스 정보를 학습한 뒤, 새롭게 주어지는 테스트 데이터에 특성 값만으로 클래스를 예측하는것
+ex) 날씨 정보를 바탕으로 상대방의 데이트 허락 Yes or No&lt;/p&gt;
+
+&lt;h3 id=&quot;결정-트리-구축-원칙&quot;&gt;결정 트리 구축 원칙&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;정보 획득량은 결정 트리 구축 과정에서 테스트할 후보 특성의 순서를 결정할 때 사용&lt;/strong&gt;
+&lt;strong&gt;각 노드에서 테스트할 특성 선택&lt;/strong&gt; : 분류할 떄 가장 유용한 특성 순서대로 선택
+&lt;strong&gt;정보 획득량&lt;/strong&gt; : 각 특성들이 훈련 예제들을 얼만큼 잘 분류할 수 있는가를 측정
+&lt;strong&gt;엔트로피&lt;/strong&gt; : 확률 변수의 불확실성을 수치로 나타냄
+&lt;strong&gt;정보 획득량&lt;/strong&gt; : 엔트로피(불확시리성)의 감소량&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;어떤 노드가 먼저 선택되어야할까?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;시간 특성 값&lt;/strong&gt;을 알 때가, 장소 특성 값을 알 때보다 더 많은 정보를 줌&lt;/li&gt;
+  &lt;li&gt;시간 특성 값을 장소 특성 값보다 먼저 테스트 해야함&lt;/li&gt;
+  &lt;li&gt;이와 같이, 다른 특성들에 대해서 정복 획득량을 계산&lt;/li&gt;
+  &lt;li&gt;결정 트리의 각 노드에서 가장 큰 정보 획득량을 갖는 특성을 선택&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;얼마나 노드를 만들어야 할까?(Stopping rule)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;모든 특성들이 트리의 경로에 모두 포함되어 있는 경우&lt;/li&gt;
+  &lt;li&gt;말단 노드와 연관되어 있는 모든 훈련 예제들이 같은 클래스에 해당하는 경우
+&lt;strong&gt;즉, 엔트로피가 0일 때&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;가장 적합한 트리는?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;모델을 구축하기 위해 ‘bias’가 필요
+ex) 크기가 가장 작은 트리를 선호, 또는 깊이가 가장 높은 트리, 노드 갯수가 가장 많은 트리&lt;/li&gt;
+  &lt;li&gt;어떠한 트리가 새로운 데이터를 가장 잘 분류할 수 있을까?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Occam의 면도날&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;면도날은 필요하지 않은 가설은 잘라내 버린다는 비유&lt;/li&gt;
+  &lt;li&gt;데이터의 특성과 부합하는 가장 간단한 가설을 선호&lt;/li&gt;
+  &lt;li&gt;모든 것이 똑같은 조건일 때, 가장 쉬운 설명이 가장 옳은 것&lt;/li&gt;
+  &lt;li&gt;과학자의 가설 선호도&lt;/li&gt;
+  &lt;li&gt;많은 데이터를 설명할 수 있으면서 가장 간단한 가설을 선택
+ex) F=ma
+&lt;strong&gt;결정 트리는 데이터의 특성과 부합하면서도 가능한 가장 작은 트리여야 함.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;결정 트리 분류의 특징&lt;/strong&gt;
+&lt;strong&gt;장점&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;다른 분류 방법에 비해서 상대적으로 빠름(계산량 적음)&lt;/li&gt;
+  &lt;li&gt;간단하고 모델 구축 원리를 이해하기 쉬움&lt;/li&gt;
+  &lt;li&gt;모델의 분류 룰(rule)을 사람이 직관적으로 이해하기 쉬움(어느 특성이 분류에 가장 중요한지 명확히 나타냄)&lt;/li&gt;
+  &lt;li&gt;다른 모델들에 비해서 더 좋은 성능이 나타날 때가 있음
+&lt;strong&gt;단점&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;연속적인 특성 값을 갖는 데이터에 적합하지 않음&lt;/li&gt;
+  &lt;li&gt;클래스의 개수가 많고 데이터가 적을 때 성능이 좋지 않음&lt;/li&gt;
+  &lt;li&gt;훈련과정에서 계산량이 많음&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;bagging&quot;&gt;Bagging&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Bagging이란&lt;/strong&gt; &lt;strong&gt;b&lt;/strong&gt;ootstrap &lt;strong&gt;agg&lt;/strong&gt;regat&lt;strong&gt;ing&lt;/strong&gt;
+다수의 분류기를 결합하는 앙상블 방법 중 하나(주로 결정 트리 분류기에 많이 쓰임)
+k개의 bootstrap 샘플 $X_1…_k$를 훈련시켜 얻은 k개의 분류기를 투표, 평균 등의 방법을 사용하여 결합.
+많은 데이터로부터 더 많은 특징(feature)을 얻을 수 있음.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Bootstrap&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;데이터의 개수가 부족할 때 사용할 수 있음&lt;/li&gt;
+  &lt;li&gt;값들을 사용하여 표준 편차 또는 확신 구간 등 설정&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;5강-서포트-벡터-머신-support-vectors&quot;&gt;[5강] 서포트 벡터 머신 support vectors&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;초평면이란?&lt;/strong&gt;
+데이터 임베딩 공간에서 한 차원 낮은 부분 공간(subspace)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;최적의 초평면의 조건&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;초평면과 결정영역 근처에 있는 ‘분류하기 애매한’ 데이터의 거리가 최대가 되어야 함&lt;/li&gt;
+  &lt;li&gt;직관적인 이해: 만약 결정 영역 근처에 데이터가 없어야함&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;결정 영역의 초평면을 둘러싸고 있는 마진(margin)을 최대화시킴 (기능적 마진의 합)
+서포트 벡터 가중치의 합을 최대화 시키려고 한다.
+왜? 결정영역이 넓어야 좋으니까.&lt;/p&gt;
+
+&lt;p&gt;서포트벡터머신이 분류를 위해 사용하는 식
+wx+b&amp;gt;=1 인 경우 양의 레이블&lt;/p&gt;
+
+&lt;h1 id=&quot;6강-신경망&quot;&gt;[6강] 신경망&lt;/h1&gt;
+
+&lt;p&gt;뇌와 컴퓨터
+|뇌|컴퓨터|
+|:-:|:-:|
+|분산처리|중앙처리|
+|병렬처리|순차처리|
+|처리속도$10^-3 $초|10-9초|&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;퍼셉트론&lt;/strong&gt; : 뇌를 모사한 신경망 알고리즘
+입력 유닛들의 가중치의 합과 임계치를 사용하여 뉴런의 발화과정을 모사 선형 분리 문제를 해결하지 못하는 문제가 있다(예)XOR&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;다층 신경망의 분류 원리&lt;/strong&gt;
+다층 신경망은 입력층 - 은닉층 - 출력층 구조를 가지며 각 층의 유닛들은 퍼셉트론이다.
+레이어를 쌓을수록 다양한 결정 영역이 추가로 생김으로써 선형 분리 문제를 극본한다.&lt;/p&gt;
+
+&lt;h1 id=&quot;7강-역전파&quot;&gt;[7강] 역전파&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;다층 퍼셉트론&lt;/strong&gt;
+적절한 가중치를 찾기 위해 경사 하강법(Gradient Descent)을 사용&lt;/p&gt;
+
+&lt;h1 id=&quot;8강-비지도학습unsupervised-learning&quot;&gt;[8강] 비지도학습Unsupervised Learning&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;클러스터링Clusters&lt;/strong&gt; (데이터마이닝 기법 중 하나로, 가장많이 사용)&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;옷사이즈 : S M L&lt;/li&gt;
+  &lt;li&gt;고객타입별구분 마케팅전략에 도움&lt;/li&gt;
+  &lt;li&gt;문서의 내용을 비슷한 정도에 따라 파일로 묶음&lt;/li&gt;
+  &lt;li&gt;동영상을 색감에 따라 구분
+데이터 그룹을 묶을 수 있는 어떠한 사전 정보도 주어지지 않기 때문에 비지도학습과 동의어로 사용됨&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;K-means클러스터링&lt;/strong&gt;
+데이터 포인트들을 무작위로 K개 선택하여 Centroid계산 후,
+클러스터 배정과 Centroid 재계산(수렴조건이 만족될 때까지 반복)
+아웃라이어에 약한점에도 불구하고 단순함과 효율성으로 인해 널리 사용됨
+클러스터, 데이터, 클러스터 재배정 반복 횟수에 따라 선형적인 계산 복잡도를 가진다.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;거리측정함수들&lt;/strong&gt;
+수치적 특성과 이산적 특성에 따라 다양한 거리 함수 사용
+수치적 특성: 유클리디안, 제곱유클리디안, 맨허튼, Chebychev거리측정
+이산적 특성: 단순 계수 비교, Jaccard계수비교&lt;/p&gt;
+
+&lt;h1 id=&quot;9강-컨볼루션-신경망-convolutional-neural-network-cnn&quot;&gt;[9강] 컨볼루션 신경망 (Convolutional neural network, CNN)&lt;/h1&gt;
+
+&lt;p&gt;신경생물학적 관찰이 컨볼루션 신경망 구조 설계에 동기를 부여함.
+&lt;strong&gt;컨볼루션 층&lt;/strong&gt;이란,
+입력 이미지 속 다양한 위치에서 동일한 특징들을 탐색. 피처맵을 입력에 대해 슬라이딩 시킴.
+같은 피처 맵은 동일한 가중치 사용.
+이미지분류에 많이 쓰이나,
+문제점은 이미지의 위치, 크기, 각도 변화 등에 취약함.
+해결방법으로 &lt;strong&gt;풀링층(물체의 위치, 각도 변화에 잘 대처할 수 있게)&lt;/strong&gt;을 이용한다.
+?? 물체의 위치와 방향에 관계없이 물체의 고유한 특징을 학습할 수 있다???
+역전파 알고리즘을 사용하여 학습이 가능하다.&lt;/p&gt;
+
+&lt;p&gt;컨볼루션 신경망과 일반 신경망의 차이
+우리 뇌의 시각 피질이 물체를 이해하는 메커니즘 모사,
+신경 세포들이 물체의 방향과 장소가 바뀌어도 별문제 없이 인식할 수 있었던 이유인 &lt;strong&gt;‘컨볼루션’개념을 신경망 모델에 적용&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;ImageNet Challenge: 이미지를 자동 분류하라
+8층-&amp;gt;152층 깊어지고 있음
+컨볼루션 신경망에서 주로 사용하는 활성함수 &lt;strong&gt;Relu&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;단점&lt;/strong&gt;
+일반적인 다층퍼셉츠론보다 더 많은 메모리 용량을 차지한다.
+컨볼루션 과정에서 많은 계산비용을 요구한다.
+같은 개수의 파라미터를 갖는 신경망보다 더 느리다.&lt;/p&gt;
+
+&lt;h1 id=&quot;10강-재현-신경망-recurrent-neural-networks&quot;&gt;[10강] 재현 신경망( Recurrent Neural Networks)&lt;/h1&gt;
+
+&lt;p&gt;시계열 데이터를 확률적으로 모델링&lt;/p&gt;
+
+&lt;p&gt;재현신경망의 한계를 넘은
+&lt;strong&gt;GRU(Gated Recurrnt Units)&lt;/strong&gt;
+&lt;strong&gt;LSTM(Long Short-Term Memory)&lt;/strong&gt;
+&lt;strong&gt;ESN(Echo State Networks)&lt;/strong&gt; : 그리디언트 손실을 막기위한 전략은 입력과 은닉, 은닉과 은닉 사이의 가중치는 학습하지 않는다.&lt;/p&gt;
+
+&lt;h1 id=&quot;11강-메모리-네트워크&quot;&gt;[11강] 메모리 네트워크&lt;/h1&gt;
+
+&lt;p&gt;기존 재현 신경망의 단점: 은닉 유닛 벡터가 제한된 공간에 많은 입력 정보를 저장해야 함
+메모리 네트워크: 재현 신경망의 저장 공간 한계 문제를 극복하기 위해 제안되었으며 스토리 선택 모듈G와 답선택모듈H로 구성됨&lt;/p&gt;
+
+&lt;p&gt;종단메모리네트워크(End-to-End)
+필요한이유: 기존 메무리 네트워크는 스토리 선택 모듈G를 학습시키기 위해서 질의에 대한 적절한 스토리 정보를 사람이 추가로 작성해야 함.
+여러 번의 메모리 접근을 위해 ‘파라미터 공유’라는 재현 신경망의 특징을 가짐
+&lt;strong&gt;종단학습모델&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;카메라의 이미지로부터 핸들 방향을 조절할 수 있는 모델을 만든다.&lt;/li&gt;
+  &lt;li&gt;질의를 주면 응답을 주는 모델을 만들고, 사람이 응답을 검토한다.&lt;/li&gt;
+  &lt;li&gt;이미지로부터 다양한 형태의 물체를 인식하는 분류기는 만든다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;나와 질의 응답하는 메모리네트워크 &lt;strong&gt;bAbl Task&lt;/strong&gt;
+모델의 언어 이해 및 추론 능력을 20가지로 나누어 테스트하려는 문제
+기존 룰 기반 방식에서 메모리 네트워크를 활용하는 머신러닝 방식의 해결책이 제시됨&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;딥러닝에서 메모리를 명시적으로 활용하게 된 이유&lt;/strong&gt;
+입력 데이터의 길이가 길어질 경우 인코딩해야할 정보가 많아졌기 때문.
+최근에 입력된 정보는 잘 기억하지만, 오래 전에 입력된 정보는 손실될 수 있기 떄문.
+인코더 재현 신경망의 경우 가장 마지막 시간의 은닉 유닛이 입력 문장의 모든 정보를 담고 있어야 하기 때문.&lt;/p&gt;
+
+&lt;h1 id=&quot;12강-딥러닝-응용사례&quot;&gt;[12강] 딥러닝 응용사례&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;딥러닝과 신경망&lt;/strong&gt;
+딥러닝은 신경망의 층을 여러 개 쌓은 것으로 결정영역을 복잡하게 만들었다
+신경망의 층을 이해하는 것은 거의 불가능하지만, 딥러닝에서는 각 층은 올라갈수록 보다 추상적인 정보들을 담고 있다.
+딥러닝은 신경망에 비해 층이 많으므로 학습을 용이하게 해주는 정규화, 오버피팅 방지 기법이 필요하다.&lt;/p&gt;
+
+&lt;p&gt;구글 번역기 어떤 원리일까? 인코더-디코더 모델 사용&lt;/p&gt;
+
+&lt;p&gt;메모리와 Attention is all you need(2017.구글)
+재현 신경망의 은닉 유닛의 크기가 한정되어 있기 때문에 오래전 입력으로 들어온 단어의 정보가 손실됨
+인코더 재현 신경망의 은닉 유닛들을 메모리에 저자하고 선형 조합(주의집중기작)&lt;/p&gt;
+
+&lt;p&gt;이미지를 자동으로 설명해주는 기계
+이미지를 여러 등분으로 나눈 뒤, 부분 이미지들을 컨볼루션 신경망으로 인코딩시킹
+인코딩된 벡터들은 순서대로 디코더 재현 신경망에 입력됨&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;신경망을 이용한 기계번역의 특징&lt;/strong&gt;
+원본 문장과 타겟 문장을 분산 표현으로 나타낸다.
+통계적 기계학습에 비해 적은 모델 파라미터 개수를 사용한다.
+번역 문제를 의미적 공간을 사용하여 학습할 수 있다.
+경사 하강법을 이용하여 입력층부터 출력층까지 한꺼번에 종단 학습 가능.&lt;/p&gt;
+
+&lt;h1 id=&quot;13강-weka를-이용한-머신러닝-실습&quot;&gt;[13강] Weka를 이용한 머신러닝 실습&lt;/h1&gt;
+
+&lt;p&gt;Weka란? Waikato Environment for Knowledge Analysis
+뉴질랜드의 Waikato 대학교 컴퓨터공학부에서 제작
+Weka는 뉴질랜드에서만 발견되는 새이기도 함
+대표적인 기계학습 알고리즘 모음, 데이터 마이닝 도구&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Weka에서 제공하는 전처리기능&lt;/strong&gt;
+데이터 샘플링, 이산화, 차원축소&lt;/p&gt;
+
+&lt;h1 id=&quot;14강-theano를-통한-머신러닝-구현&quot;&gt;[14강] Theano를 통한 머신러닝 구현&lt;/h1&gt;
+
+&lt;p&gt;LISA Lab(mila.umontreal.ca/en/)에서 만든 Python 기반 오픈소스 Package
+deeplearning.net/software/theano&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;장점&lt;/strong&gt;
+Symbolic 연산 철학으로 간결하고 빠르게 모델 구현 가능
+Symbolic 미분이 가능하므로 역전파 등을 직접 구현할 필요가 없음(grade함수 사용)
+동일한 코드를 CPU와 GPN에서 모두 사용 가능
+Python기반이므로, numpy, scipy 등 다양한 Python 패키지와 연동할 수 있음&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;단점&lt;/strong&gt;
+복잡하고 알기 어려운 에러메시지
+RAM과 GPU의 VRAM사이 데이터 전송에서 많은 시간이 소모된다.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Thano로 GPU 프로그래밍 실습&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;shared variables: RAM에서 GPU VRAM으로 데이터를 옮겨줌&lt;/li&gt;
+  &lt;li&gt;givens: symbolic 변수에 shared variables르 ㄹ대입&lt;/li&gt;
+  &lt;li&gt;updates: GPU연산 결과를 이용해 shared variables의 값을 수정&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Theano로 신경망 구현하기&lt;/strong&gt;
+Theano를 사용하여 머신러닝 알고리즘을 구현할 경우, GPU를 사용하여 빠른 학습 가능.
+간결한 코드 작성 가능, 미분의 자동 계산으로 프로그래머의 일을 줄여줌&lt;/p&gt;
+
+&lt;h1 id=&quot;15강-keras를-통한-딥러닝-구현-및-실습&quot;&gt;[15강] Keras를 통한 딥러닝 구현 및 실습&lt;/h1&gt;
+
+&lt;p&gt;Keras는 고수준의 다양한 모델 층, 활성함수, 목표함수 등을 제공하여 손쉽게 딥러닝 모델을 구현하게 해주는 라이브러리.
+사용할 입력/출력 데이터를 모델의 처음과 마지막 층에 설정하고 가운데 층을 목정에 맞게 선택가능&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;장점&lt;/strong&gt;
+쉬운 모델 구현
+다양한 함수 제공
+손쉽게 커스터마이징 가능
+GPU를 활용한 빠른 계산
+직관적인 함수 제공
+활발한 커뮤니티&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;단점&lt;/strong&gt;
+생성 모델의 부족
+고수준 라이브러리
+Theano사용에 따른 에러 분석의 어려움&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Keras로 컨볼루션 신경망 구현하기&lt;/strong&gt;
+Sequential모델의
+ZeroPadding2D / Convolution2D / MaxPooling2D 함수를 사용하여 VGG-16모델구현&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>egeg1212</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="algorithm" />
+      
+
+      
+        <summary type="html">Algorithm LIST 컴퓨터 알고리즘 이해 컴퓨터 알고리즘 초급 컴퓨터 알고리즘 중급 기초 알고리즘과 파이썬코딩 인공지능을 위한 머신러닝 알고리즘 블록체인 기술적 특징과 비즈니스 이해</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">기초 알고리즘과 파이썬코딩</title>
+      <link href="https://egeg1212.github.io/algorithm_pythoncoding" rel="alternate" type="text/html" title="기초 알고리즘과 파이썬코딩" />
+      <published>2021-05-04T01:40:00+09:00</published>
+      <updated>2021-05-04T01:40:00+09:00</updated>
+      <id>https://egeg1212.github.io/algorithm_pythoncoding</id>
+      <content type="html" xml:base="https://egeg1212.github.io/algorithm_pythoncoding">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Algorithm LIST &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm_comprehension&quot;&gt;컴퓨터 알고리즘 이해&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm_beginning&quot;&gt;컴퓨터 알고리즘 초급&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm_intermediate&quot;&gt;컴퓨터 알고리즘 중급&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm_pythoncoding&quot;&gt;기초 알고리즘과 파이썬코딩&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm_ml&quot;&gt;인공지능을 위한 머신러닝 알고리즘&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./blockchain&quot;&gt;블록체인 기술적 특징과 비즈니스 이해&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;기초-알고리즘과-파이썬코딩&quot;&gt;기초 알고리즘과 파이썬코딩&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;😖알고리즘..왜아직도모르겠냐아- 그래도 안수빈님 강좌니까 들어보자🤩
+백준 또 마주치다; &lt;a href=&quot;https://www.acmicpc.net/&quot;&gt;https://www.acmicpc.net/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강좌정보&lt;/strong&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;&lt;a href=&quot;https://tacademy.skplanet.com/live/player/onlineLectureDetail.action?seq=175&quot;&gt;Tacademy강좌링크&lt;/a&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습내용&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;1. 자료구조와 알고리즘의 기본 개념에 대해 알아보고, 알고리즘 문제해결을 위한 접근방법에 대해 알아봅니다.&lt;br /&gt;2. 기초 알고리즘 예제 문제를 파이썬으로 프로그래밍 해보도록 합니다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강사&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;안수빈 (고려대학교)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습기간&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;2021.05.03~2021.05.08 &lt;strong&gt;이수완료&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습시간&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;strong&gt;03:31:17&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강의목록&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[1강] 알고리즘 문제해결 (problem solving)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[2강] 알고리즘보다 코딩 I -읽기와 분석 (시간복잡도/공간복잡도 등)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[3강] 알고리즘보다 코딩 II - 수학 (진수와진법/최대공약수/최소공배수/소인수분해, 재귀함수)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[4강] 자료구조와 알고리즘 I - sort (select/bubble/quick/merge/radix)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[5강] 자료구조와 알고리즘 II - stack/queue/deque&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[6강] 자료구조와 알고리즘 III - grape/tree/heap/bst&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[7강] 자료구조와 알고리즘 IV - DFS/BFS&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;GitHub&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;None&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;#python #프로그래밍기초 #자료구조 #알고리즘 #문제해결 #코딩테스트 #대회 #실무&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;문제해결(Problem Solving)&lt;/strong&gt;
+프로그래밍 언어를 통해 시간 제한과 메모리 제한에서 주어진 문제를 해결&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;구현능력&lt;/strong&gt;
+본인이 생각하고 있는 내용을 코드로 옮길 수 있는가?
+필요한 변수의 선언과 간단한 전처리
+정확한 구현 &amp;amp; 빠른 구현 &amp;amp; 본인만의 템플릿&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;효율성&lt;/strong&gt;
+자주 사용하는 함수의 최적화
+다른 풀이나 연습을 통해 효율적인 코드 작성
+시간복잡도와 공간복잡도 계산 연습&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;절차적사고&lt;/strong&gt;
+전체적인 workflow설계 능력
+자료구조와 알고리즘의 학습
+적재적소한 알고리즘 선택&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;디버깅&lt;/strong&gt;
+과정 속에서 틀린 부분 발견
+예외 케이스 탐색
+코드를 읽는 능력&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;자료구조&lt;/strong&gt;란 자료를 저장하는 방법론, 규칙이다.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;기존보다 효율적인가?&lt;/li&gt;
+  &lt;li&gt;추상화&lt;/li&gt;
+  &lt;li&gt;재사용성&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;7강-dfs-depth-first-search&quot;&gt;7강] DFS (Depth First Search)&lt;/h3&gt;
+
+&lt;p&gt;전수조사(Brute Forse)
+stack이 DFS와 똑같.
+메모리자체를 stack으로 관리. 재귀함수이용시 stack이 된다?
+ex) 숨바꼭질&lt;/p&gt;
+
+&lt;h3 id=&quot;7강-bfs-breadth-first-search&quot;&gt;7강] BFS (Breadth First Search)&lt;/h3&gt;
+
+&lt;p&gt;queue와 똑같.&lt;/p&gt;
+
+&lt;h1 id=&quot;무조건-많이-푸는거-외우는거-언어상관없이-개념파악&quot;&gt;무조건 많이 푸는거/ 외우는거/ 언어상관없이 개념파악/&lt;/h1&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>egeg1212</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="algorithm" />
+      
+
+      
+        <summary type="html">Algorithm LIST 컴퓨터 알고리즘 이해 컴퓨터 알고리즘 초급 컴퓨터 알고리즘 중급 기초 알고리즘과 파이썬코딩 인공지능을 위한 머신러닝 알고리즘 블록체인 기술적 특징과 비즈니스 이해</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">컴퓨터 알고리즘 중급</title>
+      <link href="https://egeg1212.github.io/algorithm_intermediate" rel="alternate" type="text/html" title="컴퓨터 알고리즘 중급" />
+      <published>2021-04-28T01:40:00+09:00</published>
+      <updated>2021-04-28T01:40:00+09:00</updated>
+      <id>https://egeg1212.github.io/algorithm_intermediate</id>
+      <content type="html" xml:base="https://egeg1212.github.io/algorithm_intermediate">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Algorithm LIST &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm_comprehension&quot;&gt;컴퓨터 알고리즘 이해&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm_beginning&quot;&gt;컴퓨터 알고리즘 초급&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm_intermediate&quot;&gt;컴퓨터 알고리즘 중급&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm_pythoncoding&quot;&gt;기초 알고리즘과 파이썬코딩&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm_ml&quot;&gt;인공지능을 위한 머신러닝 알고리즘&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./blockchain&quot;&gt;블록체인 기술적 특징과 비즈니스 이해&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;컴퓨터-알고리즘-중급&quot;&gt;컴퓨터 알고리즘 중급&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;…아묻따 ㄱㄱㄱ&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강좌정보&lt;/strong&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;&lt;a href=&quot;https://tacademy.skplanet.com/live/player/onlineLectureDetail.action?seq=104&quot;&gt;Tacademy강좌링크&lt;/a&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습내용&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Graph, Greedy, Dynamic programming 등 컴퓨터 알고리즘 이론을 보다 깊이 있게 학습하고 이해한다.&lt;br /&gt;Maximum Flow, Number Theory, String matching 등의 심화 알고리즘 관련 지식을 학습한다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강사&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;조호성 박사 (한양대학교 SW융합원)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습기간&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;2021.04.27~2021.05.03 + 테스트20문항 &lt;strong&gt;이수완료&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습시간&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;strong&gt;05:19:40&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강의목록&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[1강] 컴퓨터 알고리즘 성능분석(1)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[2강] 컴퓨터 알고리즘 성능분석(2)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[3강] 확률분석(1)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[4강] 확률분석(2)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[5강] 동적계획법(1)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[6강] 동적계획법(2)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[7강] Greedy Approach(1)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[8강] Greedy Approach(2)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[9강] 스트링 매칭(1)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[10강] 스트링 매칭 (2)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[11강] 정수론(1)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[12강] 정수론 (2)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[13강] Flow networks (1)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[14강] Flow networks (2)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[15강] Amortized Analysis&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;GitHub&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;None&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;컴퓨터-알고리즘-정의-4가지&quot;&gt;컴퓨터 알고리즘 정의 4가지&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;문제를 해결하기 위한 과정을 상세하게 단계적으로 표현한 것&lt;/strong&gt;으로 입력과 출력으로 문제를 정의
+|단계|내용|
+|:-:|:-:|
+|문제정의|현실 세계의 문제를 컴퓨터를 이용하여 풀 수 있도록 입력과 출력의 형태로 정의|
+|알고리즘 설명|문제를 해결하기 위한 단계를 차례대로 설명|
+|정확성 증명|항상 올바른 답을 내고 정상적으로 종료되는지 증명|
+|성능분석|수행시간이나 사용공간에 대한 알고리즘의 성능을 비교하기 위한 분석|
+가장 적합한 알고리즘을 고르기 위해 성능평가와 비교가 필요하다.
+어떻게 하면 &lt;strong&gt;객관적&lt;/strong&gt;으로 분석할 수 있는가?
+ex) 특정기계X, 절대적시간X
+그래서 상대적인 평가를 할 수 있는 &lt;strong&gt;점근적 표기법(Asymptotic notations)&lt;/strong&gt; 을 사용해야 한다!&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;$O$-notation : 점근적 상한(&lt;em&gt;asymptotic upper bound&lt;/em&gt;)아무리 느려도 기준함수보다 느리다&lt;/li&gt;
+  &lt;li&gt;$\Omega$-notation : 점근적 하한(&lt;em&gt;asymptotic lower bound&lt;/em&gt;) 항상 빠르다&lt;/li&gt;
+  &lt;li&gt;$\Theta$-notation : 그 사이
+\(T(n) = 3T([n/4])+\Theta(n^2)\)
+&lt;strong&gt;대체법(Substitution Method)&lt;/strong&gt;
+재귀알고리즘은 T(n)으로 간단히 계산하기가 쉽지 않기 때문에(자기자신을 다시 리콜하기때문에.. 다차식형태로 변환해야함)&lt;br /&gt;해답의 형태를 추측하는 수학적 귀납법을 이용하여 추측한 해답이 맞음을 증명함.
+(다차식으로 변환하는 방법 3가지)&lt;/li&gt;
+  &lt;li&gt;Substitution Method : 값을 대체해서 계산하여 증명!!!&lt;/li&gt;
+  &lt;li&gt;Recursion-tree Method : 재귀를 트리형태로 그려보고 트리형태의 값이 무엇인지&lt;/li&gt;
+  &lt;li&gt;Master Method : 공식에 넣어서 적용&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;재귀-트리를-이용한-성능분석&quot;&gt;재귀 트리를 이용한 성능분석&lt;/h4&gt;
+
+&lt;p&gt;(주어진 함수에 값을 추측하고. 추측한것을 대체법을 이용하여 증명.)
+재귀 함수의 성능 분석을 위해 재귀 트리를 그려 해답을 추측하고(Recursion-tree Method),&lt;br /&gt;이를 대체법(Substitution Method)을 이용하여 증명하는 방법이 있음.
+(각 노드들을 코스트로 계산, 레벨들의 합을 구하고, 전체 트리의 합을 구함. )&lt;/p&gt;
+
+&lt;h3 id=&quot;hiring문제를-이용한-확률분석&quot;&gt;Hiring문제를 이용한 확률분석&lt;/h3&gt;
+
+&lt;p&gt;Hiring problem : 지원자 중 가장 뛰어난 직원을 고용하려고 할 때, 최소의 비용을 계산하는 문제.&lt;/p&gt;
+
+&lt;p&gt;고용문제는 인터뷰비용과 고용비용을 최소로 하면서&lt;br /&gt;가장 좋은 사람을 뽑는 방법으로 이 문제를 해결하기 위한 확률분석방법을 이해함
+(가장 좋은 사람이 몇 번째 인터뷰에 오느냐?+ 각각의 경우가 몇 가지인가?)
+(지원자는 1명씩 인터뷰, 인터뷰후 고용여부 바로 판단, 고용할경우 기존직원은 해고된다, 면접비용과 고용비용은 각각 다르다. 무작위순서가 필요한이유: 입력의 순서는 다양할 수 있기 때문에.. )&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Indicator Random Variables을 적용해야 계산이 쉬워진다.&lt;/li&gt;
+  &lt;li&gt;Randomized Order : 무작위성추가&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;balls-and-bins-문제를-이용한-확률분석&quot;&gt;Balls and Bins 문제를 이용한 확률분석&lt;/h3&gt;
+
+&lt;p&gt;Binomial Cistribution과 Geometric Distribution에 대해 알아보았는데&lt;br /&gt; 확률분석의 결과가 일반적으로 생각하는 확률과 크게 다르지 않음을 확인
+(공의 크기와 모양, 바구니의 크기와 모양, 방향 동일하다. 속도는 연관이 없다.)&lt;/p&gt;
+
+&lt;h3 id=&quot;동적계획법dynamic-programming&quot;&gt;동적계획법(Dynamic Programming)&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;동적계획법을 적용하기 위해서는 최적해 구조와 재귀 구조를 가져야 함.&lt;/strong&gt;
+✨문제해결방법의 4가지✨&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Brute-Force Approach&lt;/strong&gt; : 전수조사(모든경우를 다해보고;; 가장빠르다, 가장적다라는 판결을 내리기 때문에 시간이 오래걸림)
+모든 경우의 답을 구해보는 일반적인 방법
+답이 있다면 항상 답을 탖으며 구현이 쉬운 편
+경우의 수에 비례하여 시간이 증가
+ex)약수구하기&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Divide and Conquer Approach&lt;/strong&gt; : 큰문제를 작게쪼개어 병렬적으로 해결.
+문제의 크기를 작게 나누어서 문제를 쉽게 풀기 위한 방법
+문제의 크기는 두 개 이상으로 쪼개어지고 문제의 해답을 바로 구할 수 있을 정도가 될 때까지 문제를 계속 분할
+하위 문제들이 서로 독립적이어야 함
+ex) 정렬문제(quick, merge, radix)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Dynamic Programming Approach&lt;/strong&gt; : 주어진 문제를 하위로 나누어서 해결.(Divide and conquer와 비슷하지만 문제간의 관계가 다름)종속성을 가질 때 사용.
+하위 문제에 대한 답을 저장하였다가 동일한 문제가 나오면 재계산하지 않고 저장된 답을 사용
+ex) 피보나치 수열&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Greedy Approach&lt;/strong&gt; : 해당문제의 최적답을 고르면 전체에 답이 최적일 것이다.
+현재 상황에서 최선의 답을 선택
+현재 상황에는 최선이지만 &lt;strong&gt;전체에는 최선이라는 보장은 없음&lt;/strong&gt;
+최적 부분 구조 조건을 만족하면 결과가 우수
+ex) 허프만코드&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;동적프로그래밍의 특징&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;모든 하위 문제를 풀고 그 결과를 저장해 둠&lt;/li&gt;
+  &lt;li&gt;저장되어 있던 결과는 다음 단계의 문제를 푸는 데 사용(연관성)&lt;/li&gt;
+  &lt;li&gt;동적프로그래밍은 최적화 문제를 푸는 데 쓰임&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;동적프로그래밍과 최적화 문제&lt;/strong&gt;
+가능한 해답이 무수히 존재하며,&lt;br /&gt;각각의 해답은 숫자 등의 크기가 있는 값을 가짐&lt;br /&gt;가장 크거나 가장 작은 최적의 값을 가지는 해답을 찾을 수 있고,&lt;br /&gt;그런 해답을 최적화 문제의 &lt;strong&gt;최적해&lt;/strong&gt;라고 부름&lt;br /&gt;즉, 최적화 문제란 문제의 여러답이 서로 비교 가능하고&lt;br /&gt;복수 개인의 경우, 목적에 따라 가장 좋은 결과를 찾아야 하는 문제.
+ex) 최단경로문제&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1단계&lt;/strong&gt; : 최적해에 대한 구조적 특징을 분석&lt;br /&gt;(하위 문제로부터 해답을 구해서 원래의 답을 구할 수 있는 구조인지 확인해 본다.)
+&lt;strong&gt;2단계&lt;/strong&gt; : 최적해 값을 구하기 위한 &lt;strong&gt;재귀적 정의&lt;/strong&gt;가 가능한지 확인
+&lt;strong&gt;3단계&lt;/strong&gt; : 하위문제로부터 &lt;strong&gt;최적해의 값을 계산&lt;/strong&gt;&lt;br /&gt;수행시간은 $\Theta(2^n)$
+&lt;strong&gt;4단계&lt;/strong&gt; : 계산된 값으로부터 최적해를 만듦&lt;/p&gt;
+
+&lt;h3 id=&quot;동적계획법을-적용한-assembly-line-scheduling&quot;&gt;동적계획법을 적용한 Assembly Line Scheduling&lt;/h3&gt;
+
+&lt;p&gt;조립을 통해 제품이 완성될 때 여러 개의 과정과 여러 개의 라인이 존재할 때 최적의 조합을 찾아&lt;br /&gt;&lt;strong&gt;가장 빠른 시간과 경로를 동적계획법을 이용하여 해결&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;동적계획법을-적용한-matrix-chain-multiplication&quot;&gt;동적계획법을 적용한 Matrix-Chain Multiplication&lt;/h3&gt;
+
+&lt;p&gt;행렬의 곱은 그 순서에 따라 곱셈의 횟수가 달라지기 때문에 효율적으로 계산하기 위해서는 가장 최소인 경우를 찾아야 함&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;수행시간&lt;/strong&gt;
+$O(n^3)$ time in total : 주어진 매트릭스에 대해 매번 동일값을 매번 반복해서 계산.
+$\Theta(n2)$ subproblems : 주어진값을 매트릭스형태로 n*n으로 계산된값을 모든 매트릭스에 반복적용.
+$O(n)$ time for each subproblem&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;공간사용&lt;/strong&gt;
+$\Theta(n^2)$&lt;/p&gt;
+
+&lt;p&gt;Overlapping Subproblems : 하위 문제가 반복적으로 등장하는 경우
+Memoization : 하위 문제가 반복적으로 등장하는 경우 계산한 값을 저장하여 효율성을 올림&lt;/p&gt;
+
+&lt;h3 id=&quot;7강-949&quot;&gt;7강 9:49&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Greedy Approach&lt;/strong&gt; vs &lt;strong&gt;Brute-Force approach&lt;/strong&gt;
+현재상황의 베스트 / 정답을 고를 수 있지만시간이 걸림
+베스트와 차선값이 차이가 많이 나지 않아 경향만 보고싶을때는 greedy해도 상관없다.
+꼭 정확한 답이 필요하다면 Brute-Force.
+&lt;strong&gt;Greedy Approach&lt;/strong&gt; vs &lt;strong&gt;Dynamic programming&lt;/strong&gt;
+현재상황의 베스트 / 이전상황을 모두 고려한 현재상황의 베스트
+&lt;strong&gt;Greedy Approach&lt;/strong&gt; vs &lt;strong&gt;Divide and Conquer&lt;/strong&gt;
+완전 다르기때문에 이 둘은 유사성이 없다.&lt;/p&gt;
+
+&lt;h3 id=&quot;0-1-knapsack-problem&quot;&gt;0-1 Knapsack Problem&lt;/h3&gt;
+
+&lt;p&gt;가방이 담을 수 있는 무게가 정해져 있을때,
+가방에 담은 물건들의 가치가 최고가 되도록 선택하는 문제
+(엇? 앞전에 봤었는데??)
+&lt;strong&gt;Brute-Force&lt;/strong&gt; 각각의 가치를 따져서 이방법 저방법 다해보고 정답을 고름.
+&lt;strong&gt;Greedy&lt;/strong&gt; 일단 가장 가치가 최고인것부터 넣고본다.&lt;/p&gt;
+
+&lt;h3 id=&quot;8강_-huffman-code&quot;&gt;8강_ Huffman code&lt;/h3&gt;
+
+&lt;p&gt;Huffman code는 &lt;strong&gt;데이터를 압축하고 해제&lt;/strong&gt;하는데 광범위하게 사용되는 알고리즘으로 &lt;strong&gt;유동길이 코드를 효율적으로 설정&lt;/strong&gt;하여 Encoding과 Decoding에 문제가 없으면서 크기를 최대한 줄이기 위해 사용한다.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;압축(compression) : 처리 효율을 높이든가 데이터 양을 적게 하는 정보의 집약도를 높이는 등의 목적에서 통상의 데이터를 특수한 데이터 형식으로 치환하는것. 압축된 데이터는 역의 변환에 의해서 원래의 데이터로 돌아간다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;고정길이 코드&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;6가지 {a,b,c,d,e,f}로 구성된 십만 개의 문자를 표현한다면, 총 6가지 문자를 표현해야하므로 최소 3비트가 필요&lt;/li&gt;
+  &lt;li&gt;3비트의 고정길이 코드(fixed-length code)로 표현한다면 300,000비트가 필요
+(000, 001, 010, 011, 100, 101)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;유동크기 코드&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;사용공간은 고정크기가 아닌 유동크기 코드(variable-length code)를 사용하면 줄일 수 있음(Frequency에 따른 유동크기코드는 적은공간사용 224,000비트필요)
+(0, 101, 100, 111, 1101, 1100)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;greedy-approach를-이용하여-huffman-code-풀기&quot;&gt;Greedy Approach를 이용하여 Huffman code 풀기.&lt;/h3&gt;
+
+&lt;p&gt;Prefix가 중복되지 않는 유동길이 코드를 만들기 위해서
+모든 경우를 계산하여 가장 효율적인 방법을 고를 수도 있지만
+&lt;strong&gt;Greedy Approach를 이용하여 가장 빈도수가 낮은 문자들을 합치면서 트리구조를 생성&lt;/strong&gt;하는 방법&lt;/p&gt;
+
+&lt;p&gt;유동길이 코드의 압축과 해제&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Encoding and Decoding
+문자코드가 다른 문자코드의 prefix가 되면 중복이 발생함으로, 중복을 피하면서 유동길이 코드로 만들어야 함.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Huffman code의 생성 : Greedy approach로 해결하는 방법&lt;/p&gt;
+    &lt;ol&gt;
+      &lt;li&gt;빈도수Frequency에 따라 오름차순으로 정렬&lt;/li&gt;
+      &lt;li&gt;제일작은 1,2번을 합쳐서 부모노드를 만든다.&lt;/li&gt;
+      &lt;li&gt;1.2 반복 (끝날때까지)&lt;/li&gt;
+      &lt;li&gt;트리의 왼쪽은0, 오른쪽은1을 주면 Codeward가 나온다&lt;/li&gt;
+      &lt;li&gt;비트계산 Frequency*길이 (빈도수가높은건 길이를 짧게해서 비트수를 줄인다)&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;스트링매칭string-matching&quot;&gt;스트링매칭(String Matching)&lt;/h3&gt;
+
+&lt;p&gt;텍스트T와 패턴P가 주어졌을 때, ‘T에 P가 존재하는가?’에 대한 해답을 찾는 문제.
+한 칸씩 이동하여 text가 끝날때까지 비교하여 횟수와 위치를 찾는 문제.&lt;/p&gt;
+
+&lt;h3 id=&quot;kmp알고리즘&quot;&gt;KMP알고리즘&lt;/h3&gt;
+
+&lt;p&gt;비교횟수를 최고화하는 스트링매칭 알고리즘으로 선형시간에 검색이 가능함.&lt;/p&gt;
+
+&lt;p&gt;비교의 횟수를 줄여서 좀더 빠르게 스트링매칭의 결과를 내고자.
+불필요한 비교가 많은 기존 스트링매칭과 달리 여러칸을 옮김.
+패턴P의 발생을 놓치지 않으면서 &lt;strong&gt;비교 횟수를 최소화&lt;/strong&gt;할 수 있을것인가.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;시간복잡도&lt;/strong&gt; : 비교의 횟수와 패턴의 재 비교 횟수로 고려할 수 있다.
+&lt;strong&gt;비교의횟수&lt;/strong&gt; : 매치된 수 + 믹스매치된 수의 합이다.&lt;/p&gt;
+
+&lt;h3 id=&quot;exact-matching&quot;&gt;Exact Matching&lt;/h3&gt;
+
+&lt;p&gt;주어진 텍스트T에서 찾고자 하는 패턴P가 발생하는 횟수와 모든 지점을 찾는 문제&lt;/p&gt;
+
+&lt;h3 id=&quot;approximate-string-matchingexact의-반대&quot;&gt;Approximate string matching(exact의 반대)&lt;/h3&gt;
+
+&lt;p&gt;주어진 텍스트T에서 찾고자 하는 &lt;strong&gt;패턴P의 일부&lt;/strong&gt;를 찾아서 발생하는 횟수와 모든 지점을 찾는 문제
+\((1개틀린것과 2개틀린것 p=ab*, a*a, *ba 와 a**, *b*, **a)\)
+여러 번 반복해서 찾아야 하는 문제가 발생 -&amp;gt; 시간복잡도 증가&lt;/p&gt;
+
+&lt;h3 id=&quot;exact-set-matchingapproximate와-비슷&quot;&gt;Exact Set Matching(Approximate와 비슷)&lt;/h3&gt;
+
+&lt;p&gt;주어진 텍스트T에서 찾고자 하는 &lt;strong&gt;패턴P의 집합&lt;/strong&gt;이 주어졌을 때, 패턴 P의 집합을 효율적으로 찾는 문제
+여러 번 반복해서 찾아야 하는 문제가 발생 -&amp;gt; 시간복잡도 증가&lt;/p&gt;
+
+&lt;h3 id=&quot;aho-corasik알고리즘&quot;&gt;Aho-Corasik알고리즘&lt;/h3&gt;
+
+&lt;p&gt;Output-link와 Failure-link를 적용한 키워드 트리를 이용하여 Exact Set Matching문제를 선형시간에 해결이 가능
+중복되는것을 한번에 검사한다 p ={pat, party} 중복pa&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;키워드 트리(Keyword Tree) 생성규칙
+    &lt;ol&gt;
+      &lt;li&gt;각 간선은 문자 하나를 할당&lt;/li&gt;
+      &lt;li&gt;한 정점으로부터 간선이 두 개로 나누어졌다면 두 간선은 각기 다른 문자가 할당&lt;/li&gt;
+      &lt;li&gt;패턴집합 P안의 모든 패턴들은 정점들의 집합에 모두 매칭됨&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;정수론number-theory과-암호&quot;&gt;정수론(Number Theory)과 암호&lt;/h3&gt;
+
+&lt;p&gt;정수론은 수의 성질을 연구하는 분야로 나눗셈정리, 페르마 정리, 소인수분해, 중국인 나머지 정리 등의 이론이 있으며&lt;br /&gt;수의 성질을 이용한 암호알고리즘이 연구되고 있음&lt;/p&gt;
+
+&lt;p&gt;암호는 특정인에게 비밀정보를 전달하는데 사용하는 방법이나 체계를 의미&lt;/p&gt;
+
+&lt;h3 id=&quot;공개키-암호알고리즘&quot;&gt;공개키 암호알고리즘&lt;/h3&gt;
+
+&lt;p&gt;공개키 암호 시스템은 공개키와 개인키를 사용하여 &lt;strong&gt;메시지의 암호화&lt;/strong&gt;와 &lt;strong&gt;사용자의 인증&lt;/strong&gt;을 수행할 수 있는 암호 시스템으로&lt;br /&gt;대표적으로는 RSA, ECC, DSS등이 있음
+&lt;strong&gt;RSA 암호알고리즘&lt;/strong&gt; : 소인수분해가 어렵다는 성질, 정수론의 연구결과를 이용.&lt;br /&gt; 공격자가 암호된 내용을 쉽게 파악할 수 없도록한다는 특징이 있다.&lt;br /&gt; Eucli’d GCD함수(최대공약수), Extended Euclid’s GCD함수, Euler’s totient function 등을 사용하여 암호를 수행.
+ex)공인인증서&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ECC 암호알고리즘&lt;/strong&gt; : 타원의 두 중심점을 찾기 어렵다는 성질을 이용&lt;/p&gt;
+
+&lt;p&gt;Diffie와 Hellman 연구자가 1976년에 제안하였으며 기존의 키를 1개 사용하는 시스템과 달리 &lt;strong&gt;2개의 키를 사용&lt;/strong&gt;하여 암호화와 사용자인증을 수행함.&lt;/p&gt;
+
+&lt;p&gt;공개키 암호시스템은 다음 &lt;strong&gt;두 가지 문제를 해결하기 위해 개발&lt;/strong&gt;되었다.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;기존의 비밀키를 사용하는 시스템에서 &lt;strong&gt;키를 분배하는 문제&lt;/strong&gt;를 해결
+사람A,사람B모두 암호화된 문장을 해석할 수 있는 키를 가지고 있어야만 복원해볼 수 있는데..&lt;br /&gt;사람C라는 제3자가 나서서 ‘사람A,사람B 서로 통신(암호,복호)을해도 문제가없다’라는 것을 보장해줘야하는 것이&lt;br /&gt;“키를 분배한다”라고한다;;;&lt;/li&gt;
+  &lt;li&gt;네트워크에서 &lt;strong&gt;부인방지를 막기 위해&lt;/strong&gt; 전자서명의 필요성이 크게 대두
+보내놓고 안보냈다고 하거나, 받아놓고 안받았다고 하거나&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;공개키 암호 시스템의 구성 3가지&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;평문(M)과 암호문(C)&lt;/li&gt;
+  &lt;li&gt;공개키(Pu)와 개인키(Pr)&lt;/li&gt;
+  &lt;li&gt;암호알고리즘(Enc)과 복호알고리즘(Dec)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;공개키 암호 시스템의 특징&lt;/strong&gt;
+Trap Door One-Way Function
+단방향 함수로 역함수를 계산하는 것은 거의 불가능하지만,
+특정 정보(Trap Door)를 알고 있다면 역함수를 계산할 수 있음&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;공개키 암호 시스템의 조건&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;공개키는 &lt;strong&gt;모든 사람이 필요로 하면 얻을 수 있도록&lt;/strong&gt; 공개&lt;/li&gt;
+  &lt;li&gt;개인키는 사용자만 보관/사용함&lt;/li&gt;
+  &lt;li&gt;공개키-개인키는 쌍으로 만들어지고 사용됨&lt;/li&gt;
+  &lt;li&gt;공개키로 암호화한 내용은 개인키로 복호화함&lt;/li&gt;
+  &lt;li&gt;개인키로 암호화한 내용은 공개키로 복호화함&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;rsa-암호알고리즘-소개&quot;&gt;RSA 암호알고리즘 소개&lt;/h3&gt;
+
+&lt;p&gt;1977년 MIT에서 개발되어 현재까지 활발히 사용 중인 암호알고리즘(ex.공인인증서)
+Rivest-Shamir-Adelman 연구자가 공동으로 개발
+블록단위로 암호를 수행
+0과 n-1사이의 정수를 평문과 암호문으로 사용
+사용하는 키의 크기는 2048bit이상이 일반적 (60승 어마어마 큼!!)
+크기가 아주 큰 수는 소인수분해가 어렵다는 수의 성질을 이용하여 암호화를 수행.&lt;/p&gt;
+
+&lt;h2 id=&quot;_12강-정수론2&quot;&gt;@_@12강 정수론(2)😥&lt;/h2&gt;
+
+&lt;h3 id=&quot;rsa와-entended-euclid-gcd&quot;&gt;RSA와 Entended Euclid GCD&lt;/h3&gt;
+
+&lt;p&gt;공개키 암호알고리즘인 RSA는 크기가 큰 수는 소인수 분해가 어렵다는 수의 성질을 이용하여&lt;/p&gt;
+
+&lt;h3 id=&quot;flow-networks&quot;&gt;Flow networks&lt;/h3&gt;
+
+&lt;p&gt;방향성 또는 무방향성 그래프에서&lt;br /&gt; 각 간선이 용량(Capacity)과 흐름(Flow)을 갖는 경우
+ex) 도로, 순환, 전자회로, 파이프의 흐름 등을 표현
+-Maximum flow problem은 그래프에서 최대 흐름의 양을 찾는 문제&lt;/p&gt;
+
+&lt;h3 id=&quot;flow-networks를-ford-fulkerson-method로-풀어보자&quot;&gt;Flow networks를 Ford-Fulkerson Method로 풀어보자&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Greedy 알고리즘으로 Flow networks에서 Max, flow 문제를 해결&lt;/li&gt;
+  &lt;li&gt;Augmenting paths와 residual nerwork를 이용하여 여분의 경로를 찾고 흐름의 양을 계속 추가하는 과정을 반복&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;amortized-analysis분할상환-방식&quot;&gt;Amortized Analysis(분할상환 방식)&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;자료구조에서 &lt;strong&gt;하나의 Operation&lt;/strong&gt;을 수행할 때 필요한 시간을 &lt;strong&gt;전체 Operation을 수행할 때의 평균 시간&lt;/strong&gt;으로 바꾸어 놓는 것&lt;/li&gt;
+  &lt;li&gt;Amortized Analusis는 Average Case Analysis와는 다르며 차이점은 확률적인 계산이 포함되지 않음(모든 경우, 최악의 경우 모두를 고른다)&lt;/li&gt;
+  &lt;li&gt;목표는 최악의 경우일 때, 각 Operation의 평균 성능을 보장해주는 것&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;3가지 기술 사용&lt;/strong&gt;
+(3가지 모두 고비용의 Operation이 있을때 미리 비용을 계산해놓고, 크레딧 혹은 포텐샬값을 가지고 앞으로 있을 비용들을 미리 지불하는 형식으로 최대값이 얼마가 될것인지를 잡는것이 목표 )&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Aggregate Method&lt;/strong&gt; 합계&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Accounting Method&lt;/strong&gt; 회계
+Accounting Method란,
+은행에 적립해놓고 쓰는것과 같다.
+    &lt;ul&gt;
+      &lt;li&gt;Operation이 다르면 비용Charges도 다름&lt;/li&gt;
+      &lt;li&gt;추가로 Change된 부분은 Credit에서 보관&lt;/li&gt;
+      &lt;li&gt;Credit은 실제 Operation보다는 &lt;strong&gt;차후에 수행될 operation에 사용&lt;/strong&gt;&lt;/li&gt;
+      &lt;li&gt;Aggregate Method에서는 모든 Operation이 동일했던 것과는 반대&lt;/li&gt;
+      &lt;li&gt;전체 Amortized Analysis는 실제 Cost의 상한이어야 함&lt;/li&gt;
+      &lt;li&gt;전체 Credit은 양의 정수 혹은 0 이어야 함&lt;/li&gt;
+      &lt;li&gt;따라서, 선택된 Amortized 비용은 음의 값이 나오지 않음&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Potential Method&lt;/strong&gt; 가능성&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;2가지 적용 예&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Stack operation (push, pop, multi-pop)&lt;/strong&gt;
+stack operation이란,
+Push와 pop, multi-pop은 (n번들어갔다가 n번나오니까)아무리 커도 최악의 경우 O(n)
+각 object는 push되는 경우에 대해 아무리 커도 한번 pop.
+push operation의 최대는 O(n)
+따라서 pop의 횟수는 최대 O(n)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Binary counter&lt;/strong&gt; using the increment operation&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;1-1aggregate-analysis기술을-이용한-stack-operation-분석방법&quot;&gt;1-1.Aggregate Analysis기술을 이용한 Stack operation 분석방법&lt;/h4&gt;
+
+&lt;p&gt;Amortized Cost는 O(n)/n = O(1)&lt;/p&gt;
+
+&lt;h4 id=&quot;1-2aggregate-analysis기술을-이용한-binary-counter-분석방법15강-615&quot;&gt;1-2.Aggregate Analysis기술을 이용한 Binary counter 분석방법(15강 6:15)&lt;/h4&gt;
+
+&lt;p&gt;😭&lt;/p&gt;
+
+&lt;h4 id=&quot;2-1accounting-method기술을-이용한-stack-operation-분석방법&quot;&gt;2-1.Accounting Method기술을 이용한 Stack operation 분석방법&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;Push 2, pop 0, multi-pop 0&lt;/strong&gt;
+비어있는 stack에 push를 먼저 한다면 Amortized Credit에 저장
+모든 pop에 저장된 credit을 이용하여 수행
+pop의 수는 push의 수와 동일
+전체 Amortized Analysis는 O(n)&lt;/p&gt;
+
+&lt;h4 id=&quot;2-2accounting-method기술을-이용한-binary-counter-분석방법&quot;&gt;2-2.Accounting Method기술을 이용한 Binary counter 분석방법&lt;/h4&gt;
+
+&lt;p&gt;Accounting Method의 Amortized Cost는
+1이 되면 2, 0이 되면 0, 1에 대해서 credit이 저장
+모든 bit를 reset하는 것은 credit을 사용
+1의 숫자는 항상 0 또는 양수이므로 credit도 0 또는 양수
+전체 Amortized cost는 O(n)&lt;/p&gt;
+
+&lt;h3 id=&quot;dynamic-expansion-and-contraction&quot;&gt;Dynamic Expansion and Contraction&lt;/h3&gt;
+
+&lt;p&gt;Table을 사용하다가 할당한 크기가 데이터를 담기에 작아지는 경우
+Table은 더 큰 크기를 재할당 받고
+기존의 데이터는 새로운 table로 모두 복사&lt;/p&gt;
+
+&lt;p&gt;반대의 경우로
+Table을 사용하다가 Table의 크기에 비해 데이터가 너무 작은 경우에도
+Table을 (낭비를 줄이기 위해)재할당 받고
+데이터를 모두 복사&lt;/p&gt;
+
+&lt;p&gt;Table-Insert와 Table-Delete Operation을 지원한다고 가정
+Table-Insert는 Table에 빈 슬롯이 있으면 한 칸을 차지하고 데이터를 집어 넣음
+Table-Delete는 Table에서 데이터 하나를 삭제하여 빈 슬롯 하나를 추가&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>egeg1212</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="algorithm" />
+      
+
+      
+        <summary type="html">Algorithm LIST 컴퓨터 알고리즘 이해 컴퓨터 알고리즘 초급 컴퓨터 알고리즘 중급 기초 알고리즘과 파이썬코딩 인공지능을 위한 머신러닝 알고리즘 블록체인 기술적 특징과 비즈니스 이해</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">컴퓨터 알고리즘 초급</title>
+      <link href="https://egeg1212.github.io/algorithm_beginning" rel="alternate" type="text/html" title="컴퓨터 알고리즘 초급" />
+      <published>2021-04-19T01:40:00+09:00</published>
+      <updated>2021-04-19T01:40:00+09:00</updated>
+      <id>https://egeg1212.github.io/algorithm_beginning</id>
+      <content type="html" xml:base="https://egeg1212.github.io/algorithm_beginning">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Algorithm LIST &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm_comprehension&quot;&gt;컴퓨터 알고리즘 이해&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm_beginning&quot;&gt;컴퓨터 알고리즘 초급&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm_intermediate&quot;&gt;컴퓨터 알고리즘 중급&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm_pythoncoding&quot;&gt;기초 알고리즘과 파이썬코딩&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm_ml&quot;&gt;인공지능을 위한 머신러닝 알고리즘&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./blockchain&quot;&gt;블록체인 기술적 특징과 비즈니스 이해&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;컴퓨터-알고리즘-초급&quot;&gt;컴퓨터 알고리즘 초급&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;알고리즘.. 아직은 잘 모르겠지만…&lt;br /&gt; 일단 고!!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강좌정보&lt;/strong&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;&lt;a href=&quot;https://tacademy.skplanet.com/live/player/onlineLectureDetail.action?seq=83&quot;&gt;Tacademy강좌링크&lt;/a&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습내용&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;컴퓨터 알고리즘의 역할 및 필요성에 대해 이해합니다. &lt;br /&gt; 시간복잡도를 통해 알고리즘을 분석하는 방법을 학습합니다.&lt;br /&gt;배열, 큐, 트리 등 주요 자료구조에 대해 복습합니다.&lt;br /&gt;정렬, 해쉬, 그래프, 탐욕, 스트링 알고리즘에 대해 학습하고 이해합니다. &lt;br /&gt;응용문제를 통해 문제해결방법을 익히고 심화학습을 수행합니다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강사&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;조호성 박사 (한양대학교 SW융합원)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습기간&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;2021.04.18~2021.04.24 + 테스트20문항 &lt;strong&gt;이수완료&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습시간&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;strong&gt;07:55:56&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강의목록&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[1강] 컴퓨터 알고리즘 개요(1)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[2강] 컴퓨터 알고리즘 개요(2)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[3강] 정렬문제&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[4강] 삽입정렬&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[5강] 합병정렬&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[6강] 힙정렬(Heap Sort)(1)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[7강] 힙정렬(Heap Sort)(2)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[8강] 퀵 정렬 (Quick Sort)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[9강] 선형시간 정렬 알고리즘&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[10강] 해쉬 알고리즘(1)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[11강] 해쉬 알고리즘(2)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[12강] 그래프의 기초&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[13강] 그래프의 표현&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[14강] 넓이 우선 탐색&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[15강] 깊이 우선 탐색&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[16강] 다익스트라 알고리즘&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[17강] 벨만-포드 알고리즘&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[18강] 플로이드-와샬 알고리즘&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[19강] 탐욕 알고리즘&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;GitHub&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;None&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;컴퓨터-알고리즘의-정의-프로그램과-다르니-주의하자&quot;&gt;컴퓨터 ‘알고리즘’의 정의. ‘프로그램’과 다르니 주의하자.&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;컴퓨터 알고리즘(Computer Algolithm)&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;컴퓨터를 이용하여 주어진 문제를 효율적으로 풀기 위한 방법을 단계별로 명확하게 기술해 놓은 것.&lt;/li&gt;
+      &lt;li&gt;정렬알고리즘, 해시알고리즘, 최단거리알고리즘 등&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;컴퓨터 프로그램(Computer Program)&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;컴퓨터가 특정 작업을 수행하기 위해 짜여진 명령의 순서&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;1-컴퓨터-알고리즘을-설명하기-위한-4단계&quot;&gt;1. 컴퓨터 알고리즘을 설명하기 위한 4단계.&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;1.문제 정의&lt;/strong&gt; (Problem definition)
+    &lt;ul&gt;
+      &lt;li&gt;해결하고자 하는 문제는 무엇인가?&lt;/li&gt;
+      &lt;li&gt;입력과 출력의 형태로 정의돌 수 있는가?&lt;/li&gt;
+      &lt;li&gt;컴퓨터가 수행할 수 있는 형태로 전환이 가능한가?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;2.알고리즘 설명&lt;/strong&gt; (Algorithm description)
+    &lt;ul&gt;
+      &lt;li&gt;컴퓨터가 수행해야 할 내용은 하나씩 차례대로 정의한 과정&lt;br /&gt;(ex. 세탁기사용법, 라면끓이는법)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;3.정확성 증명&lt;/strong&gt; (Correctness proof)
+    &lt;ul&gt;
+      &lt;li&gt;과정대로 수행하면 출력으로 항상 올바른 답을 내보내는가?&lt;/li&gt;
+      &lt;li&gt;잘못된 답을 내보내는 경우는 없는가?&lt;/li&gt;
+      &lt;li&gt;올바른 출력을 내보내고 정상적으로 종료되는가?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;4.성능 분석&lt;/strong&gt; (Performance analysis)
+    &lt;ul&gt;
+      &lt;li&gt;수행시간 (Running time)
+        &lt;ul&gt;
+          &lt;li&gt;수행연산의 횟수를 비교하는 방식&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;사용공간 (Space consumption)&lt;/li&gt;
+      &lt;li&gt;비교대상
+        &lt;ul&gt;
+          &lt;li&gt;산술연산(Arithmetic Calculation) : Add, Multiply, Exponent, Modular, …&lt;/li&gt;
+          &lt;li&gt;데이터입출력(Data Movement) : Copy, Move, Save, Load, …&lt;/li&gt;
+          &lt;li&gt;제어연산(Access Control) : If, While, Register,…&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;2-점근적-표기법asymptotic-notation&quot;&gt;2. 점근적 표기법(Asymptotic notation)&lt;/h3&gt;
+
+&lt;p&gt;$O$-notation 점근적 상한(&lt;em&gt;asymptotic upper bound&lt;/em&gt;)
+$\Omega$-notation 점근적 하한(&lt;em&gt;asymptotic lower bound&lt;/em&gt;)
+$\Theta$-notation 점근적 상한 및 하한(&lt;em&gt;asymptotically tight bound&lt;/em&gt;)
+…최악의 경우와 최선의 경우의 공통부분이다.&lt;/p&gt;
+
+&lt;h3 id=&quot;3-정렬문제sorting-problem&quot;&gt;3. 정렬문제(Sorting problem)&lt;/h3&gt;
+
+&lt;p&gt;$n$개의 숫자를 입력 받아, 입력받은 숫자들을 점점 커지는 순서나 점점 작아지는 순서로 다시 배열하여 출력하는 문제.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;오름차순(Increasing Order)&lt;/li&gt;
+  &lt;li&gt;내림차순(Decreasing Order)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;선택정렬(Selection sort) 알고리즘&lt;/strong&gt;
+정렬문제를 푸는 컴퓨터 알고리즘 중의 하나. 현재 상황에서 가장 작거나 가장 큰 숫자를 선택하여 &lt;u&gt;_재배치_&lt;/u&gt;하는 아이디어로 정렬문제를 해결하며 &lt;br /&gt; 시간복잡도는 $\theta(n^2)$&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;최소값 선택 정렬(Min-Selection sort) : 오름차순&lt;/li&gt;
+  &lt;li&gt;최대값 선택 정렬(Max-Selection sort) : 내림차순&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;삽입정렬(Insertion sort) 알고리즘&lt;/strong&gt;
+key값과 정렬된 리스트가 주어졌을 때, key값을 정렬된 리스트의 &lt;u&gt;_알맞은 위치_&lt;/u&gt;에 삽입.&lt;br /&gt;시간복잡도는 $\theta(n^2)$ &lt;br /&gt;제자리정렬(Sorted in place)이므로 추가공간을 사용하지 않는다.
+&lt;img src=&quot;https://github.com/EGEG1212/egeg1212.github.io/blob/main/_img/2021-04-18-insert.PNG&quot; alt=&quot;InsertSort&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;합병정렬(Merge Sort)&lt;/strong&gt;
+이미 정렬된 두 개의 배열을 입력으로 받아, 정렬된 하나의 배열을 출력하는 정렬알고리즘.
+시간복잡도 $\theta(nlogn)$ 아니고 $O(nlgn)$ 였던가…&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;비교compare와 이동move 함수 사용.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;A divide-ane-conquer approach&lt;/strong&gt;
+크기가 커서 풀기 어려운 하나의 문제를
+크기를 작게 풀기 쉬운 여러 개의 문제로 바꾸어서 푸는 방법.
+    &lt;blockquote&gt;
+      &lt;p&gt;Divide 나누고
+Conquer 합병정렬을 사용하여 두 개의 배열로 정렬하고
+Combine 두 개의 정렬된 배열을 하나로 합치는 과정
+&lt;img src=&quot;https://github.com/EGEG1212/egeg1212.github.io/blob/main/_img/2021-04-18-merge.PNG&quot; alt=&quot;MergeSort&quot; /&gt;&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;$A$ : n개의 숫자가 들어있는 배열
+$p$ : 배열의 첫번째 인덱스
+$r$ : 배열이 마지막 인덱스
+&lt;img src=&quot;https://github.com/EGEG1212/egeg1212.github.io/blob/main/_img/2021-04-18-mergecode.PNG&quot; alt=&quot;MergeSortPseudoCode&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;힙정렬(Heap Sort)&lt;/strong&gt;
+수행시간은 합병정렬과 동일한 $O(nlgn)$
+삽입정렬과 동일한 제자리 정렬 (Sort in Place)&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Min-Heap&lt;/li&gt;
+  &lt;li&gt;Max-Heap
+    &lt;ul&gt;
+      &lt;li&gt;조건1 : 완전 이진트리(Binary tree)&lt;/li&gt;
+      &lt;li&gt;조건2 : 부모 노드의 값은 항상 자식 노드의 값보다 크다.
+        &lt;ul&gt;
+          &lt;li&gt;이 조건이 유지되도록 바꾸는 연산 힙특성관리(Maintaining the heap property)
+&lt;strong&gt;Max-Heapify&lt;/strong&gt;
+&lt;img src=&quot;https://github.com/EGEG1212/egeg1212.github.io/blob/main/_img/2021-04-18-MaxHeapify.PNG&quot; alt=&quot;MaxHeapify&quot; /&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;1.힙 구조 만들기 (Building a heap)&lt;/strong&gt;
+Root 노드 방향으로 거슬러 올라가면서 MAX-HEAPIFY를 진행.
+수행하는 시간 $O(nlgn)$&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;2.최대값 추출 (Extract-Max)&lt;/strong&gt;
+Heap에서 가장 큰 값을 제거하고 Max-heap구조를 복원하는 연산&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;3.힙 소트 (Heap Sort)&lt;/strong&gt;
+수행하는 시간 $O(nlgn)$
+Extract-Max를 n번 반복
+시간복잡도는 $\Theta(nlgn)$&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;퀵정렬(Quicksort)&lt;/strong&gt;
+퀵정렬은 Pivot과 partition을 이요하여 크기가 작은 숫자는 계속 앞쪽으로 이동시키고,
+크기가 큰 숫자는 계속 뒤쪽으로 이동시켜 정렬문제를 해결하는 알고리즘으로
+시간복잡도는 $\Theta(nlgn)$&lt;/p&gt;
+
+&lt;p&gt;Divide-and-Conquer paradigm을 사용 (&lt;strong&gt;Partition&lt;/strong&gt;)
+(정렬문제를 풀 수 있는 알고리즘은 아니다;)
+Partition의 수행시간&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Partition에 걸리는 시간 &lt;strong&gt;$\Theta(n)$&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Partition의 횟수
+    &lt;ul&gt;
+      &lt;li&gt;경우에 따라 횟수가 달라진다&lt;/li&gt;
+      &lt;li&gt;
+        &lt;ol&gt;
+          &lt;li&gt;Balanced partitioning 수행시간 &lt;strong&gt;$\Theta(nlgn)$&lt;/strong&gt;
+각 하위 문제의 크기가 기존 문제의 크기의 절반정도로 나누어짐(바이너리 비슷)&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;ol&gt;
+          &lt;li&gt;unbalanced partitioning &lt;strong&gt;$\Theta(n^2)$&lt;/strong&gt;
+한개 그리고 나머지..최악의경우&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt; &lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;BEST case&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Average case&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Worst case&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Insertion sort&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;$\Theta(n)$&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;$\Theta(n^2)$&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;$\Theta(n^2)$&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Merge sort&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;$\Theta(nlgn)$&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;$\Theta(nlgn)$&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;$\Theta(nlgn)$*&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;selection sort&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;$\Theta(n^2)$&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;$\Theta(n^2)$&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;$\Theta(n^2)$&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Heapsort&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;$\Theta(n)$&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;$\Theta(nlgn)$*&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Quicksort&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;$\Theta(nlgn)$&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;$\Theta(nlgn)$*&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;$\Theta(n^2)$&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;두 숫자를 비교해서 어떤것이 큰지,작은지 판단해야하는 경우이다.
+들어오는 데이터와 공간을 생각해서 적합한걸 골라야한다
+Merge sort - 추가공간 필요하다는 단점;
+Heapsort - Heap구조를 만들고 구조를 유지해야한다는 단점;
+Quicksort - pivot이 어떻게 뽑이냐에 따라 성능차이가 있음;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;선형시간-정렬-알고리즘&quot;&gt;선형시간 정렬 알고리즘&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;숫자가 몇개인지를 세어보거나, 각 숫자의 자릿수들 끼리만 비교하는 방법을 통해 정렬해야하는 경우이다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;계수정렬&lt;/strong&gt;
+입력 받은 배열에 있는 숫자의 범위를 확인하고
+몇 개가 있는지를 세어보고 정렬하는 알고리즘으로
+시간복잡도는 $\Theta(n)$&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;동일한숫자가 여러개 들어오는 데이터에는 계수정렬이 유리하다
+숫자의 범위가 적을때 계수정렬이 유리하다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;기수정렬(Radix sort)&lt;/strong&gt;
+입력 받은 배열에 있는 숫자를 각 자리끼리 비교하여 정렬하는 알고리즘으로
+시간복잡도는 $\Theta(n)$
+LSB -&amp;gt; MSB : 1의자리부터 비교해서 정렬함
+(숫자의 자릿수가 모두 같아야 쓸 수 있음)
+(선형시간에 정렬이 가능하다.)&lt;/p&gt;
+
+&lt;h3 id=&quot;해쉬-알고리즘&quot;&gt;해쉬 알고리즘&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Direct-Address Tables&lt;/strong&gt;
+검색, 삽입, 삭제가 빠른 장점이 있지만
+실제 사용하는 공간이 낭비되는 경우가 많음&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Hash Tables&lt;/strong&gt;
+Direct-Address Tables에서 공간낭비를 줄이면서도
+시간복잡도를 낮추기 위해서 사용하지만 충돌문제가 있으며
+이를 해결하기 위한 Chained Hash Table은 시간이 느려질 수 있음&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Open Addressing&lt;/strong&gt;
+Collision을 피하기 위한 다른 방법으로 key를 hash table에 직접 저장
+자료를 직접 기록하는 방법으로 검색, 삽입, 삭제가 빠르지만 충돌의 가능성이 있어서
+Linear Probing, Quadratic Probing, Double Hashing등의 방법을 이용하여 충돌을 최소화할 필요가 있디.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Open Addressing 장점: 포인터를 사용하지 않아도 되므로 구현이 간편!! 추가 메모리 공간 사용 가능!!&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Open Addressing의 기술3가지&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;선형프로빙(Linear Probing )&lt;/strong&gt;
+삽입 연산(Insertion)
+빈 slot이 나올 때까지 해쉬 테이블을 탐색(다음다음다음다음)
+선형적인 형태로 충돌이 발생하면 1씩 증가하면서 빈 slot을 찾는 작업을 반복한다.
+&lt;strong&gt;장점&lt;/strong&gt;: 구현이 매우 쉽다
+&lt;strong&gt;단점&lt;/strong&gt;: primary clustering문제-key값을 넣을 빈 slot은 뭉쳐있는 slot들의 끝부분에 존재하기 때문에 값이 들어있는 slot들이 뭉쳐있는 경우가 많다. 검색시간증가.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;이차식프로빙(Quadratic Probing)&lt;/strong&gt;
+주어진 Hash함수 외에 i에 대한 2차함수꼴로 slot을 이동하면서 빈 slot을 찾는다.
+&lt;strong&gt;단점&lt;/strong&gt;: 만약 두 key의 처음 probe 값이 동일하다면 빈slot을 찾는 과정이 동일하므로 같은 slot을 탐색 (Mod).. 이런특성을 secondary clustering이라 부른다.
+즉, 처음 충돌한 위치가 같다면 다음 충돌할 위치에서도 반복적으로 계속 충돌이 나게 됨.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;이중해싱(Double Hashing)&lt;/strong&gt;
+\(h(k,i)=(h_1(k)+i*h_2(k))\pmod{m}\)
+해싱함수를 2개사용.
+충돌이 발생했을 때, 이동하는 거리가 hash함수에 의해 계산되어 무작위로 빈 slot을 찾게 한다.
+&lt;strong&gt;주의점&lt;/strong&gt;: $h_2(k)$함수는 해쉬 테이블의 크기 $m$과 서로 소 관계여야 한다.
+이것을 만족하는 가장 쉬운 방법은 $m$을 2의 지수승으로 두고 $h_2$가 항상 홀수가 되도록 만드는 것이다.
+다른 방법은 $m$을 소수로 하고 $h_2$을 $m$보다 작은 양수로 정하는 것이다.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;그래프-기초graph-basics&quot;&gt;그래프 기초(Graph Basics)&lt;/h3&gt;
+
+&lt;p&gt;V : Vertex(정점) 정점은 독립된 개체 Stand-alone object로 동그라미로 표현한다.
+E : edge(간선)
+—&amp;gt; A directed graph 방향성이 있는 간선을 가지고 있는 그래프(화살표 Arrows)
+— An undirected graph 무방향성 간선을 가진 그래프(직선 line)
+Degree(차수) - 정점의 진출차수(out-degree) - 정점의 진입차수(in-degree) - 차수는 진입차수와 진출차수의 합이다.&lt;/p&gt;
+
+&lt;p&gt;Path(경로) 정점 u로부터 정점 v까지의 경로는 정점의 순서이다.
+length(경로의 길이)는 경로에 있는 간선의 수이다.
+Simple path(단순경로)는 경로에 있는 모든 정점들이 서로 다른 경우이다.
+Cycle(순환) ex)&amp;lt;1,2,4,5,4,1&amp;gt;
+simple cycle(단일순환) ex)&amp;lt;1,2,4,1&amp;gt; - An acyclic graph(비순환그래프) : 순환이 없는 그래프 - A connected graph(연결그래프) : 정점의 모든 쌍들이 경로를 가지는 무방향성 그래프 - Connected components(연결요소) : 무방향성 그래프에서 정점들이 최대한 연결되어 있는 하위 그래프&lt;/p&gt;
+
+&lt;p&gt;A complete graph(완전그래프) - Forest(포레스트) : 순환하지 않는 무방향성 그래프 - Tree(트리) : 포레스트가 연결되어 있는 경우/
+연결된 비순환 무방향성 그래프
+&lt;strong&gt;Connected, Acyclic, Undirected Graph&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;그래프의-표현graph-representation&quot;&gt;그래프의 표현(Graph representation)&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;인접리스트 표현(Adjacency-list representation)
+정점 하나에 인접한 모든 정점을 리스트에 저장 (A directed graph경우)
+방향성그래프로 변환해서 저장(An undirected graph경우) &lt;strong&gt;$\Theta(V+E)$space&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;인접행렬 표현(Adjacency-matrix representation)
+두 정점 i와 j를 잇는 간선이 있다면 행렬의 (i,j)는 1, 아니면 0
+&lt;strong&gt;$\Theta(V^2)$space&lt;/strong&gt;
+무방향성은 양방향으로 간선이 존재하므로 하위 삼각 행렬이 상위 삼각 행렬과 대칭된다(lower triangular matrix)&lt;/li&gt;
+  &lt;li&gt;인접리스트와 인접행렬의 비교
+    &lt;ul&gt;
+      &lt;li&gt;저장공간
+G가 성기면, 인접리스트가 낫다. 이유는 $|E|&amp;lt;|V|^2$
+G가 촘촘하면, 인접행렬이 낫다. 행렬은 1비트만 사용하므로&lt;/li&gt;
+      &lt;li&gt;간선을 찾는데 걸리는 시간
+인접행렬 : $\Theta(1)$time
+인접리스트 : $O(V)$time&lt;/li&gt;
+      &lt;li&gt;모든 간선을 찾거나 방문하는데 걸리는 시간
+인접행렬 : $\Theta(V^2)$
+인접리스트 : $\Theta(V+E)$&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;가중그래프(Weighted graph) : 간선이 숫자로 표현되는 값을 가지는 그래프
+가중그래프표현(Weighted graph representation) :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;인접리스트에서는 정점 외에 간선의 값을 추가 저장&lt;/li&gt;
+  &lt;li&gt;인접행렬에서는 1대신 간선의 값을 저장&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;넓이-우선-탐색breadth-first-search&quot;&gt;넓이 우선 탐색(Breadth-first search)&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;거리&lt;/strong&gt;를 우선으로 그래프를 탐색하는 알고리즘
+정점들을 차례대로 탐색하기 위해 사용하는 자료구조는 queue&lt;/p&gt;
+
+&lt;p&gt;수행시간 분석&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;초기화 시간: $\Theta(V)$&lt;/li&gt;
+  &lt;li&gt;그래프 탐색 시간 $O(V+E)$
+정점은 최대 한 번만 조사된다.
+간선은 최대 두 번 조사된다.&lt;/li&gt;
+  &lt;li&gt;따라서, 전체 수행시간 : $O(V+E)$&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;깊이-우선-탐색depth-first-search&quot;&gt;깊이 우선 탐색(Depth-first search)&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;시간&lt;/strong&gt;을 우선으로 그래프를 탐색하는 알고리즘으로 시작점으로부터 인접한 정점을 차례대로 방문함.
+무방향성 그래프의 깊이 우선 탐색에서, 그래프의 각 간선은 트리간선이거나 후향간선이다.
+자료구조 queue가 아니다!!!!!!!!!&lt;/p&gt;
+
+&lt;p&gt;타임스탬프(Timestamps)
+각 정점은 타임스탬프를 두 개씩 가지고 있다.
+$v.d$ : 발견시간(Discovery time, when v is grayed)
+$v.f$ : 완료시간(finishing time, when v is blacken)&lt;/p&gt;
+
+&lt;p&gt;수행시간 분석 $\Theta(V+E)$ 시간복잡도가 이거였나????
+시간복잡도는 $O(n2)$&lt;/p&gt;
+
+&lt;h3 id=&quot;다익스트라-알고리즘dijkstras-algorithm&quot;&gt;다익스트라 알고리즘(Dijkstra’s algorithm)&lt;/h3&gt;
+
+&lt;p&gt;최단경로문제를 해결하는 다익스트라 알고리즘 &lt;strong&gt;정점을 하나씩 추가&lt;/strong&gt;하면서 완화를 통해 새로운 경로에서 경로값을 계산하여 새로운 경로를 추가하여 최단 경로를 찾는 알고리즘.
+하나의 시작점(Source)에서 하나의 도착점(Destinanion)을 가는 최단경로를 찾는 알고리즘.
+&lt;strong&gt;간선이 음의 값을 가져서는 안 된다.(non-negative edges only)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;최단 경로 문제
+최단경로문제는 출발점과 도착점이 모두 주어졌을 때, 두 정점을 연결하는 최단경로값을 찾는 문제로 Single Source-Single Deatination가 대표적
+가중간선(Edge weight)
+가중경로(Path weight) : 경로에 속하는 모든 간선의 값을 더한 값&lt;/p&gt;
+
+&lt;p&gt;수행시간 분석
+배열로 구현한 경우 : $O(V^2)$
+힙구조로 구현한 경우 : $O(VlgV+ElgV)$
+피보나치 힙으로 구현한 경우 : $O(VlgV+E)$&lt;/p&gt;
+
+&lt;h3 id=&quot;벨만-포드-알고리즘the-bellman-ford-algorithm&quot;&gt;벨만-포드 알고리즘(The Bellman-Ford algorithm)&lt;/h3&gt;
+
+&lt;p&gt;음의 값을 가지는 그래프에서 Relax를 이용하여 순환문제를 회피하고 최단경로 문제를 해결하는 알고리즘.
+하나의 시작점에서 하나의 도착점으로 가는 최단경로 문제를 해결하는 알고리즘이다.
+음의 간선이 있는 경우에도 문제를 해결한다.
+수행시간 : $O(VE)$&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;음수간선값(Negative-weight edges)&lt;/strong&gt;
+최단경로는 출발점으로부터 도달가능하며 음의 값을 가지는 순환이 없는 경우로 생각할 수 있다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;최단경로와 순환(Cycles)&lt;/strong&gt;
+최단경로는 순환을 포함해서는 안 된다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;직전 정점 하위 그래프(Predecessor subgraph)&lt;/strong&gt;
+최단경로트리(Shortest-path tree)가 된다.
+최적해 구조(Optimal substructure)를 가진다.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;완화(Relaxation)&lt;/strong&gt;
+현재 경로 값보다 더 적은 경로가 존재한다면 값을 변경한다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;플로이드-와샬-알고리즘floyd-warshall-algolithm&quot;&gt;플로이드-와샬 알고리즘(Floyd-Warshall algolithm)&lt;/h3&gt;
+
+&lt;p&gt;중간 정점을 모두 실험해본다.(All pairs shortest path문제를 해결)
+모든 정점을 넣어보고 경로의 값이 가장 작아지는 경로를 찾는다.
+따라서 수행시간은 $\Theta(V^3)$
+시간복잡도는 $O(V^3)$&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;인접 행렬$W$
+각 &lt;strong&gt;간선의 값&lt;/strong&gt;은 다음과 같이 표시 $W_{ij} = W(i,j)$&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;최단경로 행렬$D$
+각 &lt;strong&gt;경로의 값&lt;/strong&gt;은 다음과 같이 표시 $d_{ij} = \eth(i,j)$&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;직전 정점 행렬
+각 &lt;strong&gt;행렬의 값&lt;/strong&gt;은 다음과 같이 표시 $\pi_{ij} =  NIL$&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;탐욕-알고리즘greedy-algorithm&quot;&gt;탐욕 알고리즘(Greedy Algorithm)&lt;/h3&gt;
+
+&lt;p&gt;현재 상황에서 가장 좋아 보이는 답을 선택하는 방법
+각 부분에서 최적을 선택하면 전체에서도 최적이 될 것이라는 가정을 전제로.
+선택은 항상 하위 문제에 대한 해답이 나오기 전에 선택된다.
+(배낭채우기 문제에 적용 가능)&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;탐욕선택(Greedy-choice property)&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;동적프로그래밍(Dynamic programing)&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;하위 문제를 풀기 전에 선택을 한다.&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;하위 문제를 풀고 나서 선택을 한다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;항상 하나의 문제만을 고려한다.&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;동시에 여러 개의 하위 문제를 고려한다.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;신장트리(Spanning Trees)&lt;/li&gt;
+  &lt;li&gt;최소신장트리(Minimum Spanning Trees)MST 비용이 최소가 되는 신장트리를 찾는 문제
+    &lt;ul&gt;
+      &lt;li&gt;최소신장트리는 한번에 하나의 간선이 늘어난다.&lt;/li&gt;
+      &lt;li&gt;사이클조건이 안되게 하는 것. safe edge&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;프림-알고리즘prims-algorithm&quot;&gt;프림 알고리즘(Prim’s Algorithm)&lt;/h3&gt;
+
+&lt;p&gt;정점의 최선값을 선택하여 MST문제를 해결하는 알고리즘.
+집합 A에 속하는 간선은 항상 트리를 형성한다
+트리는 임의의 root정점 r에서 시작하며 정점의 집합 V에 속하는 모든 정점을 포함할 때까지 확장한다.
+각 단계에서 가벼운 간선(light edge)이 트리에 추가된다.
+따라서, 알고리즘이 종료되면, 최소신장트리가 만들어진다.&lt;/p&gt;
+
+&lt;h3 id=&quot;쿠루스칼-알고리즘kruskals-alorithm&quot;&gt;쿠루스칼 알고리즘(Kruskal’s Alorithm)&lt;/h3&gt;
+
+&lt;p&gt;간선의 가중치값을 정렬하여 MST문제를 해결하는 알고리즘.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>egeg1212</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="algorithm" />
+      
+
+      
+        <summary type="html">Algorithm LIST 컴퓨터 알고리즘 이해 컴퓨터 알고리즘 초급 컴퓨터 알고리즘 중급 기초 알고리즘과 파이썬코딩 인공지능을 위한 머신러닝 알고리즘 블록체인 기술적 특징과 비즈니스 이해</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">컴퓨터 알고리즘 이해</title>
+      <link href="https://egeg1212.github.io/algorithm_comprehension" rel="alternate" type="text/html" title="컴퓨터 알고리즘 이해" />
+      <published>2021-04-17T01:40:00+09:00</published>
+      <updated>2021-04-17T01:40:00+09:00</updated>
+      <id>https://egeg1212.github.io/algorithm_comprehension</id>
+      <content type="html" xml:base="https://egeg1212.github.io/algorithm_comprehension">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Algorithm LIST &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm_comprehension&quot;&gt;컴퓨터 알고리즘 이해&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm_beginning&quot;&gt;컴퓨터 알고리즘 초급&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm_intermediate&quot;&gt;컴퓨터 알고리즘 중급&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm_pythoncoding&quot;&gt;기초 알고리즘과 파이썬코딩&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm_ml&quot;&gt;인공지능을 위한 머신러닝 알고리즘&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./blockchain&quot;&gt;블록체인 기술적 특징과 비즈니스 이해&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;성공적인-프로그래밍을-위한-컴퓨터-알고리즘-이해&quot;&gt;성공적인 프로그래밍을 위한 컴퓨터 알고리즘 이해&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;수학공부는 꼭. 반.드.시. 해야하는 것이었던 것이다 ㅋㅋㅋ&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강좌정보&lt;/strong&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;&lt;a href=&quot;https://tacademy.skplanet.com/live/player/onlineLectureDetail.action&quot;&gt;Tacademy강좌링크&lt;/a&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습내용&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;컴퓨터 알고리즘은 주어진 문제를 해결하기 위한 절차나 방법을 순서대로 나열하여 정의한 것입니다. 따라서 알고리즘이 정확하게 혹은 효율적으로 구성되지 않은 경우 올바른 결과물을 얻지 못하거나 결과물을 얻기 까지 너무 많은 시간과 자원이 소비되게 됩니다. 이번 세미나에서는 정렬 알고리즘을 통해 알고리즘의 기본 개념을 이해하고, 수행시간의 확률분석 구현 실습 등을 통해 효율적인 컴퓨터 알고리즘 설계 및 응용 방법에 대해서 알아 봅니다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강사&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;조호성 박사 (한양대학교 SW융합원)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습기간&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;2021.04.16~2021.04.18 &lt;strong&gt;이수완료&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습시간&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;strong&gt;02:45:34&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강의목록&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[1강] 알고리즘과 점근적 표기법&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[2강] 정렬알고리즘 (선택/삽입/계수/기수)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[3강] 효율적인 계산 방법 (RSA/KMP/Aho-corasik)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[4강] 소수와 안전소수 생성법&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;GitHub&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;None&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>egeg1212</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="algorithm" />
+      
+
+      
+        <summary type="html">Algorithm LIST 컴퓨터 알고리즘 이해 컴퓨터 알고리즘 초급 컴퓨터 알고리즘 중급 기초 알고리즘과 파이썬코딩 인공지능을 위한 머신러닝 알고리즘 블록체인 기술적 특징과 비즈니스 이해</summary>
+      
+
+      
+      
+    </entry>
+  
+</feed>

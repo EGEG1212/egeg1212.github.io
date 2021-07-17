@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" >
+  <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
+  <link href="https://egeg1212.github.io/tag/github/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="https://egeg1212.github.io/" rel="alternate" type="text/html" />
+  <updated>2021-07-17T10:28:30+09:00</updated>
+  <id>https://egeg1212.github.io/tag/github/feed.xml</id>
+
+  
+  
+  
+
+  
+    <title type="html">2021 정은경의 코딩일지 | </title>
+  
+
+  
+    <subtitle>A person who studies voice chatbots.</subtitle>
+  
+
+  
+
+  
+    
+      
+    
+  
+
+  
+  
+
+  
+    <entry>
+      <title type="html">GitHub Frofile 꾸미기</title>
+      <link href="https://egeg1212.github.io/Git_frofile" rel="alternate" type="text/html" title="GitHub Frofile 꾸미기" />
+      <published>2021-05-18T01:40:00+09:00</published>
+      <updated>2021-05-18T01:40:00+09:00</updated>
+      <id>https://egeg1212.github.io/Git_frofile</id>
+      <content type="html" xml:base="https://egeg1212.github.io/Git_frofile">&lt;p&gt;깃허브 프로필 꾸미기
+REFERENCE
+&lt;a href=&quot;https://github.com/anuraghazra/github-readme-stats/blob/master/docs/readme_kr.md&quot;&gt;https://github.com/anuraghazra/github-readme-stats/blob/master/docs/readme_kr.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;이스터에그
+&lt;a href=&quot;https://blog.naver.com/zzang9ha/222042586337&quot;&gt;https://blog.naver.com/zzang9ha/222042586337&lt;/a&gt;
+&lt;a href=&quot;https://github.com/kyechan99/capsule-render&quot;&gt;https://github.com/kyechan99/capsule-render&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;참조 
+조길상님의 깃헙 &lt;a href=&quot;https://github.com/jogilsang&quot;&gt;https://github.com/jogilsang&lt;/a&gt;&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>egeg1212</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="github" />
+      
+
+      
+        <summary type="html">깃허브 프로필 꾸미기 REFERENCE https://github.com/anuraghazra/github-readme-stats/blob/master/docs/readme_kr.md</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">3. Jekyll 기반의 GitHub Page 생성</title>
+      <link href="https://egeg1212.github.io/Git_GitPage" rel="alternate" type="text/html" title="3. Jekyll 기반의 GitHub Page 생성" />
+      <published>2021-03-25T01:40:00+09:00</published>
+      <updated>2021-03-25T01:40:00+09:00</updated>
+      <id>https://egeg1212.github.io/Git_GitPage</id>
+      <content type="html" xml:base="https://egeg1212.github.io/Git_GitPage">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;GitHub LIST &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./Git_subinium&quot;&gt;1. Git &amp;amp; GitHub Page&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./Git_career&quot;&gt;2. Git과 GitHub로 내 커리어 만들기&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./Git_GitPage&quot;&gt;3. Jekyll 기반의 GitHub Page 생성&lt;/a&gt;&lt;/li&gt;
+
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;처음엔 CSS부분? 줄바꿈에 대한 에러만 고치고 싶었다…..
+그런데 왠걸? commit으로 io에 업데이트 잘되던게 안된다…&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;3-jekyll-기반의-github-page-생성&quot;&gt;3. Jekyll 기반의 GitHub Page 생성&lt;/h1&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강좌정보&lt;/strong&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Jekyll 기반의 GitHub Page 생성 &lt;a href=&quot;https://www.youtube.com/playlist?list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&quot;&gt;YouTube링크&lt;/a&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습내용&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Jekyll 기반의 GitHub Page 생성&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강사&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;문성훈 얼큰우동TV&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습기간&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;2021.04.20~ &lt;strong&gt;이수중&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습시간&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강의목록&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[1강] Jekyll 기반의 GitHub Page 생성(1) - 환경설정&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[2강] Jekyll 기반의 GitHub Page 생성(2-1) - 환경설정파일&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[3강] Jekyll 기반의 GitHub Page 생성(2-2) - author와 tags 설정&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[4강] Jekyll 기반의 GitHub Page 생성(2-3) - 메뉴와 글 올리기&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[5강] Jekyll 기반의 GitHub Page 생성(2-4) - Archive설정 및 이미지설정&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[6강] Jekyll 기반의 GitHub Page 생성(2-5) - post목차 설정&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[7강] Jekyll 기반의 GitHub Page 생성(2-6) - publishing&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[8강] Jekyll 기반의 GitHub Page 생성(3) - 웹 폰트 설정&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[9강] Jekyll 기반의 GitHub Page 생성(4) - rouge를 이용한 syntax higlighting&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[10강] Jekyll 기반의 GitHub Page 생성(5) - lunr.js를 이용한 Search 기능 추가&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[11강] Jekyll 기반의 GitHub Page 생성(6) - Google Search Console 활용&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[12강] Jekyll 기반의 GitHub Page 생성(7) - GitHub Gist 활용&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[13강] Jekyll 기반의 GitHub Page 생성(8) - Travis CI 활용&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;얼큰우동의깃헙 &lt;a href=&quot;https://github.com/moon9342&quot;&gt;https://github.com/moon9342&lt;/a&gt;
+얼큰우동의깃페이지 &lt;a href=&quot;https://moon9342.github.io/tag/jekyll/&quot;&gt;https://moon9342.github.io/tag/jekyll/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;1강1-환경설정&quot;&gt;1강(1 환경설정)&lt;/h2&gt;
+
+&lt;p&gt;https://rubyinstaller.org/downloads/ 다운받아 설치하고
+CMD창에서 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gem install bundler&lt;/code&gt;
+참조 :&lt;a href=&quot;https://moon9342.github.io/jekyll-struct&quot;&gt;https://moon9342.github.io/jekyll-struct&lt;/a&gt;
+jasper2 theme을 다운받아 압축풀어 내용을
+나의 blogmaker로 복사해온다….안그럼 아래 명령어 실행했을때 ‘could not locate gemfile’ 이런 에러문구 뜸ㅜㅜ
+CMD창에서 해당 blog위치로 이동해서. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bundel install&lt;/code&gt; (설치하는데 시간 좀 걸림)
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bundle exec jekyll serve&lt;/code&gt;
+gem ‘wdm’, ‘&amp;gt;= 0.1.0’ 드래그 우클릭으로 복사해놓고, 컨트롤씨로 종료.
+blog폴더 안에 Gemfile을 노트패드로열기(메모장도 가능)
+Gemfile 맨끝줄에 복붙
+다시한번더 CMD창에 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bundle exec jekyll serve&lt;/code&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bundle install&lt;/code&gt; 다시한번더 해달라는 문구가 나와서 한번 더 함;
+설치 다 되면~
+CMD창에 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bundle exec jekyll serve&lt;/code&gt;
+그러면~
+Destination: ../jasper2-pages/ 폴더가 생기면서!(그런데 왜 blogmaker위에 생겼냥…)
+CMD의 Server address: http://127.0.0.1:4000/jasper2// 부분의 뒤에
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;http://127.0.0.1:4000/jasper2&lt;/code&gt; 이걸 크롬주소창에 넣어보면 기본 뙇!&lt;/p&gt;
+
+&lt;h2 id=&quot;2강2-1-환경설정파일&quot;&gt;2강(2-1 환경설정파일)&lt;/h2&gt;
+
+&lt;p&gt;유튜브 &lt;a href=&quot;https://www.youtube.com/watch?v=OO5IZrx1ZVE&amp;amp;list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&amp;amp;index=2&quot;&gt;https://www.youtube.com/watch?v=OO5IZrx1ZVE&amp;amp;list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&amp;amp;index=2&lt;/a&gt;
+블로그 &lt;a href=&quot;https://moon9342.github.io/jekyll-struct&quot;&gt;https://moon9342.github.io/jekyll-struct&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;WebStorm IDE설치..저는 vsCode로 :-)
+blogmaker의 assets폴더에 _config.yml수정
+탐색기열어서 내PC에서 우클릭.-왼쪽 변에 고급시스템설정 - 고급 탭 - 하단에 환경변수- 첫번째 새로만들기 - ‘변수이름’부분에 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;JEKYLL_ENV&lt;/code&gt; 그리고 ‘변수값’부분에 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;production&lt;/code&gt; 쓰고 확인버튼&lt;/p&gt;
+
+&lt;h2 id=&quot;3강2-2-author와-tags-설정&quot;&gt;3강(2-2 author와 tags 설정)&lt;/h2&gt;
+
+&lt;p&gt;유튜브 &lt;a href=&quot;https://www.youtube.com/watch?v=Ohrc__9z694&amp;amp;list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&amp;amp;index=3&quot;&gt;https://www.youtube.com/watch?v=Ohrc__9z694&amp;amp;list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&amp;amp;index=3&lt;/a&gt;
+블로그 &lt;a href=&quot;https://moon9342.github.io/jekyll-struct&quot;&gt;https://moon9342.github.io/jekyll-struct&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;blogmaker의 _data폴더에 authors.yml수정
+blogmaker의 _data폴더에 tags.yml수정&lt;/p&gt;
+
+&lt;h2 id=&quot;4강2-3-메뉴와-글-올리기&quot;&gt;4강(2-3 메뉴와 글 올리기)&lt;/h2&gt;
+
+&lt;p&gt;유튜브 &lt;a href=&quot;https://www.youtube.com/watch?v=lh7aYzNcgDs&amp;amp;list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&amp;amp;index=4&quot;&gt;https://www.youtube.com/watch?v=lh7aYzNcgDs&amp;amp;list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&amp;amp;index=4&lt;/a&gt;
+블로그 &lt;a href=&quot;https://moon9342.github.io/jekyll-struct&quot;&gt;https://moon9342.github.io/jekyll-struct&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;blogmaker의 _includes폴더에 navigation.html수정&lt;/p&gt;
+
+&lt;p&gt;메뉴about은 블로그 소개글. (about폴더의 index.md)
+_posts폴더 아래 메뉴별 폴더하나씩 더 만들기(태그,메뉴와 똑같이)
+jekyll을 algorithm으로 변경
+python을 github로 변경&lt;/p&gt;
+
+&lt;h2 id=&quot;5강2-4-archive설정-및-이미지설정&quot;&gt;5강(2-4 Archive설정 및 이미지설정)&lt;/h2&gt;
+
+&lt;p&gt;유튜브 &lt;a href=&quot;https://www.youtube.com/watch?v=yqtkI84C2Vw&amp;amp;list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&amp;amp;index=5&quot;&gt;https://www.youtube.com/watch?v=yqtkI84C2Vw&amp;amp;list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&amp;amp;index=5&lt;/a&gt;
+블로그 &lt;a href=&quot;https://moon9342.github.io/jekyll-struct&quot;&gt;https://moon9342.github.io/jekyll-struct&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;각각 필요한 이미지를 blogmaker/assets/built/images폴더에 저장하기(logo, favicon, cover)
+assets/built/images/blog-cover1.png
+assets/built/images/favicon.jpg
+assets/built/images/economy-author-logo.jpg # author image&lt;/p&gt;
+
+&lt;p&gt;_layouts/post.html에 45~48줄 부분 cover안나오게 코드주석처리&lt;!--  --&gt;
+_layouts/post.html에 60~67줄 부분 구독subscribers안나오게 코드주석처리
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bundle exec jekyll server&lt;/code&gt;컴파일해서 이미지들 잘 나오나 확인해보기&lt;/p&gt;
+
+&lt;p&gt;blogmaker/archive.md파일만들기(파일내용은 블로그에있음)
+author_archive.md파일만들기&lt;/p&gt;
+
+&lt;h2 id=&quot;6강2-5-post목차-설정&quot;&gt;6강(2-5 post목차 설정)&lt;/h2&gt;
+
+&lt;p&gt;유튜브 &lt;a href=&quot;https://www.youtube.com/watch?v=acVpibElHZ8&amp;amp;list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&amp;amp;index=6&quot;&gt;https://www.youtube.com/watch?v=acVpibElHZ8&amp;amp;list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&amp;amp;index=6&lt;/a&gt;
+블로그 &lt;a href=&quot;https://moon9342.github.io/jekyll-struct&quot;&gt;https://moon9342.github.io/jekyll-struct&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;_includes/github-table-of-contents.html (내용복붙)
+그중 주의할점 포스팅파일의 날짜 빼고,확장자 빼고 뒤에 이름만넣기
+포스팅파일의 title을 똑같이 넣어줘야 보는사람이 안헷갈림 ㅋㅋ&lt;/p&gt;
+
+&lt;p&gt;css스타일잡기: 마우스올렸을때 빨간색으로 바뀌고, 폰트컬러도 예쁘게~
+assets/css/custom.css 파일생성(내용복붙)
+공백을 없애 minified 한다(모바일로 접속했을때 용량이 크면 데이터를 많이 잡아먹기도함) Gulp로 함.
+Gulp를 사용하려면 node.js를 설치해야함. 11ver.낮춰서 x64
+blogmaker/gulpfile.js 모든내용지우고 얼큰우동님 내용복붙 (걸프를사용하기위한설정파일)
+환경변수 수정한것 적용되도록 IDE재접속하기
+blogmaker/package.json 모든내용지우고 얼큰우동님 내용복붙(NPM! 이렇게 깔아줘~주문서)
+CMD에 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;npm install&lt;/code&gt; 하면 /node_modules폴더가 생깁니다(여기에 NPM을 통해 Gulp설치가된것임)
+CMD에 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gulp css&lt;/code&gt;하면 gulpfile.js의 css부분이 실행됨^^….근데 난 실패함; 음… 그.. 아마도 npm ver높은듯;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;node -v&lt;/code&gt;코드실행하면 node version 확인가능 (엇..나는 12.18.4네 ㅠㅠ11이여야하는데;;높네 ㅠㅠ 미니파이즈하지말지~뭐 ㅋㅋㅋ)(미래의나: 안돼..안돼!! 꼭 해결해야해!!!)
+node 버전낮춰서 gulp해결 &lt;a href=&quot;https://www.opentutorials.org/module/4533/27464&quot;&gt;https://www.opentutorials.org/module/4533/27464&lt;/a&gt;
+성공한다면; assets/built/custom.css파일이 생기면서 열어보면 내용은 한줄로~~~&lt;/p&gt;
+
+&lt;p&gt;마지막으로 완성된 ㅋ 목차(table-of-contents-algorithm.html)를 글에 추가하자!
+`&lt;span class=&quot;table-of-contents-list&quot;&gt;Algorithm LIST &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm_comprehension&quot;&gt;컴퓨터 알고리즘 이해&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm_beginning&quot;&gt;컴퓨터 알고리즘 초급&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm_intermediate&quot;&gt;컴퓨터 알고리즘 중급&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm_pythoncoding&quot;&gt;기초 알고리즘과 파이썬코딩&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm_ml&quot;&gt;인공지능을 위한 머신러닝 알고리즘&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./blockchain&quot;&gt;블록체인 기술적 특징과 비즈니스 이해&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;` 코드를 해당 포스트에 각각 머릿말 아래 넣기&lt;/p&gt;
+
+&lt;p&gt;자, 이제 확인해보자~ 컴파일하기
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bundle exec jekyll server&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;7강2-6-publishing&quot;&gt;7강(2-6 publishing)&lt;/h2&gt;
+
+&lt;p&gt;유튜브 &lt;a href=&quot;https://www.youtube.com/watch?v=C9g8Fbc43Lk&amp;amp;list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&amp;amp;index=7&quot;&gt;https://www.youtube.com/watch?v=C9g8Fbc43Lk&amp;amp;list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&amp;amp;index=7&lt;/a&gt;
+블로그 &lt;a href=&quot;https://moon9342.github.io/jekyll-struct&quot;&gt;https://moon9342.github.io/jekyll-struct&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;앞전 6강에서 미니파이즈한 css파일을 적용시켜보자;ㅋㅋ
+blogmaker/_layouts/default.html 열어보면 14줄 Styles’n’Scripts부분 아래 추가하기
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;!-- custom.css minified실패ㅋ assets/built/custom.css 없어서--&amp;gt; &amp;lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/assets/css/custom.css&quot; /&amp;gt;&lt;/code&gt;
+다시 컴파일해서 확인하자
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bundle exec jekyll server&lt;/code&gt; 응?? 적용안되었썽….. ㅠㅠ&lt;/p&gt;
+
+&lt;p&gt;GitHub의 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Repositories&lt;/code&gt;와 lacal의 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;blogmaker&lt;/code&gt;를 아래와 같이 연결한다.
+나는 IDE를 webstorm을 안쓰고 vsCode를 써서 원래하던대로 함..;;
+깃홈피에서 repositories를 만들면 명령어가 순서대로 좌르륵- 뜬다~ 그대로 해주면 된다;
+CMD에서 blogmaker폴더로 이동해서
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git init&lt;/code&gt;명령어 실행. (그러면 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.git&lt;/code&gt;숨김파일이 생깁니다.)
+CMD에서 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git add .&lt;/code&gt;명령어 실행.
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git commit -m &quot;first&quot;&lt;/code&gt;명령어 실행. ‘first’대신 커밋할 내용을 써줘도 됩니다~
+git remote add origin~
+git push -u origin master~
+그러면 GitHub의 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Repositories&lt;/code&gt;와 lacal의 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;blogmaker&lt;/code&gt;가 연결이 완료되며,
+egeg1212.github.io 블로그에 반영되는데까지는 시간이 5분내외 소요되는듯 하다.&lt;/p&gt;
+
+&lt;h2 id=&quot;8강3-웹-폰트-설정&quot;&gt;8강(3-웹 폰트 설정)&lt;/h2&gt;
+
+&lt;p&gt;유튜브 &lt;a href=&quot;https://www.youtube.com/watch?v=48pAqr9pMUU&amp;amp;list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&amp;amp;index=8&quot;&gt;https://www.youtube.com/watch?v=48pAqr9pMUU&amp;amp;list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&amp;amp;index=8&lt;/a&gt;
+블로그 &lt;a href=&quot;https://moon9342.github.io/jekyll-font&quot;&gt;https://moon9342.github.io/jekyll-font&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;blogmaker/_layouts/degault.html수정
+웹폰트추가 내용복붙. 이것만으로 적용되지는 않는다. 조금 더 설정해보자.
+blogmaker/assets/css/screen.css에서
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.post-full-content&lt;/code&gt;를 찾는다. 623줄 정도의 ‘font-family’를 수정한다
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;font-family: Georgia, 'Nanum Gothic', serif;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;조금 더 예쁘게 보일 Font-Awesome을 추가해보자.
+블로그 https://moon9342.github.io/css-fontawesome-list
+blogmaker/_layouts/default.html에 22줄쯤에 추가한다.&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;!&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;Font&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;Awesome&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;link&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;rel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&quot;https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;(나는 gulp압축에 실패했지만ㅋ )
+CMD에서 blogmaker로 이동해서 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gulp css&lt;/code&gt;………엌 왜 글씨체도 안변했을뿐더러; 메뉴 누르면 404에러뜹니다 ㅠㅠㅠ왜그러죠&lt;/p&gt;
+
+&lt;h2 id=&quot;9강4-rouge를-이용한-syntax-highlighting&quot;&gt;9강(4-rouge를 이용한 syntax highlighting)&lt;/h2&gt;
+
+&lt;p&gt;유튜브 &lt;a href=&quot;https://www.youtube.com/watch?v=ad07tYeZQdc&amp;amp;list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&amp;amp;index=9&quot;&gt;https://www.youtube.com/watch?v=ad07tYeZQdc&amp;amp;list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&amp;amp;index=9&lt;/a&gt;
+블로그 &lt;a href=&quot;https://moon9342.github.io/jekyll-rouge&quot;&gt;https://moon9342.github.io/jekyll-rouge&lt;/a&gt;
+기술블로그 특성상 코드를 예쁘게 표현하는 기능.&lt;/p&gt;
+
+&lt;p&gt;blogmaker/_config.yml에
+24줄 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;highlighter: rouge&lt;/code&gt;로 이미 지정은 되었으나 설치는 안되었으니 설치해보자.
+CMD에 blogmaker위치에서 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gem install rouge&lt;/code&gt;명령어를 실행하면 최신버전으로 알아서 설치해준다^^&lt;/p&gt;
+
+&lt;p&gt;…자꾸 gulp에서 막힌다 ㅠㅠ&lt;br /&gt;
+node.js 버전을 맞춰주기 위해
+가상환경을 생성한다 ㅠㅠ (하실분들은 처음부터 하십쇼ㅠㅠ)
+CMD에 맨앞에 (base)라 뜬다.. base가상환경에는 node.js가 신버전이니까…ㅠㅠ&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;conda create -n blogmaker&lt;/code&gt; 가상환경명을 blogmaker로 지정한것임.
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;conda env list&lt;/code&gt; 가상환경의 리스트를 확인
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;conda deactivate&lt;/code&gt; 기존 베이스가상환경에서 나옴
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;conda activate blogmaker&lt;/code&gt; blogermaker라는 가상환경으로 들어가기~
+CMD 맨앞에 (blogmaker)라고 뜬걸 확인됐다면 정상이다!
+자, 이제 여기서 설치 다시….. 😭
+CMD에서 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;node -v&lt;/code&gt; 명령어를 실행하면 어..어랏 v12.18.4가나오네;;;?? 11ver로 낮춰여한다아ㅜㅜ
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;npm -v&lt;/code&gt;명령어를 실행하면 6.14.6 버전으로 확인되었다.
+… ‘window node 버전낮추기’ 검색하니까..
+기존에 설치한 node.js를 모두 지우고; nvm을 설치해서 하라고.. 허허허
+참고 &lt;a href=&quot;https://seunghyun90.tistory.com/52&quot;&gt;https://seunghyun90.tistory.com/52&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;나.. 다시.. base가상환경으로 돌아갈래…&lt;/p&gt;
+
+&lt;p&gt;CMD창에 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rougify help style&lt;/code&gt; 어떤 루즈스타일이 있는지 모여준다
+얼큰우동님이 쓰시는건 그중 monokai.sublime 스타일.
+아래 명령어의 뜻은 assets/css/syntax.css 여기위치에 .css파일을 monokai.sublime 스타일로 바꿔줘~라는 뜻.
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rougify style monokai.sublime &amp;gt; assets/css/syntax.css&lt;/code&gt;
+모든 스타일은 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_layouts/default.html&lt;/code&gt;여기에 등록을 해줘야 적용이 된다!
+28줄 쯔음에 추가한다.&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;!&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;syntax&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.css&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;link&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;rel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&quot;/assets/built/syntax.css&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;그 이후에 gulp로 minifyed시켜준다(나는 안됨; gulp엄청 사용하네…ㅠㅠ)&lt;/p&gt;
+
+&lt;p&gt;컴파일해서 확인하기
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bundle exec jekyll server&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;코드가 예쁘게 하이라이팅되는지 테스트하기.&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;syntaxHighlight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;code&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;foo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Hello World&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;bar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;10강5-lunrjs를-이용한-search-기능-추가&quot;&gt;10강(5-lunr.js를 이용한 Search 기능 추가)&lt;/h2&gt;
+
+&lt;p&gt;유튜브 &lt;a href=&quot;https://www.youtube.com/watch?v=usfdc-7BKa4&amp;amp;list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&amp;amp;index=10&quot;&gt;https://www.youtube.com/watch?v=usfdc-7BKa4&amp;amp;list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&amp;amp;index=10&lt;/a&gt;
+블로그 &lt;a href=&quot;https://moon9342.github.io/jekyll-search&quot;&gt;https://moon9342.github.io/jekyll-search&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;우측상단의 구독버튼을 서치기능으로 만들기
+blogmaker/_includes/site-nav.html를 열어 24줄을 아래와 같이 부분수정합니다.
+Subscribe라는 글자를 Search로 바꾸고
+다시 컴파일
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bundle exec jekyll server&lt;/code&gt; 명령어 실행하고
+server address: http://127.0.0.1:4000// 접속해보면
+우측상단의 버튼이 Serch버튼으로 바뀌었다!👌&lt;/p&gt;
+
+&lt;p&gt;blogmaker/_layouts/default.html를 열어보면 91줄쯤에 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;if site.subscribers&lt;/code&gt;이것이 있다.
+가운데 내용을 얼큰우동님꺼에서 복붙.&lt;/p&gt;
+
+&lt;p&gt;다음으로 blogmaker/_includes/subscribe-form.html여기에서 폼을 수정한다.&lt;/p&gt;
+
+&lt;p&gt;컴파일해서 확인하기
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bundle exec jekyll server&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;검색 결과가 표현될 blogmaker/search.html을 생성합니다.
+내용은 얼큰우동님것 복붙.&lt;/p&gt;
+
+&lt;p&gt;lunr.js를 생성합니다. blogermaker/assets/js/ 폴더아래 lunr.js를 저장합니다(얼큰우동님것 내용 복붙)
+search.js를 생성합니다. blogermaker/assets/js/ 폴더아래 search.js를 저장합니다(얼큰우동님것 내용 복붙)&lt;/p&gt;
+
+&lt;h2 id=&quot;11강6-google-search-console활용&quot;&gt;11강(6-Google Search Console활용)&lt;/h2&gt;
+
+&lt;p&gt;유튜브 &lt;a href=&quot;https://www.youtube.com/watch?v=3ltTMosopwY&amp;amp;list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&amp;amp;index=11&quot;&gt;https://www.youtube.com/watch?v=3ltTMosopwY&amp;amp;list=PL7nkwz9MkASx1wxXK51n7KtwQyXgoNL70&amp;amp;index=11&lt;/a&gt;
+블로그 &lt;a href=&quot;https://moon9342.github.io/jekyll-sitemap&quot;&gt;https://moon9342.github.io/jekyll-sitemap&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;구글검색엔진에 쉽게 노출되도록 처리.
+blogmaker/robot.txt생성.
+내용은&lt;/p&gt;
+
+&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;User-agent: *
+Allow: /
+# Disallow: /privateData/ 만약크롤링에 안보였으면 하는 글은 여기에 추가.
+Sitemap: https://egeg1212.github.io/sitemap.xml
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;blogmaker/sitemap.xml생성. 내용복붙
+7:47&lt;/p&gt;
+
+&lt;p&gt;gulp해결 &lt;a href=&quot;https://www.opentutorials.org/module/4533/27464&quot;&gt;https://www.opentutorials.org/module/4533/27464&lt;/a&gt;&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>egeg1212</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="github" />
+      
+
+      
+        <summary type="html">GitHub LIST 1. Git &amp;amp; GitHub Page 2. Git과 GitHub로 내 커리어 만들기 3. Jekyll 기반의 GitHub Page 생성</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">2. Git과 GitHub로 내 커리어 만들기</title>
+      <link href="https://egeg1212.github.io/Git_career" rel="alternate" type="text/html" title="2. Git과 GitHub로 내 커리어 만들기" />
+      <published>2021-03-09T01:40:00+09:00</published>
+      <updated>2021-03-09T01:40:00+09:00</updated>
+      <id>https://egeg1212.github.io/Git_career</id>
+      <content type="html" xml:base="https://egeg1212.github.io/Git_career">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;GitHub LIST &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./Git_subinium&quot;&gt;1. Git &amp;amp; GitHub Page&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./Git_career&quot;&gt;2. Git과 GitHub로 내 커리어 만들기&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./Git_GitPage&quot;&gt;3. Jekyll 기반의 GitHub Page 생성&lt;/a&gt;&lt;/li&gt;
+
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;2-git과-github로-내-커리어-만들기&quot;&gt;2. Git과 GitHub로 내 커리어 만들기&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;1일1커밋, TIL
+‘…. 꾸준이 한다는게 가장 힘든데…. 내가 할 수 있을까?’ 생각이 들기전에
+“ 해봐야지. 되던 안되던 해봐야 알지! “
+그래서 시작하게 되었다.
+나는 오늘부터 깃잔디를 심는 농부가 되었다….ㅋ.ㅋ&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강좌정보&lt;/strong&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Git과 GitHub로 내 커리어 만들기 &lt;a href=&quot;https://tacademy.skplanet.com/live/player/onlineLectureDetail.action?seq=130&quot;&gt;Tacademy강좌링크&lt;/a&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습내용&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;깃허브로 어떤 일들을 할 수 있을지, 어떻게 내 깃허브를 잘 가꾸고 만들어 나갈 수 있는지 알아봅니다.&lt;br /&gt;사소하지만 중요한 프로필 만들기부터, 일일 커밋, readme.md 작성법, 풀 리퀘스트 보내기, 학교 프로젝트 &amp;amp; 개인 프로젝트 관리 법까지!&lt;br /&gt;나만의 공간, 깃허브를 잘 가꾸고 관리하는 법을 배워봅니다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강사&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;박조은(Code For Women),이수진(Code For Women)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습기간&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;2021.03.07~2021.03.23 &lt;strong&gt;이수완료&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습시간&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;01:52:30&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강의목록&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[1강] GithHub 기초&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[2강] git 일일커밋 후기&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[3강] GihHub에서 리퍼지토리 작성 실습&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[4강] GitHub에서 Pull Request 실습&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;이수진님의 &lt;a href=&quot;https://sujinlee.me/professional-github/&quot;&gt;https://sujinlee.me/professional-github/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>egeg1212</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="github" />
+      
+
+      
+        <summary type="html">GitHub LIST 1. Git &amp;amp; GitHub Page 2. Git과 GitHub로 내 커리어 만들기 3. Jekyll 기반의 GitHub Page 생성</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">1. Git &amp;amp; GitHub Page</title>
+      <link href="https://egeg1212.github.io/Git_subinium" rel="alternate" type="text/html" title="1. Git &amp; GitHub Page" />
+      <published>2021-03-08T01:40:00+09:00</published>
+      <updated>2021-03-08T01:40:00+09:00</updated>
+      <id>https://egeg1212.github.io/Git_subinium</id>
+      <content type="html" xml:base="https://egeg1212.github.io/Git_subinium">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;GitHub LIST &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./Git_subinium&quot;&gt;1. Git &amp;amp; GitHub Page&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./Git_career&quot;&gt;2. Git과 GitHub로 내 커리어 만들기&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./Git_GitPage&quot;&gt;3. Jekyll 기반의 GitHub Page 생성&lt;/a&gt;&lt;/li&gt;
+
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;1-git--github-page&quot;&gt;1. Git &amp;amp; GitHub Page&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;GitHub를 사용하고 있기는 한데… 잘 모르겠다😒
+뭔가 더 좋은 기능들이 있을텐데.. 잘 모르겠다😢
+그래서 이 강좌들을 듣게 되었는데,
+git commit으로 나의 Git Page(블로그 같은것)가 생긴다니!! 놀랍다😲
+안수빈님의 설명은 어벤져스로 예시를 들어주셔서 너무 재미있었다 ㅋㅋㅋ&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강좌정보&lt;/strong&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Git &amp;amp; GitHub Page &lt;a href=&quot;https://tacademy.skplanet.com/live/player/onlineLectureDetail.action&quot;&gt;Tacademy강좌링크&lt;/a&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습내용&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;1. Git의 개념과 GitHub의 사용법 및 기본 명령어에 대해 알아봅니다.&lt;br /&gt;2. GitHub Page로 블로그 만들기 등 GitHub Page 활용 방법에 대해 알아봅니다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강사&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;안수빈 고려대학교&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습기간&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;2021.03.07~2021.03.14 &lt;strong&gt;이수완료&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습시간&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;03:11:45&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강의목록&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[1강] Git 기초&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[2강] GitHub 실습 I - Init, Add, Commit, Push, Diff, Status, Log&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[3강] GitHub 실습 II - Pull, Fetch, Reset, Revert, Stash, Fork, Push&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[4강] Github Page 활용하기 실습&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;안수빈님의 수비니움 &lt;a href=&quot;https://subinium.github.io/&quot;&gt;https://subinium.github.io/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;io_success.PNG
+&lt;img src=&quot;https://github.com/EGEG1212/egeg1212.github.io/blob/main/_img/2021-03-17-git.PNG&quot; alt=&quot;io_success&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;성공! 신난다 😛&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>egeg1212</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="github" />
+      
+
+      
+        <summary type="html">GitHub LIST 1. Git &amp;amp; GitHub Page 2. Git과 GitHub로 내 커리어 만들기 3. Jekyll 기반의 GitHub Page 생성</summary>
+      
+
+      
+      
+    </entry>
+  
+</feed>

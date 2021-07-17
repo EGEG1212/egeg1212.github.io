@@ -1,0 +1,1894 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://egeg1212.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://egeg1212.github.io/" rel="alternate" type="text/html" /><updated>2021-07-17T10:28:30+09:00</updated><id>https://egeg1212.github.io/feed.xml</id><title type="html">2021 정은경의 코딩일지</title><subtitle>A person who studies voice chatbots.</subtitle><entry><title type="html">딥러닝 기반 음성합성(1)</title><link href="https://egeg1212.github.io/tacotron" rel="alternate" type="text/html" title="딥러닝 기반 음성합성(1)" /><published>2021-06-16T01:40:00+09:00</published><updated>2021-06-16T01:40:00+09:00</updated><id>https://egeg1212.github.io/tacotron</id><content type="html" xml:base="https://egeg1212.github.io/tacotron">&lt;h2 id=&quot;딥러닝-기반-음성합성1&quot;&gt;딥러닝 기반 음성합성(1)&lt;/h2&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강좌정보&lt;/strong&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;&lt;a href=&quot;https://tacademy.skplanet.com/live/player/onlineLectureDetail.action?seq=184&quot;&gt;Tacademy강좌링크&lt;/a&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습내용&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;음성생성 과정 및 기존 통계적 파라미터 방식부터&lt;br /&gt; 딥러닝을 활용한 음성합성 기법까지 음성합성 모델링 전반에 대해 알아봅니다.&lt;br /&gt;또한 Tacotron2를 이용한 음성합성 과정에 대해 이해하도록 합니다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강사&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;이준엽 박사과정 (서울대 Human Interface Lab)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습기간&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;2021.06.15~2021.06.24 &lt;strong&gt;이수완료&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습시간&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;strong&gt;03:31:59&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강의목록&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[1강] 음성 모델링 I - DSP for Speech Signal Processing&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[2강] 음성 모델링 II - Speech Production (Source-Filter Model)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[3강] 음성합성 입문 I - Unit-Selection, HMM&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[4강] 음성합성 입문 II - Deep learning, End to End (Tacotron/Tacotron2/Transformer)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[5강] 음성합성 입문 III - 개인화(Multi-Speaker, Style Modeling)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[6강] 음성합성 모델 실습I - Tacotron2&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;1강-음성-모델링-i---dsp-for-speech-signal-processing&quot;&gt;[1강] 음성 모델링 I - DSP for Speech Signal Processing&lt;/h3&gt;
+
+&lt;p&gt;idea -&amp;gt; Speech formulaltion -&amp;gt; Human vocal Mechanism
+–&amp;gt; Wave propagation
+-&amp;gt; Perception of the ear -&amp;gt; Speech comprehension&lt;/p&gt;
+
+&lt;p&gt;인간의 귀는 &lt;strong&gt;저주파&lt;/strong&gt;를 듣는다.
+일정이상의 고주파는 안들림&lt;/p&gt;
+
+&lt;h4 id=&quot;speech-analog-signal&quot;&gt;Speech. Analog signal.&lt;/h4&gt;
+
+&lt;p&gt;Analog to digital conversion&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Sampling
+&lt;strong&gt;Sampling rate&lt;/strong&gt;
+높을수록 품질이 좋아지나 용량도 같이 커짐;
+그래서 적정선에서 끊어 노이즈섞인 저품질로 함. - Telephone(통화음)8kHz - Volp 16kHz - CD 44,100Kz&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Quantization
+8bit : 64개의 값 (손실많음)
+64bit : 118개의 값&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;aliasing-주의-11p&quot;&gt;Aliasing 주의 (11p)&lt;/h4&gt;
+
+&lt;p&gt;아날로그 신호의 표본화 시 표본화 주파수가 신호의 최대 주파수의 2배보다 작거나 필터링이 부적절하여 인접한 스펙트럼들이 서로 겹쳐 생기는 신호 왜곡 현상. 이 현상을 피하기 위해서는 표본화 주파수를 신호의 최대 주파수의 2배 이상으로 높이고, 샘플링하기 전에 저주파 통과 여파기를 사용하여 최대 주파수 이상의 신호들을 제거해야 한다. 영화에서 선풍기의 날개가 천천히 회전하거나 반대로 돌아가는 것처럼 보이는 현상도 표본화 주파수가 부적절하여 느끼게 되는 것이다.
+[네이버 지식백과] 에일리어싱 [aliasing] (IT용어사전, 한국정보통신기술협회)&lt;/p&gt;
+
+&lt;h4 id=&quot;fourier-analysis&quot;&gt;Fourier analysis&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;주파수 도메인으로 시간축에서 주파수축으로 바꾸는 방법인 푸리에&lt;/strong&gt;
+모든 파동은 다양한 주파수를 가지는 sine wave의 값들로 표현할 수 있다.&lt;/p&gt;
+
+&lt;h4 id=&quot;discrete-time-fourier-transform-dtft&quot;&gt;Discrete-time Fourier Transform (DTFT)&lt;/h4&gt;
+
+&lt;p&gt;신호의 비슷한 정도를 확인
+&lt;strong&gt;magnitude&lt;/strong&gt;의 변화는 사람이 민감하게 인지함.(중요)&lt;/p&gt;
+
+&lt;h4 id=&quot;z-transform&quot;&gt;Z-transform&lt;/h4&gt;
+
+&lt;p&gt;DTFT 보다 만족하기 쉬운 형태!!&lt;/p&gt;
+
+&lt;h4 id=&quot;discrete-fourier-transform-dft&quot;&gt;Discrete Fourier Transform (DFT)&lt;/h4&gt;
+
+&lt;p&gt;시간을 마이너스무한대~무한대까지 모두; 실용적이진않다;&lt;/p&gt;
+
+&lt;h4 id=&quot;fast-fourier-transform-fft&quot;&gt;Fast Fourier Transform (FFT)&lt;/h4&gt;
+
+&lt;p&gt;높은 연산량.
+DFT를 소형 DFT모듈로 분해하여 연산&lt;/p&gt;
+
+&lt;h3 id=&quot;dsp-for-speech-signal-processing&quot;&gt;DSP for Speech Signal Processing&lt;/h3&gt;
+
+&lt;p&gt;Analog Signal
+-&amp;gt; Anti-Aliasing lowpass filter(Aliasing방지.고주파날리기)
+-&amp;gt; Samplig (연속적인값을 개별적으로 만들기)
+-&amp;gt; Quantization (디지털신호로 바꾸기)
+-&amp;gt; Window (Short-Time Analysis를위해 윈도우를 매프레임마다 곱하기)
+-&amp;gt; DFT (주파수변환된 값=윈도우 취한 값을 원하는 형태로 사용.)&lt;/p&gt;
+
+&lt;h3 id=&quot;2강-음성-모델링-ii---speech-production-source-filter-model&quot;&gt;[2강] 음성 모델링 II - Speech Production (Source-Filter Model)&lt;/h3&gt;
+
+&lt;p&gt;… 수학 공식으로 분석 😲 …
+나는 분명 봤지만 잘 모르겠다..
+나중에 궁금할 때 다시 볼 것 ㅋㅋ&lt;/p&gt;
+
+&lt;h3 id=&quot;3강-음성합성-입문-i---unit-selection-hmm&quot;&gt;[3강] 음성합성 입문 I - Unit-Selection, HMM&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Comparison of TTS techniques&lt;/strong&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Class&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Approach&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Audio quality&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Naturalness&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Flexibility&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Size of footprint&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Runtime simplicity&lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Concatenative&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Unit-Selection&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;★★★★★&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;★★★★&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;★&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;★★★&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;★★★★&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Statistical Parametric&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;HMM&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;★★★&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;★★★&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;★★★★&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;★★★★★&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;★★★★&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Neural Net&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;★★★★&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;★★★&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;★★★&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;★★★★&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;★★★★&lt;/td&gt;
+      &lt;td&gt;★★★&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;End-to-End&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Deep- Learning&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;★★★★&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;★★★★&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;★★★★&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;★★★★&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;★★★&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;자연스러움엔 End-to-End 겠지만
+내가 원하는건 Unit-Selection정도만으로도 가능할 수 있겠다!! &lt;strong&gt;53p.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;4강-음성합성-입문-ii---deep-learning-end-to-end-tacotrontacotron2transformer&quot;&gt;[4강] 음성합성 입문 II - Deep learning, End to End (Tacotron/Tacotron2/Transformer)&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Tacotron&lt;/strong&gt;
+CBHG module&lt;/p&gt;
+
+&lt;p&gt;Tacotron1 보다 나아진 Tacotron2
+&lt;strong&gt;Stop token&lt;/strong&gt; 최대길이설정해놓고 최대길이 이후 잘라서 합성했었는데(계산량 비효율적),
+언제 합성이 끝났는지 알려주는 Stop token으로 원하는 만큼만 계산하는 장점이 있다.
+&lt;strong&gt;WaveNet vocoder&lt;/strong&gt;사용&lt;/p&gt;
+
+&lt;p&gt;Tacotron2와 Transformer비교
+training속도 Transfomer가 4.25배 빠름
+학습은 빠르지만 테스트시 합성할때, inference가 느리다.
+Transformer는 batch size가 중요하다.
+서버 소용량으로 Tacotron2를 사용하는 것이 낫다 ~~&lt;/p&gt;
+
+&lt;h3 id=&quot;5강-음성합성-입문-iii---개인화multi-speaker-style-modeling&quot;&gt;[5강] 음성합성 입문 III - 개인화(Multi-Speaker, Style Modeling)&lt;/h3&gt;
+
+&lt;h3 id=&quot;6강-음성합성-모델-실습i---tacotron2&quot;&gt;[6강] 음성합성 모델 실습I - Tacotron2&lt;/h3&gt;
+
+&lt;p&gt;Colab실습&lt;/p&gt;</content><author><name>egeg1212</name></author><category term="NLP" /><summary type="html">딥러닝 기반 음성합성(1)</summary></entry><entry><title type="html">디지털 신호처리(DSP)이해</title><link href="https://egeg1212.github.io/DSP" rel="alternate" type="text/html" title="디지털 신호처리(DSP)이해" /><published>2021-05-30T01:40:00+09:00</published><updated>2021-05-30T01:40:00+09:00</updated><id>https://egeg1212.github.io/DSP</id><content type="html" xml:base="https://egeg1212.github.io/DSP">&lt;h2 id=&quot;디지털-신호처리digital-signal-processor이해&quot;&gt;디지털 신호처리(Digital Signal Processor)이해&lt;/h2&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강좌정보&lt;/strong&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;&lt;a href=&quot;https://tacademy.skplanet.com/live/player/onlineLectureDetail.action?seq=178&quot;&gt;Tacademy강좌링크&lt;/a&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습내용&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;1. 오디오 데이터의 특징 및 Fourier Transform, Spectrogram 등 디지털 신호처리 기초 개념에 대해 알아봅니다.&lt;br /&gt;2. Librosa와 Torch Audio를 이용한 디지털신호처리(DSP)에 대해 학습해 봅니다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강사&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;도승헌(KAIST Music and Audio computing Lab) T아카데미&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습기간&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;2021.05.29~2021.06.14 &lt;strong&gt;이수완료&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습시간&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;strong&gt;02:07:21&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강의목록&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[1강] 디지털신호처리(DSP) 기초 I - Sampling, Quantization&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[2강] 디지털신호처리(DSP) 기초 II - STFT, Spectrogram, Mel-Specrtogram&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[3강] 디지털신호처리(DSP) 기초 III - MFCC, Auditory Filterbank&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[4강] 디지털신호처리(DSP) 실습 I - Data augmentation&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[5강] 디지털신호처리(DSP) 실습 II - DataLoader&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Colab으로 실습&lt;/p&gt;
+
+&lt;h3 id=&quot;2강-디지털신호처리dsp-기초-ii---stft-spectrogram-mel-specrtogram&quot;&gt;[2강] 디지털신호처리(DSP) 기초 II - STFT, Spectrogram, Mel-Specrtogram&lt;/h3&gt;
+
+&lt;p&gt;n_fft=1024 보통 1024사용.&lt;/p&gt;
+
+&lt;p&gt;허수를 날리기 위해 &lt;strong&gt;2
+$D = np.abs(S)&lt;/strong&gt;2$&lt;/p&gt;
+
+&lt;p&gt;인간의 청각경로특성상 &lt;strong&gt;저주파&lt;/strong&gt;의 정보를 더 많이 인지한다.
+Mel-Filter bank
+40(음성) 92(음악) 128&lt;/p&gt;
+
+&lt;p&gt;스펙토그렘의 계단현상: &lt;strong&gt;압축되었고 그만큼 노이즈감소&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;3강-디지털신호처리dsp-기초-iii---mfcc-auditory-filterbank&quot;&gt;[3강] 디지털신호처리(DSP) 기초 III - MFCC, Auditory Filterbank&lt;/h3&gt;
+
+&lt;p&gt;Spectrogram : 시간축과 주파수축 변화에 따라 진폭차이를 색상을 통해 보여줍니다.
+MFCC : 노래의 음색을 잡거나, 고유한 화자를 분리할때 보통 쓰인다.&lt;/p&gt;
+
+&lt;h3 id=&quot;4강-디지털신호처리dsp-실습-i---data-augmentation&quot;&gt;[4강] 디지털신호처리(DSP) 실습 I - Data augmentation&lt;/h3&gt;
+
+&lt;p&gt;(전처리)
+방법1. 웨이브폼에서 노이즈를 섞는다던지, 피치를 바꾸던지
+방법2. 스펙트로그램에서 마스킹을 주기
+방법3. 데이터를&lt;/p&gt;
+
+&lt;p&gt;옥타브를 낮춰도 같은노래 librosa.effects.pitch_shift
+FrequencyMasking(freq_mask_param 보통15~35 준다. 논문따라서)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;주의 20:32&lt;/strong&gt;
+벨리데이션, 테스트할때 마스킹하면 안되고 함수따로 짜기.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;torchaudio&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;transforms&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MelSpectogram&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sample_rate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;16000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n_mels&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;128&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;5강-디지털신호처리dsp-실습-ii---dataloader&quot;&gt;[5강] 디지털신호처리(DSP) 실습 II - DataLoader&lt;/h3&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;torchaudio&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;transforms&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;FrequencyMasking&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;freq_mask_param&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;torchaudio&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;transforms&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;TimeMasking&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;time_mask_param&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;35&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>egeg1212</name></author><category term="NLP" /><summary type="html">디지털 신호처리(Digital Signal Processor)이해</summary></entry><entry><title type="html">딥러닝 기반의 음성인식 기술</title><link href="https://egeg1212.github.io/deep_voice" rel="alternate" type="text/html" title="딥러닝 기반의 음성인식 기술" /><published>2021-05-27T01:40:00+09:00</published><updated>2021-05-27T01:40:00+09:00</updated><id>https://egeg1212.github.io/deep_voice</id><content type="html" xml:base="https://egeg1212.github.io/deep_voice">&lt;h2 id=&quot;음성인식-음성언어분야-ai-기술산업-현황-및-구현기술의-이해&quot;&gt;음성인식-음성언어분야 AI 기술/산업 현황 및 구현기술의 이해&lt;/h2&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강좌정보&lt;/strong&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;&lt;a href=&quot;https://tacademy.skplanet.com/live/player/onlineLectureDetail.action?seq=110&quot;&gt;Tacademy강좌링크&lt;/a&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습내용&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;음성언어분야의 인공지능(AI) 기술 현황 및 음성인식/대화처리/자동통역/질의응답 등 주요 음성인식 기반 산업 현황을 이해하고, 음성인식 모델별(HMM/DNN/LSTM 등) 적용원리 및 알고리즘을 통해 딥러닝 기반 음성인식 요소 기술에 대해 알아봅니다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강사&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;이윤근, 김승희 (ETRI 음성지능연구그룹)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습기간&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;2021.05.25~2021.05.27 &lt;strong&gt;이수완료&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습시간&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;strong&gt;02:46:30&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강의목록&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[1강] 음성언어분야 인공지능(AI) 기술 / 산업현황&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[2강] 딥러닝 기반 음성인식 기술&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;1강-음성언어분야-인공지능ai-기술--산업현황&quot;&gt;[1강] 음성언어분야 인공지능(AI) 기술 / 산업현황&lt;/h3&gt;
+
+&lt;p&gt;잡음이나 음향간섭등에 의해 음성입력이 왜곡.
+해결방법:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;잡음필터링(Kalman filter, Wiener filter 등),
+채널보상(channel compensation),
+음원분리 (source separation)
+빔포밍( beam forming) 등 다양항 잡음처리 방법 적용.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;다양한 왜곡 신호를 음향모델에 포함하여 훈련시키는 방법 적용(multi-condition training)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;운율 []
+Emotional TTS(엄마가 아이게 동화책읽어주는)&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;합성음에 감정을 구현하는 기술&lt;/li&gt;
+  &lt;li&gt;음의 높낮이, 세기, 음색 등의 변화가 심해 음질이 저하되며 제어하기가 어려움&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Voice Conversion&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;특정인의 목소리로 변환하는 기술&lt;/li&gt;
+  &lt;li&gt;특정인의 목소리를 나타내기 위해서는 음색 뿐만 아니라 발음, 억양 등 복합적인 요소가 작용&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;대화처리&quot;&gt;대화처리&lt;/h4&gt;
+
+&lt;p&gt;Finite-State Machine
+조금 더 나은 방법 Form-based model
+information State model
+|대화처리방법론|정의|특징||
+|:-:|:-:|:-:|:-:|
+|Topic-oriented Dialogue(주제 제한, 지식 처리)|구체적인 Topic에 대한 대화처리(ex.티켓예약, 상품구매/조회)|시스템주도형으로 대화흐름 제한, 특정Topic에 대한 대화흐름의 수동 지식화|혼합 주도형(mixed-initiative)대화관리: 시스템주도 및 사용자 주도 대화 가능, 대화 자유도 증가, |
+|Chat-oriented Dialoque(주제 무세한, 패턴 처리)|목적없는 대화chat-bot/ Data-driven 방식의 예제 매칭 대화처리|문맥유지 없이 단순 반복 응답만 가능, 대화/응답 패턴의 수동 지식화|&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Switchboard Cellular&lt;/strong&gt;
+예전부터 전화통화하는 부분은 음성인식이 잘 안됐다리 ㅠㅠㅠ
+(출처: By Li Deng, Auedong, Communications of the ACM, 2004)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;자유대화 이해의 오류 사례(Apple SIRI)&lt;/strong&gt;
+순서변경시 이해불가
+2개 명령을 한꺼번에 발화시 이해불가
+정해진 대화 시나리오 진행(정확한 사용자 응답 요구)
+앞전 문맥을 유지하지 못함
+특정 주제의 대화 진행 중, 다른 주제 대화 삽입시, 문맥 유지 오류 발생&lt;/p&gt;
+
+&lt;p&gt;…개인비서 불가능.
+Apple SIRI
+Google Assistant
+MS Cortana
+Amazon Echo 알렉사
+삼성 S보이스
+SKT NUGU
+KT 기가지니
+롯데 샬롯&lt;/p&gt;
+
+&lt;h3 id=&quot;2강-딥러닝-기반-음성인식-기술&quot;&gt;[2강] 딥러닝 기반 음성인식 기술&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Hidden Markov Model(HMM)&lt;/strong&gt;
+Markov chainL 미래상태(state)의 조건부 확률 분포가 현재 상태에 의해서만 결정
+음성신호의 dynamics는 HMM으로 모델링, 각 state에서의 관측확률은 GMM, DNN, LSTM등으로 모델링&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;GMM-HMM&lt;/strong&gt;
+특징(feature) 추출(extraction)
+Gaussian Mixture Modeling : 각state에서, 특징 벡터의 관측확률 분포를, Gaussian들의 weighted summation으로 모델링&lt;/p&gt;
+
+&lt;p&gt;특징추출과정&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Waveform(Frame단위)&lt;/li&gt;
+  &lt;li&gt;Spectrum&lt;/li&gt;
+  &lt;li&gt;Mel-scaled filterbank energy&lt;/li&gt;
+  &lt;li&gt;Mel-scaled sepstral coefficient(MFCC)&lt;/li&gt;
+  &lt;li&gt;Dynamics를 고려: Static MFCC + Delta + Acc + $a$&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;LSTM-HMM&lt;/strong&gt;
+&lt;strong&gt;End-to-end AM&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;기존 hybrid모델&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>egeg1212</name></author><category term="NLP" /><summary type="html">음성인식-음성언어분야 AI 기술/산업 현황 및 구현기술의 이해</summary></entry><entry><title type="html">NAVER AI NOW</title><link href="https://egeg1212.github.io/NAVERaiNOW" rel="alternate" type="text/html" title="NAVER AI NOW" /><published>2021-05-25T22:40:00+09:00</published><updated>2021-05-25T22:40:00+09:00</updated><id>https://egeg1212.github.io/NAVERaiNOW</id><content type="html" xml:base="https://egeg1212.github.io/NAVERaiNOW">&lt;h2 id=&quot;naver-ai-now-20210525&quot;&gt;NAVER AI NOW 2021.05.25&lt;/h2&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;strong&gt;온라인 컨퍼런스&lt;/strong&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;[NAVER TV_NAVER AI NOW]](https://tv.naver.com/v/20349478)&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;모두를 위한 AI&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;a href=&quot;https://naver-ai-now.kr/&quot;&gt;https://naver-ai-now.kr/&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;PART1.&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;strong&gt;HyperCLOVA 커다란 카능성을 열다.&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;성낙호&lt;br /&gt;NAVER CLOVA Biz AI 책임리더&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;새로운 AI의 시작, HyperCLOVA&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;황인용&lt;br /&gt;NAVER Cloud 리더&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;HyperCLOVA를 위한 슈퍼 컴퓨팅 인프라&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;강인호&lt;br /&gt;NAVER Search CIC 책임리더&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;HyperCLOVA를 위한 Big Data&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;하정우&lt;br /&gt;NAVER AI LAB 책임리더&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;새로운 글로벌 AI R&amp;amp;D 리더십&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;송대섭&lt;br /&gt;NAVER 책임리더&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;AI, 사람을 위한 일상의 도구&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;PART2.&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;strong&gt;HyperCLOVA테크놀로지&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;박우명, 김보섭, 김형석&lt;br /&gt;CLOVA Conversation&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;HyperCLOVA의 한국어 모델&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;장민석&lt;br /&gt;NAVER AI LAB&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;HyperCLOVA Studio 나에게 필요한 인공지능, 내 손으로 쉽게 만들기&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;김선훈&lt;br /&gt;NAVER Search NLP&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;HyperCLOVA의 활용 (1) 검색 어플리케이션&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;김경덕&lt;br /&gt;NAVER AI Assistatnt&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;HyperCLOVA의 활용 (2) AI 어시스턴트&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;강재욱,이상우&lt;br /&gt;CLOVA Conversation&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;HyperCLOVA의 활용 (3) 대화(Conversation)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;유강민&lt;br /&gt;NAVER AI LAB&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;HyperCLOVA의 활용 (4) 데이터 증강(Data Augmentation)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;인수교&lt;br /&gt;CLOVA AI Assistant&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;HyperCLOVA의 조율 (Controllability)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;서동필&lt;br /&gt;CLOVA ML System&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;HyperCLOVA를 위한 서비스 기반(Service Infrastructure)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;새로운-ai의-시작-hyperclova&quot;&gt;새로운 AI의 시작, HyperCLOVA&lt;/h3&gt;
+
+&lt;p&gt;GTP-3한국어 데이터 대비 6,500배
+기존NAVER언어모델 데이터 대비 3,000배
+뉴스 50년치에 해당하는 크기
+네이버블로그 9년치에 해당하는 크기
+=&lt;strong&gt;한국어 데이터 5,600억 토큰&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;비지도학습&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;인공지능의 성능&lt;/strong&gt;은
+학습에 사용되는 데이터의 양,
+연산의 규모,
+모델의 파라미터 수.
+3가지요소 모두 서로에게 병목이 되지 않는다는 전제 하에서
+그 성능이 무한히 향상될 수 있음. (참조: Scaling Laws)
+많은양의 데이터를 효과적으로 사용하기 위해&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;맥락을 이해하는 자연스러운 대화&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;이전 질문/응답 내용 이해하여 다음 대답&lt;/li&gt;
+      &lt;li&gt;사용자의 만족도 인지, 호응, 감정표시&lt;/li&gt;
+      &lt;li&gt;20회이상 주고 받는 대화&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;창작을 도와주는 글쓰기&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;정보요약&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;주제에 대한 여러 의견 요약하여 빠르게 이해하도록 도와줌&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;데이터 생성
+    &lt;ul&gt;
+      &lt;li&gt;전화를 대신 받아주는 CLOVA AiCall을 만들기 위해 HyperCLOVA가 쓰임.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;대화 시나리오 구축 생산성 x10배&lt;/p&gt;
+
+&lt;p&gt;의도 기반 검색하기/영화제목 맞추기/시,소설 쓰기/ 번역하기/캐릭터와 대화하기/앱디자인하기/법률문서간소화/엔티티인식하기/셀럽말투따라하기/웹페이지만들기/콘텐츠분류하기/마케팅문구생성하기/가사쓰기/의료증상구분하기/토론질문생성하기/끝말잇기게임하기/자동으로 메일으씩/레시피만들기/비속어필터하기/백과사전묻고답하기.문법교정하기/사투리변환하기/역사적인물과대화하기&lt;/p&gt;
+
+&lt;p&gt;확장예정
+글 음악 그림 음성 비디오 코드&lt;/p&gt;
+
+&lt;h3 id=&quot;hyperclova를-위한-슈퍼-컴퓨팅-인프라&quot;&gt;HyperCLOVA를 위한 슈퍼 컴퓨팅 인프라&lt;/h3&gt;
+
+&lt;p&gt;Big Model을 위해 구축된 슈퍼 컴퓨팅 인프라의 소개와 향후계획
+(현.날씨예보, 과학시뮬레이션)
+CLOVA Chatbot
+CLOVA OCR
+CLOVA AiCall
+슈퍼컴퓨터 병렬 학습을 통한 문제해결
+BIG AI를 위한 핵심 컴퓨팅 자원인 슈퍼컴퓨터&lt;/p&gt;
+
+&lt;p&gt;인프라규모 :
+Computing node140개, GPU 1120개, 케이블3800개&lt;/p&gt;
+
+&lt;p&gt;기술요소 :&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;고성능의 병렬 GPU클러스터&lt;/strong&gt;와 초저지연 인피니 밴드 네트워크 &amp;amp; 스토리지 기술로 Big Model의 복잡하고 긴 학습 시간을 단축시키고, 빠르게 모델을 구축하도록 도와줌.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;초저지연 고대역폭 네트워크&lt;/strong&gt;
+인피니티밴드 기술(많은 슈퍼컴퓨터들이 사용하는 네트워크기술. 분산컴퓨팅 환경에서 OS를 통하지 않고 네트워크를 통해 노드간 메모리를 직접 읽고 쓸 수 있게 한(RDMA)오버헤드 없이 초저지역 고대역폭을 극대화.)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;고성능 병렬 아키텍처 기반의 스토리지&lt;/strong&gt;
+고대역폭의 대규모 서버에서 동시 데이터 엑세스가 가능함으로써 대규모 워크 로드 처리가 가능.
+데이터를 GPU 메모리로 직접 전송(GDS)하여 성능을 더욱 높일 수 있다.
+일반 네트워크 스토리지보다 2배 이상의 성능을 갖고 있으며, 확장에 따라 성능을 더울 높일 수 있다.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;인프라 운영 노하우&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;클라우드 인프라 운영 역랑 :
+슈퍼컴퓨팅 클러스터가 내부 인프라 운영 표준 환경과 연계될 수 있도록 빠르게 최적화.&lt;/li&gt;
+  &lt;li&gt;자체 데이터센터 구축 노하우 :
+랙 설비, 네트워크 구성, 관리 시스템 연동 등 전체적인 인프라 구축 일정을 단축&lt;/li&gt;
+  &lt;li&gt;모니터링 플랫폼과 운영자동화 :
+최소한의 서비스중단, 연속성 보장을 위해, 모니터링을 비롯한 자체 관리 플랫폼과 운영 자동화 솔루션&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;hyperclova를-위한-big-data&quot;&gt;HyperCLOVA를 위한 Big Data&lt;/h3&gt;
+
+&lt;p&gt;대용량 데이터 준비시 고민해본 부분 4가지.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;다양한 내용(일상생활에서 접할 수 있는 뉴스,카페,블로그,지식인,웹문서, 오픈된 리소스, 전문지식)
+문서 내용이 유사한 경우 중복 제거(치우치지 않기위해)
+개인정보(전번,메일)는 제거하거나 비식별화 처리&lt;/li&gt;
+  &lt;li&gt;범용의 구성(검색, 대화, Q&amp;amp;A, 요약등 여러 생성 작업 포함)
+메타정보 추가(대화문에서의 화자ID)(문서의 카페명, 블로그명 같은 출처정보, 카테고리정보 추가)&lt;/li&gt;
+  &lt;li&gt;양질의 정보
+영역선별-정보성이 있으면서 신뢰도 있고, 인기 있는 공식 사이트 출처가 상위 품질에 포함되도록 함.
+상위 품질의 문서에서도 정보의 가치나 유용성에 따라 선별작업 진행(웹 페이지 내 핵심 영역만 사용 - &lt;strong&gt;행심 영역을 판정하는 기계학습 모델을 만듦&lt;/strong&gt;)
+저품질 문서 필터링 : 의미없는 단어의 나열, 비속어나 유해 정보 제거, 서비스별 홍보 또는 스팸판별 결과 활용&lt;/li&gt;
+  &lt;li&gt;충분한 크기
+1.96TB 데이터셋
+한국어데이터 5,600억 토큰 = 뉴스 50년치에 해당하는 크기 = 네이버블로그 9년치에 해당하는 크기 = 한국어 위키피디어 2,900배&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;한국의 지식과 한국어의 특성을 잘 반영한 좋은 구성이다.
+텍스트 위주의 데이터 구축에 이어,
+앞으로 문서와 관련된 그림, 음성, 비디오 등 멀티모달리티 측면에서도 데이터 구축을 준비하고 있다.&lt;/p&gt;
+
+&lt;h3 id=&quot;새로운-글로벌-ai-rd-리더십&quot;&gt;새로운 글로벌 AI R&amp;amp;D 리더십&lt;/h3&gt;
+
+&lt;p&gt;구글, 페이스북, OpenAI등과 같은 글로벌 기업들은
+지난 수년간 의미있는 기술들을 공개 해왔고
+많은 기업들이 이런 기술들을 잘 활용하고 있다.&lt;/p&gt;
+
+&lt;p&gt;그러나 글로벌 빅테크 기업들이 공개한 기술들을 그냥 적용하는 것 중심으로 하는 전략도 효율성이 있겠지만,
+기술경쟁력 관점에서의 한계도 존재.&lt;/p&gt;
+
+&lt;p&gt;서울대 X NAVER SNU
+KAIST X NAVER
+그 외&lt;/p&gt;
+
+&lt;h3 id=&quot;ai-사람을-위한-일상의-도구&quot;&gt;AI, 사람을 위한 일상의 도구&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;사용자의 일상을 편리하게 만들어 줄 수 있는 도구&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;NAVER AI 윤리 준칙 5개 조항 1. 사람을 위한 AI 개발 Developing Human-centered AI 2. 다양성의 존중 Respecting Diversity 3. 합리적인 설명과 편리성의 조화 Balancing Reasonable Explainability with Convenience 4. 안전을 고려한 서비스 설계 Accounting for Safety in Service Design 5. 프라이버시 보호와 정보 보안 Protecting Privacy and Data Security&lt;/p&gt;
+
+&lt;p&gt;ex1)
+코로나일상에서 국민의 건강과 안전을 케어하는 도구
+(&lt;strong&gt;클로바 케어콜&lt;/strong&gt;. 성남시10만건2020.03-2021.02)
+(그 외 10개 지방자치단체 도입. 서울, 고양, 의정부, 춘천, 인천, 성남, 화성, 수원, 전주 부산)
+SME(도메인전문가)의 사업을 돕는 CLOVA AiCall 전화예약
+AI기술의 집약체 &lt;strong&gt;CLOVA AiCall&lt;/strong&gt; - 자연어처리 - 음성인식 - 음성합성 - 텍스트 분석&lt;/p&gt;
+
+&lt;p&gt;ex2)
+즐거운 독서 경험을 제공하는 도구 &lt;strong&gt;클로바램프&lt;/strong&gt; - 문자인식 - 이미지인식 - 음성합성 - 음성인식 - 자연어 처리&lt;/p&gt;
+
+&lt;h3 id=&quot;hyperclova의-한국어-모델&quot;&gt;HyperCLOVA의 한국어 모델&lt;/h3&gt;
+
+&lt;h4 id=&quot;language-model-네이버에서-한국어-모델을-만든-이유---박우명conversation&quot;&gt;[Language Model] 네이버에서 한국어 모델을 만든 이유 - 박우명Conversation&lt;/h4&gt;
+
+&lt;p&gt;현 GPT-3는 학습 데이터 구성상 한국어 성능이 제한적이다.
+인터넷언어 분포 :
+&lt;strong&gt;영어60.3%&lt;/strong&gt; &amp;gt; 기타,독일어,프랑스어,중국어,일본어,스페인어,러시아어 &amp;gt; &lt;strong&gt;한국어 0.6%&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;GPT-3 언어 분포
+&lt;strong&gt;영어92.7%&lt;/strong&gt; &amp;gt; 기타,독일어,프랑스어,중국어,일본어,스페인어,러시아어 &amp;gt; &lt;strong&gt;한국어0.1%&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;비중은 작아도 과거 하지 못했던 일부 난이도 높은 태스크가 동작하기도 하는 등 뛰어난 성능을 보이고 있다.
+이러한 상황에서
+&lt;strong&gt;만약 한국어에 맞는 Big Model을 확보하지 못한다면,
+글로벌 기업들이 강력한 영어 모델을 기반으로 다양한 서비스를 만들어 낼 때
+우리는 그들이 제공하는 제한적인 한국어 성능의 모델을 사용할 수밖에 없게 되고
+이는 기술이 종속되는 현상뿐 아니라 한국어 기반 서비스의 성장에 명확한 한계로 작용하게 될 것이다..ㅠㅠㅠ&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;GPT-3와 비슷한 규모로 데이터를 학습함.
+&lt;strong&gt;데이터 처리 파이프라인&lt;/strong&gt;
+데이터 전체560B토큰 중 300B 토큰학습함.
+어휘 집합 학습: 한국어에 최적인 토크나이징Tokenizing방법 학습.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;전처리를 효율적으로&lt;/strong&gt;
+코퍼스믹서Corpus Mixer : 전처리 시 데이터 종류별 비율 자동 조절
+(뉴스, 구어체 등등 )
+시리얼라이저Sericalizer : 하둡 스트리밍 적용/ 처리속도 약 170배 개선(7일이 1시간으로 줄어듦)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;모델의 크기를 키우려면&lt;/strong&gt;
+생성 모델로 다양한 태스크에 활용 가능성
+모델 크기 증가에 따라 GPU 1장으로 학습 불가
+3중 병렬화 적용 : 데이터, 모델, 파이프라인&lt;/p&gt;
+
+&lt;p&gt;성능테스트 :다운스트림 태스크
+NSMC
+KorQuAD1.0 한국어 Machine Reading Comprehension데이터셋&lt;/p&gt;
+
+&lt;h4 id=&quot;tokenization-hyperclova가-한국어를-읽는-방법토큰화tokenization---김보섭conversation-1030&quot;&gt;[Tokenization] HyperCLOVA가 한국어를 읽는 방법:토큰화(Tokenization) - 김보섭Conversation 10:30&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;기계가 글을 이해하려면?
+기계가 문장을 이해하기 위해 단위Token으로 문장을 끊어 읽는 능력이 필요함.
+방법1- 어절단위의 경우: 문장을 적은 토큰 개수로 처리할 수 있지만 어휘집합(Vocabulary)을 크기를 만들지 못해서 토큰이 다양하지 못해 처리할 수 없는 문장이 발생하기도 함.
+방법2- 문자단위의 경우: 문장을 처리할 때, 어절 단위에 비해서 더 많은 토큰 개수를 요구하지만 처리할수없는 문장이 덜 발생함 ㅋ - 방법 1,2의 장단점을 보완할 수 있는 방법은?
+&lt;strong&gt;서브워드Subword(어떤단어의부분)로 끊어 읽으면&lt;/strong&gt; 규칙 기반의 장점들을 취하면서 단점을 줄일 수 있으며, 데이터를 기반한 알고리즘&lt;strong&gt;BPE&lt;/strong&gt;을 통해 학습가능함.
+&lt;strong&gt;BPE(Byte-pair encoding) 정보 압축 알고리즘.&lt;/strong&gt;메모리를 많이 필요로 하는 작업;
+자주 등장하는 문자열을 하나의 문자열로 병합해 가면서 어휘 집합을 구성하는 방법. - 말뭉치로부터 병합의 대상이 되는 문자열에 적절한 전처리를 수행함으로써 서브워드를 학습하는 방식에 변화를 줄 수 있음
+character-&amp;gt;Byte-&amp;gt;Morpheme-Aware Byte&lt;/li&gt;
+  &lt;li&gt;대용량 말뭉치로 서브워드 토크나이저 학습하기
+2TB말뭉치를 모두 사용하는건 현실적으로 불가능하다.
+&lt;strong&gt;전체 말뭉치를 대표할 수 있도록 샘플링Sampling해서 서브워드 토크나이저학습에 사용하는 것이 중요함&lt;/strong&gt; - 적절한 양의 말뭉치를 결정하기 위해 2가지 가설을 토대로 말뭉치선정함. 1. 일반적으로 자연어 말뭉치에 사용된 단어를 빈도순으로 나열했을 경우 지프의 법칙(Zipf’s Law)을 따름(and, the, I, to, a, of, my, is, that) 2. 1에 따라 학습에 사용한 말뭉치 양에 차이가 있어도 서브워드 토크나이저(Subword Tokenizer)의 어휘집합(Vocabulary)에는 중복되는 토큰(Token)이 많을 것이다.
+&lt;strong&gt;&lt;em&gt;말뭉치의 양을 줄여가면서 서브워드 토크나이저를 학습하고,
+중복되는 토큰의 비율을 검사하여 최종적으로 사용할 말뭉치의 양을 결정함.&lt;/em&gt;&lt;/strong&gt;
+최종적으로 전체 말뭉치의 1%(20G)를 사용하여 서브워드 토크나이저를 학습함.
+그래도!!!!!!! 메모리부족(OUT of Memory)과 같은 이슈들이 발생…..전처리를 통해 해결!!&lt;/li&gt;
+  &lt;li&gt;언어모델을 위한 서브워드 토크나이저
+    &lt;ul&gt;
+      &lt;li&gt;3가지 BPE를 테스트한 결과
+미등록 단어 문제가 발생하지 않으며, 고빈도 형태소를 기반으로 학습하는 Morpheme-Aware Byte-Lavel BPE가 적합할 것이라고 판단함.&lt;/li&gt;
+      &lt;li&gt;좋은 서브워드 토크나이저로 만든 언어모델이 생성한 문장은 사람의 문장과 비슷하다고 가정 -&amp;gt; 지표화를 통해 &lt;strong&gt;판별 모델&lt;/strong&gt;을 도입.(토큰화의 방식이 달라지면, 언어모델을 비교할때 많이 사용하는 퍼플렉시티Perplexity지표를 사용할 수없다.)&lt;/li&gt;
+      &lt;li&gt;‘더 좋은 서브워드 토크나이저로 만든 언어 모델은 더 사람이 쓴 것 같은 문장을 생성한다’고 가정&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;HyperCLOVA가 글을 읽는 방법(한 문장으로 정리)
+언어모델은 학습용 말뭉치의 1%로부터 학습된 Morpheme-Aware Byte-Level BPE Tokenizer로 문장을 처리함&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;metrics-hyperclova-한국어-능력-평가---김형석conversation1739&quot;&gt;[Metrics] HyperCLOVA 한국어 능력 평가 - 김형석Conversation17:39&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;설계목적
+“모델이 생성한 문장은 얼마나 유창한가Fluency”
+이를 측정하기 위해, 정량화 수치화&lt;/li&gt;
+  &lt;li&gt;문제점들
+    &lt;ul&gt;
+      &lt;li&gt;생성 문장과 레퍼런스 문장 간의 유사성이 문장 품질을 보장하지 않음&lt;/li&gt;
+      &lt;li&gt;서로 다른 설정(특히 어휘 집합)에서 학습한 모델들을 Preplexity(PPL)로 비교하는것이 부적절함&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;개선 아이디어
+    &lt;ul&gt;
+      &lt;li&gt;래퍼런스 없는 평가지표
+레퍼런스 의존성이 없으면서 loss가 아닌 생성텍스트에 기반한 품질 평가 지표여야 함.&lt;/li&gt;
+      &lt;li&gt;생성 문장 기반 평가지표&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;평가결과&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;hyperclova-studio&quot;&gt;HyperCLOVA Studio&lt;/h3&gt;
+
+&lt;p&gt;코드없이 ML/AI기반으로 개발, 실행 할 수 있는 도구.(개발환경)&lt;/p&gt;
+
+&lt;p&gt;보통 5 STEP. 1.문제정의, 사용자 리서치 (User Researcher) 2.데이터수집, 데이터분석, 데이터Annotation, 데이터검증 (ML Researcher/Engineer) 3.모델구조, 모델학습, 파라미터 튜딩, 모델평가
+4.ML인프라/Ops 프로덕션 서빙 (ML Ops Researcher/Engineer/ Data Engineer) 5.에러분석, 모니터링, 사용자분석 (SME도메인전문가/Product Service Manager)&lt;/p&gt;
+
+&lt;p&gt;NAVER생태계안에 사용 가능.&lt;/p&gt;
+
+&lt;p&gt;웹 전화 스마트스피커 모바일디바이스 등등으로 바로 배포하거나 사용이 가능.&lt;/p&gt;
+
+&lt;h3 id=&quot;hyperclova의-활용-1-검색-어플리케이션&quot;&gt;HyperCLOVA의 활용 (1) 검색 어플리케이션&lt;/h3&gt;
+
+&lt;p&gt;1.Null 검색 질의 재작성 (Null-Query Rewriting)
+‘검색결과가 없는 경우’ 질의를 재 작성하는 것.
+Null-Query유형 : 오타, 띄어쓰기가 잘 안되었거나, 자소단위가 많이 섞여 있는 경우, 잘못된 정보를 사용하는 경우 등..
+[Few-Shot] 학습데이터셋
+[Prev-Query]이전 클릭, 이전 검색어를 추가정보로 제공&lt;/p&gt;
+
+&lt;p&gt;2.쇼핑 리뷰 요약 (Shopping Review Summarization)
+&lt;strong&gt;Faithfulness Evaluation&lt;/strong&gt;
+&lt;strong&gt;방식1)&lt;/strong&gt; ROUGE(Recall-Oriented Understudy for Gisting Evaluation)
+Word Overlap을 이용하는 방식.
+쇼핑 리뷰와 한 줄 요약이 상호간에 얼마나 단어들이 겹치는지를 계산
+&lt;strong&gt;방식2)&lt;/strong&gt; Natural Language Inference
+두 문장의 Entailment를 비교하는 방식.
+쇼핑리뷰(premise)가 한 줄 요약(Hypothesis)을 entailment하는지로 평가
+-&amp;gt; NLI로 faithfulness를 체크하는 방법이 성능 우위.
+단, 멀티 리뷰 요약 특성 상 단일 문장 간의 NLI 비교보다는 복수개 리뷰 문장을 premise로 하는 경우 성능 우위&lt;/p&gt;
+
+&lt;p&gt;3.자유 질의 응답 (Free-Form Question Answering)
+&lt;strong&gt;지식백과 기반의 Question Answering&lt;/strong&gt;
+Subject + Predicate Question 한글 만든 사람이 누구야?
+Multi-hop Question 미국 대통령 중 그래미 상을 받은 사람은?
+Boolean Question 해파리는 뇌가 있어?
+Long-form Question(How/Why) 시서스가 다이어트에 왜 도움이 되니?&lt;/p&gt;
+
+&lt;p&gt;Q&amp;amp;A 프로세스
+(생략)&lt;/p&gt;
+
+&lt;h3 id=&quot;hyperclova의-활용-2-ai-어시스턴트&quot;&gt;HyperCLOVA의 활용 (2) AI 어시스턴트&lt;/h3&gt;
+
+&lt;p&gt;목적지향형대화 Goal Oriented Dialogs (사용자의 특정 목적을 만족시키기 위한)
+질의응답 Question Answering (사용자의 질문에 전문 지식으로 응답하기 위한)
+일상대화 Chit-Chat Dialogs (목적성이 없는 일상 대화를 수행하기 위한)&lt;/p&gt;
+
+&lt;p&gt;사용자의 질문에 대해 위 3가지의 답변을 만들고, Selector에서 최적의 응답을 선택하는 형태.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;AI Assistant가 얻고자 하는 것.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;여러턴의 대화를 자연스럽게 응답하는 능력.&lt;/li&gt;
+  &lt;li&gt;비정형화된 수많은 텍스트로부터 학습한 여러 지식들에도 응답할 수 있는 능력.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;ex. 질문, 응답 + 요약형 설명 + 관련 질문 설명 + 쉬운설명 + 인물 비교 + 관련답변 +&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;대화 이해 :
+대화 이해를 위한 컨텍스트 주입 Context Injection
+    &lt;ul&gt;
+      &lt;li&gt;대화 전체를 이용하여 사용자의 의도를 이해하기 위해&lt;/li&gt;
+      &lt;li&gt;보통 대명사나 지시 표현(그때, 그다음)의 원래의 표현을 찾아내기 위해, 이전의 대화 내용을 참고하는 &lt;strong&gt;대용어 해소 및 생략 복원 기술, 대화 상태 추적 기술&lt;/strong&gt;이 활용 됨.&lt;/li&gt;
+      &lt;li&gt;
+        &lt;dl&gt;
+          &lt;dt&gt;&lt;strong&gt;Transfomer기반의 문장 인코더&lt;/strong&gt;를 사용하여 대화 검색 모듈을 구현함.&lt;/dt&gt;
+          &lt;dt&gt;모듈의 성능은 출력 문장과 정답 문장과의 BLUE스코어(Bilingual Evaluation Understudy Score)를 계산.&lt;/dt&gt;
+          &lt;dd&gt;Few-Shot을 추출하는 대화 검색 모듈의 규현방식도 품질에 영향을 미쳤으나&lt;/dd&gt;
+          &lt;dd&gt;무엇보다 &lt;strong&gt;LM(Language Model)의 크기&lt;/strong&gt;가 최종 성능과 큰 연관성 있음.&lt;/dd&gt;
+        &lt;/dl&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;시스템 응답 선택 :
+시멘틱 검색을 이용한 응답 선택
+    &lt;ul&gt;
+      &lt;li&gt;여러 시스템 응답 후보들 중 가장 맥락에 맞는 응답을 서낵하기 위해 시맨틱 서치를 이용하는 기술.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;시스템 응답 생성 :
+적절한 시스템 응답 생성을 위한 조율 방법
+    &lt;ul&gt;
+      &lt;li&gt;생성모델의 결과를 조율하기 위한 기술.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;hyperclova의-활용-3-대화conversation&quot;&gt;HyperCLOVA의 활용 (3) 대화(Conversation)&lt;/h3&gt;
+
+&lt;h4 id=&quot;hyperclova가-만드는-캐릭터-대화---강재욱conversation&quot;&gt;HyperCLOVA가 만드는 캐릭터 대화 - 강재욱Conversation&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;일관적 캐릭터 대화체 유지 + 유창성&lt;/li&gt;
+  &lt;li&gt;캐릭터 세계관 유지(캐릭터의 기본 프로필, 배경, 철학 내포)
+-&amp;gt; PCU(Prompt Control Unit) 캐릭터 대화를 위한 제어 장치&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;캐릭터 대화체의 퓨샷 러닝(Few-Shot Learning)&lt;/strong&gt;
+‘안나는 매사가 행복하고 기운이 넘친다. 공감 능력이 뛰어나고 긍정적이며 리액션이 좋은 편이다.’
+캐릭터 페르소나 모니터링하는 탐지 모델을 별도로 훈련시켜 언어모델 보조.&lt;/p&gt;
+
+&lt;h4 id=&quot;aicall의-미래와-hyperclova---이상우conversation-1050&quot;&gt;AiCall의 미래와 HyperCLOVA - 이상우Conversation 10:50&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;클로바 챗봇 2018~&lt;/strong&gt;
+&lt;strong&gt;클로바 고객센터 2019~&lt;/strong&gt; - AiCall(문의응대 및 예약을 대화형으로), - HappyCall(보험,증권,리서치 등의 업종에서 고객만족도조사, 불완전판매모니터링 업무 수행.) - (케어콜)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;멀티턴Multi-Turn형태의 목표지향적 대화 시스템&lt;/strong&gt;
+사람 -&amp;gt; (음성입력) -&amp;gt; 음성인식 -&amp;gt; (텍스트입력)
+-&amp;gt; &lt;strong&gt;자연어 이해 모델(NLU)&lt;/strong&gt; Domain Identification/ User Intent Detection/ Slot Filling -&amp;gt; (사용자 의도 추출)
+-&amp;gt; &lt;strong&gt;대화 관리 모델(DM)&lt;/strong&gt; Dialogue State Tracking/ Dialogue Policy -&amp;gt; (답변 분기 결정)
+-&amp;gt; &lt;strong&gt;자연어 생성 모델&lt;/strong&gt; System utterance generation/ Answer Recommendation -&amp;gt; (자연어 답변 출력) -&amp;gt; 사람&lt;/p&gt;
+
+&lt;p&gt;기존 QA pair 형태로도 데이터를 넣어줄 수 있는
+single-Turn FAQ 시스템이나 자유 대화 시스템과 달리
+많은 데이터, 다양한 시나리오가 필요하기 때문에 더 복잡하다…😥&lt;/p&gt;
+
+&lt;p&gt;목표 지향 대화 구축의 어려움&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;유저와 점원이 나눈 대화 로그가 많이 있어도 이를 그대로 대화 구축에 사용할 수는 없음&lt;/li&gt;
+  &lt;li&gt;대화 상태 별(State) 대화 분기를 포함하는 대화 설계를 시나리오 별로 진행하여야&lt;/li&gt;
+  &lt;li&gt;시나리오에 맞는 대화를 데이터 수집가들을 섭외하여 채워나가야 함&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;예시1 : 사용자 의도에 맞는 발화생성
+기존 난점 : 의도별 발화를 구상하고 수집하는 점에 대한 어려움
+해결책 : 의도별 발화를 의도 예제 없이도 보강할 수 있음
+사용자 인텐트-예약질의(방으로예약될까요?자리없으면밖에앉아도괜찮아요.단체석가능한가요?등등..)
+사용자 인텐트-1인식사가능한지물어보기(혼자먹어도될까요?여기혼밥돼요?저혼자먹을건데주문되나요?점심때사람많아요?등등..)
+이것이 &lt;strong&gt;Data Augmentation 중 Zero-Shot Learning&lt;/strong&gt;에 해당&lt;/p&gt;
+
+&lt;p&gt;예시2 : 시스템 응답 추천
+앞의 문맥에 맞는 시스템 응답을 추천해 줌
+더 나아가, 대화 분기를 추천해줌
+긍정 -&amp;gt; 진행
+부정 -&amp;gt; 종료&lt;/p&gt;
+
+&lt;p&gt;예시3 : HyperCLOVA 연속대화 생성
+한차례의 대화를 기술하는 설명문(Goal Script)»올해 ACL에서 확인가능
+대화에 대한 간단한 기술만으로 가상 대화를 조절하여 생성할 수 있음.
+대화 설계에 참고할 수 있음
+대화 시스템 평가에 사용될 수 있음
+BERT기반 대화 시스템 성능 향상에 사용될 수있음.&lt;/p&gt;
+
+&lt;p&gt;연예인챗봇/메타버스챗봇/친구챗봇/캐릭터어시스턴트
+금융전화AI/전화예약시스템/더강력한FAQ봇/AI콜센터/의료복지전화AI&lt;/p&gt;
+
+&lt;h3 id=&quot;hyperclova의-활용-4-데이터-증강data-augmentation&quot;&gt;HyperCLOVA의 활용 (4) 데이터 증강(Data Augmentation)&lt;/h3&gt;
+
+&lt;p&gt;효율적인 NLP모델학습을 가능하게하는 데이터증강 기법.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;자연어처리 패러다임의 변화
+사전학습된 언어모델(PLM:Pretrained Language Model)을 이용한 파인튜닝Fine-tuning
+특정 도메인 혹은 문제를 푸는 NLP 모델로 파인튜닝하는 방법이다.
+PLM의 대표적인 사례로 LaRva라바가 있다.
+[데이터설계 -&amp;gt; 데이터수집 -&amp;gt; (PLM)NLP모델학습 -&amp;gt; 성능평가 –&amp;gt; 데이터개선 또는 모델개선]
+LaRva는 클로바다 언어 모델 기술을 한국어에 적용하여 개발한 새로운 라이브러리.
+&lt;strong&gt;프롬프트를 활용한 방안&lt;/strong&gt; 3:10&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;HyperMix : HyperCLOVA를 이용한 텍스트 증강 기법&lt;/li&gt;
+  &lt;li&gt;HyperMix의 효용성&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;hyperclova의-조율-controllability&quot;&gt;HyperCLOVA의 조율 (Controllability)&lt;/h3&gt;
+
+&lt;p&gt;요약하면
+프롬프트 엔지니어링Prompt Design 대비 프롬프트 튜닝Prompt Tuning의 성능이 높고
+10B 기준, 파인 튜닝(Model Tuning)과 프롬프트 튜닝(Prompt Tuning)성능이 동일.&lt;/p&gt;
+
+&lt;p&gt;HyperCLOVA의 조율하기 위해
+&lt;strong&gt;이산공간Discrete에서의 프롬프트 엔지니어링&lt;/strong&gt; - 적절한 설명문과 적절한 수의 예시의 중요성 - 편향Bias 다루기
+&lt;strong&gt;연속공간Continuous에서의 프롬프트 엔지니어링&lt;/strong&gt; - P-튜닝 - 프롬프트 튜닝&lt;/p&gt;
+
+&lt;h3 id=&quot;hyperclova를-위한-서비스-기반service-infrastructure&quot;&gt;HyperCLOVA를 위한 서비스 기반(Service Infrastructure)&lt;/h3&gt;</content><author><name>egeg1212</name></author><category term="NLP" /><summary type="html">NAVER AI NOW 2021.05.25</summary></entry><entry><title type="html">블록체인 기술적 특징과 비즈니스 이해</title><link href="https://egeg1212.github.io/blockchain" rel="alternate" type="text/html" title="블록체인 기술적 특징과 비즈니스 이해" /><published>2021-05-23T01:40:00+09:00</published><updated>2021-05-23T01:40:00+09:00</updated><id>https://egeg1212.github.io/blockchain</id><content type="html" xml:base="https://egeg1212.github.io/blockchain">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Algorithm LIST &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm_comprehension&quot;&gt;컴퓨터 알고리즘 이해&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm_beginning&quot;&gt;컴퓨터 알고리즘 초급&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm_intermediate&quot;&gt;컴퓨터 알고리즘 중급&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm_pythoncoding&quot;&gt;기초 알고리즘과 파이썬코딩&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm_ml&quot;&gt;인공지능을 위한 머신러닝 알고리즘&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./blockchain&quot;&gt;블록체인 기술적 특징과 비즈니스 이해&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;블록체인-기술적-특징과-비즈니스-이해&quot;&gt;블록체인 기술적 특징과 비즈니스 이해&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;블록체인 궁금하다궁금해!! 두근두근&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강좌정보&lt;/strong&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;&lt;a href=&quot;https://tacademy.skplanet.com/live/player/onlineLectureDetail.action?seq=139&quot;&gt;Tacademy강좌링크&lt;/a&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습내용&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;1. 블록체인의 등장배경과 개념에 대해 알아본다.&lt;br /&gt;2. 블록체인의 네트워크, 보안, 작업증명, 이중지불방지 등 주요 요소기술에 대해 알아본다.&lt;br /&gt;3. 스마트 계약(이더리움)과 신뢰서비스의 작동원리에 대해 알아본다.&lt;br /&gt;4. 다양한 블록체인 비즈니스 사례와 가능성에 대해 알아본다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강사&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;고덕윤 수석연구원 (피노텍) 2018.07.05 강의&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습기간&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;2021.05.22~2021.05.25 &lt;strong&gt;이수완료&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습시간&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;strong&gt;02:51:53&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강의목록&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[1강] 블록체인의 개념&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[2강] 블록체인 기술의 이해&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[3강] 스마트 계약(이더리움)과 신뢰서비스&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[4강] 블록체인 비즈니스 사례&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;GitHub&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;None&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;**&lt;사전학습자료&gt;**
+▶ 블록체인 한번에 이해하기(뒤태지존님의 블로그)
+&amp;lt;https://homoefficio.github.io/2017/11/19/%EB%B8%94%EB%A1%9D%EC%B2%B4%EC%9D%B8-%ED%95%9C-%EB%B2%88%EC%97%90-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0/&amp;gt;&lt;/사전학습자료&gt;&lt;/p&gt;
+
+&lt;p&gt;▶ 비트코인과 블록체인 기술(NAVER D2)
+&lt;a href=&quot;https://d2.naver.com/helloworld/8237898&quot;&gt;https://d2.naver.com/helloworld/8237898&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;NAVER AI NOW&lt;/strong&gt;
+&lt;a href=&quot;https://naver-ai-now.kr/&quot;&gt;https://naver-ai-now.kr/&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;peer to peer네트워크 위변조방지
+APK (개인키,공개키)생산주체명확하게,부인방지
+타원암호알고리즘(ECC : Elliptic-curve cryptography)&lt;/p&gt;
+
+&lt;p&gt;블록체인 데이터의 진실성(BITCOIN)&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;정보의 합의 도축&lt;/li&gt;
+  &lt;li&gt;출처의 명확성&lt;/li&gt;
+  &lt;li&gt;불가역적 데이터저장(한번쓴 데이터는 수정이 불가능하다.)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;3강-스마트-계약이더리움과-신뢰서비스&quot;&gt;[3강] 스마트 계약(이더리움)과 신뢰서비스&lt;/h2&gt;
+
+&lt;p&gt;특정 검증된 프로그램에 따라 지불됨.
+(중개업이 없어짐)&lt;/p&gt;
+
+&lt;p&gt;에스크로서비스
+ICO
+알트코인&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;strong&gt;스마트자산ex.&lt;/strong&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;4강내용추가&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;금융&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;해외송금veem&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;금융&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;ABRA-ATM기찾으러 시내안나가고 옆사람에게&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;다이아몬드이력&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;일련번호, 소유자, 특징, 감정서, 소유권이전&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;부동산산업&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;집주인에대한정보, 담보내역 등등&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;미술&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;저작권&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;음악&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;저작권&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;자동차매매,자전거&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;도난여부, 수리여부, 주인변경이력&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;식품&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;사료, 농장, 도축, 운반, 판매, 보관&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;에너지(충전)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;정치&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;선거,의결권&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;4강-블록체인-비즈니스-사례&quot;&gt;[4강] 블록체인 비즈니스 사례&lt;/h2&gt;
+
+&lt;p&gt;하이퍼렛져의 프리미엄 회원사 (IT, 금융, 종합, 의료&lt;em&gt;CHANGE&lt;/em&gt;, 항공&lt;em&gt;AIRBUS&lt;/em&gt;, 자동차&lt;em&gt;DAIMEER&lt;/em&gt;)&lt;/p&gt;
+
+&lt;p&gt;Practical Byzantine Fault Tolerance
+||PoW|PBFT|
+|:-:|:-:|:-:|
+|통신비용|단일노드의 통신비용은 낮음|다수의 통신을 하므로 높음|
+|CPU연산비용|높음|낮음|
+|최종|합의가 최종이 아닐 수 있음|과반의 의한 최종 합의|
+|참가조건|아무나 참가 가능|허락된 서버만 참가 가능|
+|비밀보호|사전 신뢰한 암호 사용|공개키 암호 사용|
+|전력소모|매우 큼|적음|&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;자전거블록체인&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;자전거 등록&lt;/li&gt;
+  &lt;li&gt;소유자 등록&lt;/li&gt;
+  &lt;li&gt;잠금 유무 상태, 위치&lt;/li&gt;
+  &lt;li&gt;도난여부&lt;/li&gt;
+  &lt;li&gt;주인 변경 등록&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;식품안정성 확보차원(월마트, IBM, 칭화대학교)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;사료, 농장, 도축, 운반, 판매, 보관 모두 기록&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;해운MAERSK LINE&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;리플Ripple(은행을위한)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;아랍의 하왈라 시스템에서 영감을 얻음&lt;/li&gt;
+  &lt;li&gt;국제간 신용 송금을 위한 코인&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;무료 페이팔 시스템&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;송금 시간을 3일에서 1시간 이내로 줄임&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;은행의 송금서비스를 위한 코인&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;진정한 탈중앙화는 아니라는 주장이 있음.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;데이터 시장의 탈중앙화(Steemit)스팀잇&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;스팀잇은 게시자에게 접근 권한을 부여하고
+제 3자의 광고 없이 콘텐츠로 수익을 창출할 수 있도록 했다.
+우리의 주된 목표는 좋은 사람을 플랫폼으로 끌어들여 더 긍적적인 온라인 커뮤니티를 구축하는것이다 -네드스캇, 스팀잇CEO-&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;기존 블로그에 글을올려 광고다는것과 다른 방법.
+글올리면 코인을 줌.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;저작권 관리와 유통을 위한 암호화폐(KodakCoin)&lt;/strong&gt;
+음원과 저작권 유통에서 중개업자의 비용이 큼
+(재생시 수익: 제작자44%&amp;gt;유통사40%&amp;gt;저작권자10%&amp;gt;실연권자6%)
+암호화폐를 이용하여 중개비용을 최소화 하기 위한 노력&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;의료정보의 활용을 위한 화폐 Medibloc메디블록&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;파편화된 연구용 의료 데이터 문제&lt;/li&gt;
+  &lt;li&gt;의료 정보 공유의 어려움&lt;/li&gt;
+  &lt;li&gt;프라이버시 문제&lt;/li&gt;
+  &lt;li&gt;안전한 의료 데이터 제공&lt;/li&gt;
+  &lt;li&gt;효율적인 의료 데이터 공유&lt;/li&gt;
+  &lt;li&gt;암호화폐를 이용한 의료 생태계 조성&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>egeg1212</name></author><category term="algorithm" /><summary type="html">Algorithm LIST 컴퓨터 알고리즘 이해 컴퓨터 알고리즘 초급 컴퓨터 알고리즘 중급 기초 알고리즘과 파이썬코딩 인공지능을 위한 머신러닝 알고리즘 블록체인 기술적 특징과 비즈니스 이해</summary></entry><entry><title type="html">Theano</title><link href="https://egeg1212.github.io/Theano" rel="alternate" type="text/html" title="Theano" /><published>2021-05-21T00:00:00+09:00</published><updated>2021-05-21T00:00:00+09:00</updated><id>https://egeg1212.github.io/Theano</id><content type="html" xml:base="https://egeg1212.github.io/Theano">{
+ &quot;metadata&quot;: {
+  &quot;language_info&quot;: {
+   &quot;codemirror_mode&quot;: {
+    &quot;name&quot;: &quot;ipython&quot;,
+    &quot;version&quot;: 3
+   },
+   &quot;file_extension&quot;: &quot;.py&quot;,
+   &quot;mimetype&quot;: &quot;text/x-python&quot;,
+   &quot;name&quot;: &quot;python&quot;,
+   &quot;nbconvert_exporter&quot;: &quot;python&quot;,
+   &quot;pygments_lexer&quot;: &quot;ipython3&quot;,
+   &quot;version&quot;: &quot;3.8.5&quot;
+  },
+  &quot;orig_nbformat&quot;: 2,
+  &quot;kernelspec&quot;: {
+   &quot;name&quot;: &quot;python385jvsc74a57bd0b3ba2566441a7c06988d0923437866b63cedc61552a5af99d1f4fb67d367b25f&quot;,
+   &quot;display_name&quot;: &quot;Python 3.8.5 64-bit (conda)&quot;
+  }
+ },
+ &quot;nbformat&quot;: 4,
+ &quot;nbformat_minor&quot;: 2,
+ &quot;cells&quot;: [
+  {
+   &quot;cell_type&quot;: &quot;code&quot;,
+   &quot;execution_count&quot;: 2,
+   &quot;metadata&quot;: {},
+   &quot;outputs&quot;: [
+    {
+     &quot;output_type&quot;: &quot;stream&quot;,
+     &quot;name&quot;: &quot;stdout&quot;,
+     &quot;text&quot;: [
+      &quot;Collecting theano\n&quot;,
+      &quot;  Downloading Theano-1.0.5.tar.gz (2.8 MB)\n&quot;,
+      &quot;Requirement already satisfied: numpy&gt;=1.9.1 in c:\\programdata\\anaconda3\\lib\\site-packages (from theano) (1.19.2)\n&quot;,
+      &quot;Requirement already satisfied: scipy&gt;=0.14 in c:\\programdata\\anaconda3\\lib\\site-packages (from theano) (1.5.2)\n&quot;,
+      &quot;Requirement already satisfied: six&gt;=1.9.0 in c:\\programdata\\anaconda3\\lib\\site-packages (from theano) (1.15.0)\n&quot;,
+      &quot;Building wheels for collected packages: theano\n&quot;,
+      &quot;  Building wheel for theano (setup.py): started\n&quot;,
+      &quot;  Building wheel for theano (setup.py): finished with status 'done'\n&quot;,
+      &quot;  Created wheel for theano: filename=Theano-1.0.5-py3-none-any.whl size=2668111 sha256=f6c4e4bb7846dec1655120669243c4f51b659b275e14cce4efd4a0f9f00de242\n&quot;,
+      &quot;  Stored in directory: c:\\users\\pc-go\\appdata\\local\\pip\\cache\\wheels\\84\\cb\\19\\235b5b10d89b4621f685112f8762681570a9fa14dc1ce904d9\n&quot;,
+      &quot;Successfully built theano\n&quot;,
+      &quot;Installing collected packages: theano\n&quot;,
+      &quot;Successfully installed theano-1.0.5\n&quot;,
+      &quot;Note: you may need to restart the kernel to use updated packages.\n&quot;,
+      &quot;WARNING: You are using pip version 21.0.1; however, version 21.1.1 is available.\n&quot;,
+      &quot;You should consider upgrading via the 'C:\\ProgramData\\Anaconda3\\python.exe -m pip install --upgrade pip' command.\n&quot;
+     ]
+    }
+   ],
+   &quot;source&quot;: [
+    &quot;pip install theano&quot;
+   ]
+  },
+  {
+   &quot;cell_type&quot;: &quot;code&quot;,
+   &quot;execution_count&quot;: 12,
+   &quot;metadata&quot;: {},
+   &quot;outputs&quot;: [],
+   &quot;source&quot;: [
+    &quot;import numpy\n&quot;,
+    &quot;import theano\n&quot;,
+    &quot;import theano.tensor as T&quot;
+   ]
+  },
+  {
+   &quot;cell_type&quot;: &quot;code&quot;,
+   &quot;execution_count&quot;: 7,
+   &quot;metadata&quot;: {},
+   &quot;outputs&quot;: [],
+   &quot;source&quot;: [
+    &quot;rng = numpy.random\n&quot;,
+    &quot;\n&quot;,
+    &quot;N = 400\n&quot;,
+    &quot;feats = 784 #차원\n&quot;,
+    &quot;D = (rng.randn(N, feats).astype(numpy.float32), rng.randint(size = N, low=0, high=2).astype(numpy.float32))&quot;
+   ]
+  },
+  {
+   &quot;cell_type&quot;: &quot;code&quot;,
+   &quot;execution_count&quot;: 8,
+   &quot;metadata&quot;: {},
+   &quot;outputs&quot;: [
+    {
+     &quot;output_type&quot;: &quot;execute_result&quot;,
+     &quot;data&quot;: {
+      &quot;text/plain&quot;: [
+       &quot;(array([[-0.03968759,  0.32623804, -0.2864035 , ...,  1.0145822 ,\n&quot;,
+       &quot;         -0.98714745,  0.68108976],\n&quot;,
+       &quot;        [ 0.70494425,  1.1646211 ,  1.0447122 , ...,  0.11065981,\n&quot;,
+       &quot;         -0.92154187,  0.7028902 ],\n&quot;,
+       &quot;        [ 1.7221528 ,  0.23708415,  1.9193072 , ...,  2.097736  ,\n&quot;,
+       &quot;         -1.3243518 ,  0.21220408],\n&quot;,
+       &quot;        ...,\n&quot;,
+       &quot;        [ 0.5444983 ,  0.7940225 ,  0.04632351, ..., -0.8444883 ,\n&quot;,
+       &quot;         -1.1282709 ,  2.1386142 ],\n&quot;,
+       &quot;        [-0.15034786, -0.29176366,  0.18123117, ..., -0.0937378 ,\n&quot;,
+       &quot;         -0.11165322,  0.17779373],\n&quot;,
+       &quot;        [-0.8927488 , -0.92266774,  0.7283412 , ...,  0.8297746 ,\n&quot;,
+       &quot;         -0.3400725 ,  0.63995266]], dtype=float32),\n&quot;,
+       &quot; array([1., 1., 0., 0., 1., 1., 0., 1., 0., 0., 0., 0., 0., 0., 1., 1., 0.,\n&quot;,
+       &quot;        1., 1., 1., 0., 1., 1., 1., 0., 0., 0., 0., 1., 1., 1., 1., 0., 0.,\n&quot;,
+       &quot;        1., 0., 1., 1., 0., 0., 0., 1., 1., 1., 1., 0., 0., 0., 1., 1., 0.,\n&quot;,
+       &quot;        0., 0., 0., 1., 1., 0., 1., 0., 1., 1., 0., 1., 1., 1., 1., 1., 1.,\n&quot;,
+       &quot;        0., 0., 0., 1., 0., 0., 0., 1., 0., 1., 1., 0., 1., 0., 1., 1., 1.,\n&quot;,
+       &quot;        0., 1., 1., 1., 1., 1., 1., 0., 1., 0., 1., 1., 0., 0., 1., 1., 1.,\n&quot;,
+       &quot;        0., 0., 1., 1., 0., 0., 1., 0., 0., 0., 0., 0., 1., 1., 1., 0., 0.,\n&quot;,
+       &quot;        0., 0., 0., 0., 0., 1., 1., 0., 1., 0., 1., 0., 1., 0., 0., 0., 0.,\n&quot;,
+       &quot;        0., 1., 1., 1., 0., 0., 0., 1., 1., 1., 0., 1., 0., 1., 1., 0., 1.,\n&quot;,
+       &quot;        1., 0., 0., 1., 1., 1., 1., 0., 1., 0., 0., 1., 1., 1., 1., 0., 0.,\n&quot;,
+       &quot;        0., 0., 0., 1., 0., 1., 1., 0., 1., 0., 1., 1., 1., 1., 1., 1., 0.,\n&quot;,
+       &quot;        1., 0., 0., 0., 0., 0., 1., 0., 1., 1., 0., 0., 1., 0., 0., 1., 0.,\n&quot;,
+       &quot;        0., 1., 0., 1., 0., 0., 0., 1., 0., 0., 1., 0., 0., 0., 1., 1., 0.,\n&quot;,
+       &quot;        1., 0., 0., 0., 0., 0., 0., 0., 1., 1., 0., 0., 0., 1., 0., 0., 0.,\n&quot;,
+       &quot;        1., 0., 1., 0., 0., 1., 0., 1., 1., 1., 1., 1., 1., 0., 0., 1., 0.,\n&quot;,
+       &quot;        1., 0., 1., 1., 1., 0., 1., 0., 0., 1., 0., 0., 1., 0., 0., 0., 1.,\n&quot;,
+       &quot;        0., 0., 0., 0., 1., 1., 1., 0., 0., 1., 0., 1., 1., 0., 0., 0., 0.,\n&quot;,
+       &quot;        1., 1., 0., 1., 0., 0., 1., 1., 0., 1., 0., 0., 1., 0., 0., 1., 1.,\n&quot;,
+       &quot;        0., 1., 0., 0., 1., 0., 0., 0., 1., 1., 0., 1., 1., 0., 1., 0., 1.,\n&quot;,
+       &quot;        0., 0., 1., 1., 0., 0., 0., 0., 0., 0., 1., 1., 0., 0., 1., 1., 1.,\n&quot;,
+       &quot;        1., 0., 1., 1., 1., 1., 0., 0., 0., 0., 0., 1., 1., 0., 0., 0., 1.,\n&quot;,
+       &quot;        1., 1., 1., 1., 1., 1., 0., 1., 1., 1., 1., 1., 0., 0., 0., 0., 0.,\n&quot;,
+       &quot;        0., 0., 0., 0., 0., 0., 0., 1., 0., 1., 0., 0., 0., 0., 0., 0., 0.,\n&quot;,
+       &quot;        0., 0., 1., 1., 1., 1., 1., 0., 0.], dtype=float32))&quot;
+      ]
+     },
+     &quot;metadata&quot;: {},
+     &quot;execution_count&quot;: 8
+    }
+   ],
+   &quot;source&quot;: [
+    &quot;D\n&quot;,
+    &quot;#가우시간분포에 따른. 400개의 레이블이 달려있다.&quot;
+   ]
+  },
+  {
+   &quot;cell_type&quot;: &quot;code&quot;,
+   &quot;execution_count&quot;: 16,
+   &quot;metadata&quot;: {},
+   &quot;outputs&quot;: [
+    {
+     &quot;output_type&quot;: &quot;stream&quot;,
+     &quot;name&quot;: &quot;stdout&quot;,
+     &quot;text&quot;: [
+      &quot;[[ 0.91193345  0.63892273 -0.71941473 ... -1.33527277  0.73837072\n   1.38924837]\n [ 0.5581504  -0.30152718  0.32769058 ...  1.17244099 -0.81116815\n   1.04825718]\n [ 1.05933354  2.05137907 -1.96551677 ... -0.74216618 -2.03028449\n   0.55809047]\n ...\n [ 0.53049583  0.02157492 -1.02954589 ...  0.774203    0.89361168\n   1.32411742]\n [ 0.53819113 -0.25902789  0.50222782 ... -1.29481319 -0.42896654\n  -0.3317319 ]\n [-0.80546122  1.31027997 -0.14003127 ... -0.64395619 -1.70540192\n  -0.90070639]] [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.\n 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.\n 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.\n 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.\n 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.\n 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.\n 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.\n 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.\n 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.\n 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.\n 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.\n 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.\n 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]\n[-0.18668918 -0.84287693 -0.62107179 -0.38955162  0.55726845  0.38801171\n -0.41565086  0.31710532 -0.13416397 -0.65241825 -0.82463423 -0.23421881\n  0.72658131  1.3073682   2.64901381  1.15010926 -1.01638705 -0.22045888\n  0.61185981  1.11853618 -1.33623058  0.74660065 -0.39294644 -0.78453651\n -0.39910608  0.06191575 -1.46316714 -0.08447413 -0.08251807 -0.86530487\n -0.92312007 -0.55360073  0.40336459  1.41016883  0.77803133 -0.2330329\n -0.20553976 -0.66806649 -1.24960761 -1.01886316  2.34786331 -0.66627363\n -1.51388646  0.89149262  1.80332222  1.29113601 -1.65079471 -0.13486959\n -1.02463002 -0.47626569 -0.19650702 -0.10514686 -1.01205288  1.17046906\n  0.18645894 -0.01857437  2.19904279 -0.284601   -0.01885763 -0.13486807\n  1.27402254 -0.10534138 -0.72832046 -1.25841163 -0.61727362  0.55019468\n -0.35376909 -0.17884404 -0.78279627 -0.75773709  0.38234021  0.22101313\n -0.80383725  1.32707493  0.31919838 -0.91754569 -0.34284874  0.2826746\n -0.41770645  0.47674479  0.21426539  0.72135939  2.41932669 -0.23203883\n  0.32549192 -0.99858767 -1.00270865  0.01281052  0.50507095  0.4107643\n  0.64248066 -0.3260234   0.87652222 -1.07318845 -0.0955651  -0.1059995\n  0.43294392 -2.75273846  0.08381457 -0.20769605  0.05330276  0.34260298\n  0.75050665  0.01217291 -0.88170625 -0.34603999 -0.76647721 -1.47359974\n -0.08534046 -0.50192779  1.40289497 -2.37618241 -1.40670998  0.7062895\n  0.36752632  1.9913155   0.4278721   0.57014159 -0.98087354 -1.53564191\n -0.83472914 -0.25432482  1.93663723  0.33851495 -0.17883038 -0.88782433\n -1.26227395 -0.39090793 -0.83597432  2.43509566 -1.28385385  0.67188589\n -0.30382091 -0.21858016 -0.44038565  1.96535295  0.17666942  1.57673968\n  0.93496532 -0.30029693  1.47397832  1.43872158 -0.43640247  0.5187453\n  0.86266746  0.80947124  0.25923412  0.0189863  -0.46212837 -1.33234516\n -1.68033912 -1.2579394   0.564451   -0.87452256 -0.67885468  0.02359229\n  1.77610082  1.01878578  0.05451306  0.05194913 -0.28976428  0.45124914\n  1.86150476 -0.11718844  0.78467436  0.68519158 -0.66257112  0.44038051\n -0.2678314  -0.2636233  -1.40891744 -0.37592289  0.52444636 -2.68875469\n  0.28257717  0.91719716  0.11611303  1.6835271  -1.03101234  1.18691191\n  1.27362555  0.95989182 -0.59217916 -0.1049146   1.04830654 -0.1967342\n  0.94057648 -1.29558974  0.43529339  1.51777237  0.07817532 -0.37100327\n  2.85885546  0.62178436 -0.19299101 -0.02464568 -0.26478711 -0.53034814\n  1.15452862  0.03023015 -0.18166217  0.42803472 -0.55355049 -1.06412876\n  0.76501006  0.44134338 -0.19750494  1.54293112 -0.1911823  -2.4582198\n  0.26592896 -0.82499026  1.51250465 -0.1935144  -0.73414461  0.48935829\n -1.43289387 -0.77055129 -1.39309467 -0.69066213 -0.74870051 -1.19690244\n -1.59806868  0.66631091  1.41062019  1.11965239 -0.34778778 -0.12351565\n  0.26707622 -0.08167269  0.25625628  0.10365456 -0.16546265 -1.0458382\n  0.23507325  0.0517782  -0.16110192 -0.87503303  0.37318971 -0.22448335\n -0.5880142   1.17517055  0.07055411  0.72727295  1.39790342  0.79575813\n -0.67769541 -1.00990614  0.06877186  0.41363478 -1.25689165 -0.45313471\n  0.14645274 -1.64158407  1.17344799  1.00870674  0.83086912 -1.20219302\n  1.27729154 -0.36795035 -0.37574463 -0.15076182  0.95824902  1.1403624\n  0.46554717  1.73263265  0.19278916  0.42909698 -0.37054964  1.63584331\n  0.23037314 -0.27905685 -0.56433865 -0.38486382  0.49369047 -1.39960878\n  0.14618188  0.29313808 -0.93955091 -0.06561327 -0.09969509 -0.29628194\n  0.14064006 -0.01432175 -0.43597951 -0.52217526  0.56937455 -1.1013863\n -1.31498826 -0.01736189 -1.73708197 -0.80822594  0.22389792 -0.44893354\n -0.02526708 -0.01471571 -1.21739481  0.20709959 -0.06014108  1.64327828] 0.0\n&quot;
+     ]
+    }
+   ],
+   &quot;source&quot;: [
+    &quot;#3층으로 이루어진 다층퍼셉트론의 파라미터 지금은 GPU에 있다\n&quot;,
+    &quot;training_steps = 10000\n&quot;,
+    &quot;x = T.matrix('x')\n&quot;,
+    &quot;y = T.vector('y')\n&quot;,
+    &quot;w_1 = theano.shared(rng.randn(784, 300), name = 'w1')\n&quot;,
+    &quot;b_1 = theano.shared(numpy.zeros(300,), name = 'b1') # 입력층784-은닉층300 사이 가중치\n&quot;,
+    &quot;w_2 = theano.shared(rng.randn(300,), name = 'w2')\n&quot;,
+    &quot;b_2 = theano.shared(0., name = 'b2') # 은닉층-출력층 사이 가중치\n&quot;,
+    &quot;\n&quot;,
+    &quot;#get_value()란, GPU VRAM에 있는 데이터를 CPU RAM으로 가져와서 비주얼해줌\n&quot;,
+    &quot;print (w_1.get_value(), b_1.get_value())\n&quot;,
+    &quot;print (w_2.get_value(), b_2.get_value())&quot;
+   ]
+  },
+  {
+   &quot;cell_type&quot;: &quot;code&quot;,
+   &quot;execution_count&quot;: 22,
+   &quot;metadata&quot;: {},
+   &quot;outputs&quot;: [],
+   &quot;source&quot;: [
+    &quot;# 모델의 출력값을 출력\n&quot;,
+    &quot;p_1 = T.nnet.sigmoid(T.dot(T.nnet.sigmoid(T.dot(x, w_1)+b_1), w_2)+b_2)\n&quot;,
+    &quot;prediction = p_1 &gt; 0.5 # 0또는 1일텐데, 0.5보다크면 1로 분류하라\n&quot;,
+    &quot;xent = -y*T.log(p_1) - (1-y)*T.log(1-p_1) #크로스엔트로피 정의\n&quot;,
+    &quot;cost = xent.mean() + 0.01 * ((w_1**2).sum()+ (w_2**2).sum() + (b_1**2).sum() + (b_2**2).sum()) #에러값정의 모델의 파라미터값이 커지지 못하도록 미분\n&quot;,
+    &quot;gw_1, gb_1, gw_2, gb_2 = T.grad(cost, [w_1, b_1, w_2, b_2])&quot;
+   ]
+  },
+  {
+   &quot;cell_type&quot;: &quot;code&quot;,
+   &quot;execution_count&quot;: 23,
+   &quot;metadata&quot;: {},
+   &quot;outputs&quot;: [
+    {
+     &quot;output_type&quot;: &quot;stream&quot;,
+     &quot;name&quot;: &quot;stderr&quot;,
+     &quot;text&quot;: [
+      &quot;&lt;ipython-input-23-6055d0711dc2&gt;:1: UserWarning: The parameter 'updates' of theano.function() expects an OrderedDict, got &lt;class 'dict'&gt;. Using a standard dictionary here results in non-deterministic behavior. You should use an OrderedDict if you are using Python 2.7 (theano.compat.OrderedDict for older python), or use a list of (shared, update) pairs. Do not just convert your dictionary to this type before the call as the conversion will still be non-deterministic.\n  train = theano.function(inputs=[x,y],\n&quot;
+     ]
+    }
+   ],
+   &quot;source&quot;: [
+    &quot;train = theano.function(inputs=[x,y],\r\n&quot;,
+    &quot;                outputs= [prediction, xent],\r\n&quot;,
+    &quot;                updates= {w_1 : w_1-0.1*gw_1, b_1 : b_1-0.1*gb_1,\r\n&quot;,
+    &quot;                            w_2: w_2-0.1*gw_2, b_2 : b_2-0.1*gb_2}) # GPU에서 CPU로 가져오기 update / running rate 0.1 학습률\r\n&quot;,
+    &quot;predict = theano.function(inputs=[x], outputs=prediction) # 예측함수&quot;
+   ]
+  },
+  {
+   &quot;cell_type&quot;: &quot;code&quot;,
+   &quot;execution_count&quot;: 26,
+   &quot;metadata&quot;: {},
+   &quot;outputs&quot;: [
+    {
+     &quot;output_type&quot;: &quot;stream&quot;,
+     &quot;name&quot;: &quot;stdout&quot;,
+     &quot;text&quot;: [
+      &quot;Final model:\n[[-0.00250912 -0.00446023  0.00137025 ... -0.00192448  0.00369112\n   0.00242716]\n [-0.00353448 -0.00635199  0.00192308 ... -0.00270506  0.00523063\n   0.00341786]\n [ 0.00621797  0.01109977 -0.00339112 ...  0.00476536 -0.0091678\n  -0.00601409]\n ...\n [ 0.00530576  0.00952523 -0.00288791 ...  0.00406158 -0.00784736\n  -0.00513087]\n [ 0.00055254  0.00090462 -0.00031055 ...  0.00043094 -0.0007767\n  -0.00053588]\n [ 0.00455305  0.00811802 -0.00248432 ...  0.00349036 -0.00670839\n  -0.00440396]] [ 1.80210137e-04  9.82381217e-04 -2.85690117e-05  9.33848281e-04\n -1.21721973e-06 -2.52283786e-05  1.00483858e-03 -6.76835053e-04\n  1.14928243e-03  2.69155924e-04  2.99313868e-04  1.36353004e-03\n -3.72283151e-04 -8.62078821e-04 -1.63798854e-03 -1.38307546e-03\n  9.50266902e-04 -2.91169525e-07 -5.00489039e-05 -6.53918521e-04\n  8.01814238e-04 -4.52912678e-06  1.71377561e-03  1.07201084e-06\n  8.41103211e-05 -1.99142946e-04  2.10469734e-04 -7.71616702e-06\n  2.11799075e-07  1.55472370e-04  8.76165559e-04  1.82409072e-04\n  5.97624263e-07 -3.51530056e-05 -1.12641638e-03  2.89698106e-09\n  2.86257336e-05  1.36912067e-03  3.94124833e-04  2.03962877e-04\n -1.92956944e-03  3.56670151e-05  1.35528283e-03 -9.36589580e-04\n -7.37802423e-04 -8.34978625e-05  1.94327191e-04 -3.10773785e-05\n  1.72720180e-03  2.17846076e-05 -8.02093930e-07  7.84529869e-04\n  9.15062686e-04 -1.01160191e-03 -2.72917069e-04  1.57518570e-04\n -5.66054379e-04 -1.47934806e-07  3.06328719e-07 -3.10769675e-08\n -1.27405065e-03 -6.59201049e-04  5.05067695e-04  2.36801923e-04\n  1.14799714e-05 -5.14885841e-07 -5.05005342e-06  3.54324406e-04\n  5.38750796e-05  4.38819923e-06 -1.95690785e-04  1.64088395e-04\n  6.21208235e-04 -1.20844032e-04  1.01348351e-03  1.32503810e-04\n  4.40501171e-08 -1.09750797e-03 -6.56457749e-05  2.11119950e-08\n  2.95631385e-04 -1.95230313e-05 -4.02609987e-04 -1.09042039e-04\n  2.47370744e-05  2.79844325e-04  3.98237975e-05  1.08865431e-04\n -9.07488957e-04 -2.49908051e-05  1.48145714e-04 -9.02600396e-05\n -1.87204897e-03  4.77769829e-06  8.46982792e-06  2.41766033e-04\n -6.28493828e-05  1.89181080e-03 -1.66088919e-05  5.49870039e-05\n -4.68992389e-04 -1.52800918e-06 -5.36796608e-05  6.65867298e-04\n  1.48077034e-03  1.74396094e-05  1.10583937e-03  1.50234348e-05\n  3.27657053e-06 -1.05521715e-04 -1.99920906e-03  1.06834282e-03\n  1.17120475e-03  1.47488576e-07 -5.37265768e-05 -8.00931320e-04\n -1.33267796e-07 -2.79979139e-05  1.08642807e-06  1.31858895e-03\n -1.35554500e-07 -1.68771464e-06 -1.18771631e-03 -4.33068577e-05\n  2.10104096e-07  5.47466014e-04  1.16299684e-04 -2.55085821e-08\n  6.02385164e-04 -1.74430578e-03  2.03880940e-04 -5.17474858e-05\n  7.85228831e-04 -4.83644126e-07  1.75705837e-06 -9.77557931e-04\n -2.80569155e-05 -3.87219623e-04  1.17611231e-06  3.44215253e-04\n -5.55072702e-04 -2.16480263e-05  6.27786588e-04 -5.49738262e-04\n -6.90947400e-04 -1.94703642e-04  7.04456030e-06 -1.21107690e-05\n  1.36727862e-04  2.36736995e-04  3.58242288e-05  1.18202231e-07\n -4.55464243e-04  6.02961878e-05 -1.21296699e-05 -3.73175145e-04\n -1.69673372e-04 -1.42159542e-03  9.27543116e-06 -6.58427506e-05\n -1.17406536e-05  5.07911695e-04 -1.33036436e-03  2.04375254e-05\n -2.99724610e-04 -7.41522608e-07 -3.16017042e-06 -3.07527800e-04\n  5.92644725e-04  9.04179692e-04  1.88846577e-03  4.77726026e-05\n -4.78034484e-04  1.90499775e-03 -2.81480861e-04 -5.38375821e-06\n -3.61450645e-08 -7.79055024e-04 -1.45798936e-07 -3.52234823e-04\n -6.64323804e-04 -1.67700492e-03  2.16401959e-05  2.35490476e-04\n -1.13317204e-04  1.45058173e-07 -7.68512168e-04  9.03677038e-04\n -1.40931972e-03 -1.33582845e-04  2.17667685e-05  8.17414317e-04\n -4.16468186e-04 -5.99800242e-04  2.61025405e-04 -1.41835720e-06\n  3.13918461e-04 -8.96468662e-05 -6.83145685e-04 -3.39331705e-04\n  5.25999877e-05 -2.05424606e-05  1.10635376e-04  8.43792586e-04\n -2.56279658e-05 -1.02278316e-03 -8.07593765e-04 -7.13394505e-06\n  1.43690208e-04  1.39782814e-04 -8.48845920e-04  1.86111051e-04\n -1.31140563e-03 -1.44294661e-05  5.22363843e-04 -2.01075055e-07\n  1.41263084e-03 -2.32532840e-05  1.10217676e-04  5.62854159e-04\n -5.30374857e-08  1.07300472e-03  2.42708790e-06 -1.27630597e-04\n -1.19216404e-03 -3.69731556e-04  5.64997977e-05  3.57085796e-05\n  3.80153667e-04  9.35469675e-05 -6.61463611e-04 -4.32730480e-04\n -3.87306767e-04  3.65434302e-04 -1.35149477e-04  1.20427004e-04\n  5.16197468e-05  1.60721282e-04 -1.65297607e-04  3.81030726e-05\n  1.11880413e-03 -8.92423556e-05 -5.45442150e-08 -2.75407364e-05\n -1.34348307e-06  5.75088422e-06  4.06601874e-06  3.66103440e-06\n -6.10186399e-08 -1.25229066e-05  1.29949856e-04  2.74221201e-06\n -2.55933407e-06  1.37882551e-03 -1.03714385e-03 -6.38852862e-04\n -1.17832682e-03  7.67590476e-04 -1.04790422e-03  4.25836009e-04\n  8.67545109e-04  4.14872433e-05  1.48795007e-07 -2.75076873e-05\n -6.00657873e-04 -5.15878478e-04 -1.78826035e-04 -8.94073133e-04\n  5.81810395e-08 -1.04094114e-03  1.96013374e-04  5.01848394e-05\n  7.62899208e-04 -8.19656090e-05 -8.73451911e-05  6.84064819e-04\n -5.52927778e-04 -5.41307475e-05  9.71008392e-09 -6.95614142e-04\n  5.05844539e-05  8.16179916e-05 -2.13928902e-04 -1.07902931e-04\n -2.15391320e-06  5.94781058e-04  5.29085791e-06  3.72115643e-04\n  1.24476736e-03  2.63867038e-04  1.93223577e-03  5.88770003e-05\n  2.51231824e-05  9.48821914e-04 -1.53902225e-03 -7.09096134e-06\n  5.22262696e-05  8.10187346e-05 -5.65805693e-04 -1.63036068e-04]\n[-0.13881441 -0.24851605  0.07566882 -0.24411576  0.02988222  0.07269798\n -0.2505078   0.21817896 -0.26272175 -0.15894757 -0.1647828  -0.27925825\n  0.17757301  0.23741808  0.29841796  0.28075859 -0.24561947  0.02232241\n  0.09079839  0.21558276 -0.2313931   0.04271705 -0.30328681 -0.02889975\n -0.10764786  0.14363306 -0.14626281  0.0501069  -0.02122587 -0.13210151\n -0.23870171 -0.13938183 -0.02536066  0.08092137  0.26092295 -0.0176506\n -0.07564388 -0.27966844 -0.18099571 -0.14472231  0.31677101 -0.08123056\n -0.27865129  0.24443899  0.2248327   0.10746046 -0.14238211  0.0777543\n -0.30414859 -0.06928222  0.02709656 -0.22963525 -0.2423752   0.2511734\n  0.15976966 -0.13268207  0.20506889 -0.01050307 -0.02242134 -0.00140961\n  0.27262405  0.21618607 -0.19708686 -0.15220272 -0.05656793  0.02468901\n  0.04410983 -0.17452919 -0.09294368 -0.0422485   0.14278999 -0.13451296\n -0.21170575  0.12150005 -0.25126732 -0.12521977  0.00205991  0.25852636\n  0.09925685  0.00099001 -0.16409099  0.06696972  0.18239228  0.11741205\n -0.07216692 -0.16106118 -0.08419736 -0.11727611  0.24173869  0.07247683\n -0.12998223  0.11026813  0.31328263 -0.04331841 -0.05148211 -0.1532742\n  0.09784488 -0.31441786  0.06361584 -0.09356919  0.19219439  0.03163527\n  0.09290595 -0.21687185 -0.28766348 -0.06453471 -0.25915    -0.06155623\n -0.03882682  0.11613758  0.32091674 -0.25599906 -0.26449337  0.00940766\n  0.09293238  0.23137514 -0.01266732  0.07517744 -0.02899344 -0.27592425\n -0.01246968  0.03245753  0.26588578  0.0866049  -0.02120304 -0.20264496\n -0.1198854  -0.01697154 -0.20945945  0.30531119 -0.14470284  0.09179621\n -0.22970686  0.02439101 -0.03272524  0.24815574  0.07522864  0.17997644\n -0.02955507 -0.17281416  0.20368509  0.06921611 -0.21248088  0.20300689\n  0.21975095  0.14254731 -0.04866402  0.05759529 -0.12654022 -0.15218847\n -0.08134691 -0.01984071  0.1902714  -0.0964467   0.05762385  0.17771841\n  0.13610525  0.28354231 -0.05294341  0.09935485  0.05703994 -0.19746854\n  0.27687485 -0.0678814   0.16493181  0.02663069  0.03850465  0.16637876\n -0.20827995 -0.24135718 -0.31421433 -0.08935301  0.1934605  -0.31521816\n  0.16145241  0.04495511 -0.00164568  0.22914499 -0.00906674  0.17424944\n  0.21676837  0.30097677 -0.06913468 -0.15191736  0.11892461  0.01150788\n  0.22805635 -0.2413101   0.28266005  0.125632   -0.06926408 -0.23295965\n  0.18451835  0.20921907 -0.1573036   0.03104212 -0.1674744   0.11001933\n  0.21888444  0.17204617 -0.09221618  0.06806603 -0.11790754 -0.23556785\n  0.07306657  0.25215118  0.23204684  0.04892423 -0.12866025 -0.12747872\n  0.23613291 -0.14032689  0.27545584  0.06085061 -0.19938816  0.02115924\n -0.28282794  0.07081992 -0.1177591  -0.20459564  0.01877627 -0.25639449\n -0.03569688  0.1237346   0.2662399   0.1771565  -0.09440673 -0.08126141\n -0.17877506 -0.11151098  0.21644367  0.18695703  0.17999011 -0.17637867\n  0.1261223  -0.12128747 -0.09164908 -0.1335805   0.1349171  -0.08299479\n -0.26022463  0.10985452 -0.00252328  0.07477953  0.0306205  -0.04577449\n -0.04131809 -0.04008057 -0.01597525  0.05820192 -0.124408   -0.03692491\n  0.03629847 -0.28037821  0.25339746  0.21384497  0.26513572 -0.22788953\n  0.25432455 -0.18585833 -0.23787422 -0.08532806  0.01021225  0.07475056\n  0.20932279  0.19860247  0.13852761  0.24047614 -0.01878973  0.25372542\n -0.14279694 -0.09080622 -0.22740184  0.10680389  0.10907527 -0.21891534\n  0.20341292  0.09316087 -0.01780466  0.22026635 -0.09104243 -0.1065813\n  0.14714161  0.11700263  0.03462749 -0.20853976 -0.04464864 -0.17747381\n -0.27029921 -0.15788189 -0.31686121 -0.095694   -0.07252727 -0.24548785\n  0.2917659   0.0488352  -0.09200077 -0.10632164  0.20503777  0.13429535] 8.875979862972325e-05\ntarget values for D:  [1. 1. 0. 0. 1. 1. 0. 1. 0. 0. 0. 0. 0. 0. 1. 1. 0. 1. 1. 1. 0. 1. 1. 1.\n 0. 0. 0. 0. 1. 1. 1. 1. 0. 0. 1. 0. 1. 1. 0. 0. 0. 1. 1. 1. 1. 0. 0. 0.\n 1. 1. 0. 0. 0. 0. 1. 1. 0. 1. 0. 1. 1. 0. 1. 1. 1. 1. 1. 1. 0. 0. 0. 1.\n 0. 0. 0. 1. 0. 1. 1. 0. 1. 0. 1. 1. 1. 0. 1. 1. 1. 1. 1. 1. 0. 1. 0. 1.\n 1. 0. 0. 1. 1. 1. 0. 0. 1. 1. 0. 0. 1. 0. 0. 0. 0. 0. 1. 1. 1. 0. 0. 0.\n 0. 0. 0. 0. 1. 1. 0. 1. 0. 1. 0. 1. 0. 0. 0. 0. 0. 1. 1. 1. 0. 0. 0. 1.\n 1. 1. 0. 1. 0. 1. 1. 0. 1. 1. 0. 0. 1. 1. 1. 1. 0. 1. 0. 0. 1. 1. 1. 1.\n 0. 0. 0. 0. 0. 1. 0. 1. 1. 0. 1. 0. 1. 1. 1. 1. 1. 1. 0. 1. 0. 0. 0. 0.\n 0. 1. 0. 1. 1. 0. 0. 1. 0. 0. 1. 0. 0. 1. 0. 1. 0. 0. 0. 1. 0. 0. 1. 0.\n 0. 0. 1. 1. 0. 1. 0. 0. 0. 0. 0. 0. 0. 1. 1. 0. 0. 0. 1. 0. 0. 0. 1. 0.\n 1. 0. 0. 1. 0. 1. 1. 1. 1. 1. 1. 0. 0. 1. 0. 1. 0. 1. 1. 1. 0. 1. 0. 0.\n 1. 0. 0. 1. 0. 0. 0. 1. 0. 0. 0. 0. 1. 1. 1. 0. 0. 1. 0. 1. 1. 0. 0. 0.\n 0. 1. 1. 0. 1. 0. 0. 1. 1. 0. 1. 0. 0. 1. 0. 0. 1. 1. 0. 1. 0. 0. 1. 0.\n 0. 0. 1. 1. 0. 1. 1. 0. 1. 0. 1. 0. 0. 1. 1. 0. 0. 0. 0. 0. 0. 1. 1. 0.\n 0. 1. 1. 1. 1. 0. 1. 1. 1. 1. 0. 0. 0. 0. 0. 1. 1. 0. 0. 0. 1. 1. 1. 1.\n 1. 1. 1. 0. 1. 1. 1. 1. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 1.\n 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 1. 1. 1. 1. 0. 0.]\npredictions on D:  [ True  True False False  True  True False  True False False False False\n False False  True  True False  True  True  True False  True  True  True\n False False False False  True  True  True  True False False  True False\n  True  True False False False  True  True  True  True False False False\n  True  True False False False False  True  True False  True False  True\n  True False  True  True  True  True  True  True False False False  True\n False False False  True False  True  True False  True False  True  True\n  True False  True  True  True  True  True  True False  True False  True\n  True False False  True  True  True False False  True  True False False\n  True False False False False False  True  True  True False False False\n False False False False  True  True False  True False  True False  True\n False False False False False  True  True  True False False False  True\n  True  True False  True False  True  True False  True  True False False\n  True  True  True  True False  True False False  True  True  True  True\n False False False False False  True False  True  True False  True False\n  True  True  True  True  True  True False  True False False False False\n False  True False  True  True False False  True False False  True False\n False  True False  True False False False  True False False  True False\n False False  True  True False  True False False False False False False\n False  True  True False False False  True False False False  True False\n  True False False  True False  True  True  True  True  True  True False\n False  True False  True False  True  True  True False  True False False\n  True False False  True False False False  True False False False False\n  True  True  True False False  True False  True  True False False False\n False  True  True False  True False False  True  True False  True False\n False  True False False  True  True False  True False False  True False\n False False  True  True False  True  True False  True False  True False\n False  True  True False False False False False False  True  True False\n False  True  True  True  True False  True  True  True  True False False\n False False False  True  True False False False  True  True  True  True\n  True  True  True False  True  True  True  True  True False False False\n False False False False False False False False False  True False  True\n False False False False False False False False False  True  True  True\n  True  True False False]\n&quot;
+     ]
+    }
+   ],
+   &quot;source&quot;: [
+    &quot;for i in range(training_steps):\n&quot;,
+    &quot;    pred, err = train(D[0], D[1])\n&quot;,
+    &quot;\n&quot;,
+    &quot;print (\&quot;Final model:\&quot;)\n&quot;,
+    &quot;print (w_1.get_value(), b_1.get_value())\n&quot;,
+    &quot;print (w_2.get_value(), b_2.get_value())\n&quot;,
+    &quot;print (\&quot;target values for D: \&quot;, D[1])\n&quot;,
+    &quot;print (\&quot;predictions on D: \&quot;, predict(D[0]))&quot;
+   ]
+  },
+  {
+   &quot;cell_type&quot;: &quot;code&quot;,
+   &quot;execution_count&quot;: 28,
+   &quot;metadata&quot;: {},
+   &quot;outputs&quot;: [
+    {
+     &quot;output_type&quot;: &quot;stream&quot;,
+     &quot;name&quot;: &quot;stdout&quot;,
+     &quot;text&quot;: [
+      &quot;1.0\n&quot;
+     ]
+    }
+   ],
+   &quot;source&quot;: [
+    &quot;# 정확도 측정 (무작위로 데이터를 넣엇기 때문에 특징을 잡기가 어려워서 정확도가 낮을듯)\n&quot;,
+    &quot;import numpy as np\n&quot;,
+    &quot;print (np.float(np.sum(D[1]==predict(D[0]))) / np.float(400))&quot;
+   ]
+  },
+  {
+   &quot;cell_type&quot;: &quot;code&quot;,
+   &quot;execution_count&quot;: null,
+   &quot;metadata&quot;: {},
+   &quot;outputs&quot;: [],
+   &quot;source&quot;: []
+  }
+ ]
+}</content><author><name></name></author><summary type="html">{ &quot;metadata&quot;: { &quot;language_info&quot;: { &quot;codemirror_mode&quot;: { &quot;name&quot;: &quot;ipython&quot;, &quot;version&quot;: 3 }, &quot;file_extension&quot;: &quot;.py&quot;, &quot;mimetype&quot;: &quot;text/x-python&quot;, &quot;name&quot;: &quot;python&quot;, &quot;nbconvert_exporter&quot;: &quot;python&quot;, &quot;pygments_lexer&quot;: &quot;ipython3&quot;, &quot;version&quot;: &quot;3.8.5&quot; }, &quot;orig_nbformat&quot;: 2, &quot;kernelspec&quot;: { &quot;name&quot;: &quot;python385jvsc74a57bd0b3ba2566441a7c06988d0923437866b63cedc61552a5af99d1f4fb67d367b25f&quot;, &quot;display_name&quot;: &quot;Python 3.8.5 64-bit (conda)&quot; } }, &quot;nbformat&quot;: 4, &quot;nbformat_minor&quot;: 2, &quot;cells&quot;: [ { &quot;cell_type&quot;: &quot;code&quot;, &quot;execution_count&quot;: 2, &quot;metadata&quot;: {}, &quot;outputs&quot;: [ { &quot;output_type&quot;: &quot;stream&quot;, &quot;name&quot;: &quot;stdout&quot;, &quot;text&quot;: [ &quot;Collecting theano\n&quot;, &quot; Downloading Theano-1.0.5.tar.gz (2.8 MB)\n&quot;, &quot;Requirement already satisfied: numpy&gt;=1.9.1 in c:\\programdata\\anaconda3\\lib\\site-packages (from theano) (1.19.2)\n&quot;, &quot;Requirement already satisfied: scipy&gt;=0.14 in c:\\programdata\\anaconda3\\lib\\site-packages (from theano) (1.5.2)\n&quot;, &quot;Requirement already satisfied: six&gt;=1.9.0 in c:\\programdata\\anaconda3\\lib\\site-packages (from theano) (1.15.0)\n&quot;, &quot;Building wheels for collected packages: theano\n&quot;, &quot; Building wheel for theano (setup.py): started\n&quot;, &quot; Building wheel for theano (setup.py): finished with status 'done'\n&quot;, &quot; Created wheel for theano: filename=Theano-1.0.5-py3-none-any.whl size=2668111 sha256=f6c4e4bb7846dec1655120669243c4f51b659b275e14cce4efd4a0f9f00de242\n&quot;, &quot; Stored in directory: c:\\users\\pc-go\\appdata\\local\\pip\\cache\\wheels\\84\\cb\\19\\235b5b10d89b4621f685112f8762681570a9fa14dc1ce904d9\n&quot;, &quot;Successfully built theano\n&quot;, &quot;Installing collected packages: theano\n&quot;, &quot;Successfully installed theano-1.0.5\n&quot;, &quot;Note: you may need to restart the kernel to use updated packages.\n&quot;, &quot;WARNING: You are using pip version 21.0.1; however, version 21.1.1 is available.\n&quot;, &quot;You should consider upgrading via the 'C:\\ProgramData\\Anaconda3\\python.exe -m pip install --upgrade pip' command.\n&quot; ] } ], &quot;source&quot;: [ &quot;pip install theano&quot; ] }, { &quot;cell_type&quot;: &quot;code&quot;, &quot;execution_count&quot;: 12, &quot;metadata&quot;: {}, &quot;outputs&quot;: [], &quot;source&quot;: [ &quot;import numpy\n&quot;, &quot;import theano\n&quot;, &quot;import theano.tensor as T&quot; ] }, { &quot;cell_type&quot;: &quot;code&quot;, &quot;execution_count&quot;: 7, &quot;metadata&quot;: {}, &quot;outputs&quot;: [], &quot;source&quot;: [ &quot;rng = numpy.random\n&quot;, &quot;\n&quot;, &quot;N = 400\n&quot;, &quot;feats = 784 #차원\n&quot;, &quot;D = (rng.randn(N, feats).astype(numpy.float32), rng.randint(size = N, low=0, high=2).astype(numpy.float32))&quot; ] }, { &quot;cell_type&quot;: &quot;code&quot;, &quot;execution_count&quot;: 8, &quot;metadata&quot;: {}, &quot;outputs&quot;: [ { &quot;output_type&quot;: &quot;execute_result&quot;, &quot;data&quot;: { &quot;text/plain&quot;: [ &quot;(array([[-0.03968759, 0.32623804, -0.2864035 , ..., 1.0145822 ,\n&quot;, &quot; -0.98714745, 0.68108976],\n&quot;, &quot; [ 0.70494425, 1.1646211 , 1.0447122 , ..., 0.11065981,\n&quot;, &quot; -0.92154187, 0.7028902 ],\n&quot;, &quot; [ 1.7221528 , 0.23708415, 1.9193072 , ..., 2.097736 ,\n&quot;, &quot; -1.3243518 , 0.21220408],\n&quot;, &quot; ...,\n&quot;, &quot; [ 0.5444983 , 0.7940225 , 0.04632351, ..., -0.8444883 ,\n&quot;, &quot; -1.1282709 , 2.1386142 ],\n&quot;, &quot; [-0.15034786, -0.29176366, 0.18123117, ..., -0.0937378 ,\n&quot;, &quot; -0.11165322, 0.17779373],\n&quot;, &quot; [-0.8927488 , -0.92266774, 0.7283412 , ..., 0.8297746 ,\n&quot;, &quot; -0.3400725 , 0.63995266]], dtype=float32),\n&quot;, &quot; array([1., 1., 0., 0., 1., 1., 0., 1., 0., 0., 0., 0., 0., 0., 1., 1., 0.,\n&quot;, &quot; 1., 1., 1., 0., 1., 1., 1., 0., 0., 0., 0., 1., 1., 1., 1., 0., 0.,\n&quot;, &quot; 1., 0., 1., 1., 0., 0., 0., 1., 1., 1., 1., 0., 0., 0., 1., 1., 0.,\n&quot;, &quot; 0., 0., 0., 1., 1., 0., 1., 0., 1., 1., 0., 1., 1., 1., 1., 1., 1.,\n&quot;, &quot; 0., 0., 0., 1., 0., 0., 0., 1., 0., 1., 1., 0., 1., 0., 1., 1., 1.,\n&quot;, &quot; 0., 1., 1., 1., 1., 1., 1., 0., 1., 0., 1., 1., 0., 0., 1., 1., 1.,\n&quot;, &quot; 0., 0., 1., 1., 0., 0., 1., 0., 0., 0., 0., 0., 1., 1., 1., 0., 0.,\n&quot;, &quot; 0., 0., 0., 0., 0., 1., 1., 0., 1., 0., 1., 0., 1., 0., 0., 0., 0.,\n&quot;, &quot; 0., 1., 1., 1., 0., 0., 0., 1., 1., 1., 0., 1., 0., 1., 1., 0., 1.,\n&quot;, &quot; 1., 0., 0., 1., 1., 1., 1., 0., 1., 0., 0., 1., 1., 1., 1., 0., 0.,\n&quot;, &quot; 0., 0., 0., 1., 0., 1., 1., 0., 1., 0., 1., 1., 1., 1., 1., 1., 0.,\n&quot;, &quot; 1., 0., 0., 0., 0., 0., 1., 0., 1., 1., 0., 0., 1., 0., 0., 1., 0.,\n&quot;, &quot; 0., 1., 0., 1., 0., 0., 0., 1., 0., 0., 1., 0., 0., 0., 1., 1., 0.,\n&quot;, &quot; 1., 0., 0., 0., 0., 0., 0., 0., 1., 1., 0., 0., 0., 1., 0., 0., 0.,\n&quot;, &quot; 1., 0., 1., 0., 0., 1., 0., 1., 1., 1., 1., 1., 1., 0., 0., 1., 0.,\n&quot;, &quot; 1., 0., 1., 1., 1., 0., 1., 0., 0., 1., 0., 0., 1., 0., 0., 0., 1.,\n&quot;, &quot; 0., 0., 0., 0., 1., 1., 1., 0., 0., 1., 0., 1., 1., 0., 0., 0., 0.,\n&quot;, &quot; 1., 1., 0., 1., 0., 0., 1., 1., 0., 1., 0., 0., 1., 0., 0., 1., 1.,\n&quot;, &quot; 0., 1., 0., 0., 1., 0., 0., 0., 1., 1., 0., 1., 1., 0., 1., 0., 1.,\n&quot;, &quot; 0., 0., 1., 1., 0., 0., 0., 0., 0., 0., 1., 1., 0., 0., 1., 1., 1.,\n&quot;, &quot; 1., 0., 1., 1., 1., 1., 0., 0., 0., 0., 0., 1., 1., 0., 0., 0., 1.,\n&quot;, &quot; 1., 1., 1., 1., 1., 1., 0., 1., 1., 1., 1., 1., 0., 0., 0., 0., 0.,\n&quot;, &quot; 0., 0., 0., 0., 0., 0., 0., 1., 0., 1., 0., 0., 0., 0., 0., 0., 0.,\n&quot;, &quot; 0., 0., 1., 1., 1., 1., 1., 0., 0.], dtype=float32))&quot; ] }, &quot;metadata&quot;: {}, &quot;execution_count&quot;: 8 } ], &quot;source&quot;: [ &quot;D\n&quot;, &quot;#가우시간분포에 따른. 400개의 레이블이 달려있다.&quot; ] }, { &quot;cell_type&quot;: &quot;code&quot;, &quot;execution_count&quot;: 16, &quot;metadata&quot;: {}, &quot;outputs&quot;: [ { &quot;output_type&quot;: &quot;stream&quot;, &quot;name&quot;: &quot;stdout&quot;, &quot;text&quot;: [ &quot;[[ 0.91193345 0.63892273 -0.71941473 ... -1.33527277 0.73837072\n 1.38924837]\n [ 0.5581504 -0.30152718 0.32769058 ... 1.17244099 -0.81116815\n 1.04825718]\n [ 1.05933354 2.05137907 -1.96551677 ... -0.74216618 -2.03028449\n 0.55809047]\n ...\n [ 0.53049583 0.02157492 -1.02954589 ... 0.774203 0.89361168\n 1.32411742]\n [ 0.53819113 -0.25902789 0.50222782 ... -1.29481319 -0.42896654\n -0.3317319 ]\n [-0.80546122 1.31027997 -0.14003127 ... -0.64395619 -1.70540192\n -0.90070639]] [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.\n 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.\n 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.\n 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.\n 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.\n 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.\n 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.\n 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.\n 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.\n 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.\n 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.\n 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.\n 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]\n[-0.18668918 -0.84287693 -0.62107179 -0.38955162 0.55726845 0.38801171\n -0.41565086 0.31710532 -0.13416397 -0.65241825 -0.82463423 -0.23421881\n 0.72658131 1.3073682 2.64901381 1.15010926 -1.01638705 -0.22045888\n 0.61185981 1.11853618 -1.33623058 0.74660065 -0.39294644 -0.78453651\n -0.39910608 0.06191575 -1.46316714 -0.08447413 -0.08251807 -0.86530487\n -0.92312007 -0.55360073 0.40336459 1.41016883 0.77803133 -0.2330329\n -0.20553976 -0.66806649 -1.24960761 -1.01886316 2.34786331 -0.66627363\n -1.51388646 0.89149262 1.80332222 1.29113601 -1.65079471 -0.13486959\n -1.02463002 -0.47626569 -0.19650702 -0.10514686 -1.01205288 1.17046906\n 0.18645894 -0.01857437 2.19904279 -0.284601 -0.01885763 -0.13486807\n 1.27402254 -0.10534138 -0.72832046 -1.25841163 -0.61727362 0.55019468\n -0.35376909 -0.17884404 -0.78279627 -0.75773709 0.38234021 0.22101313\n -0.80383725 1.32707493 0.31919838 -0.91754569 -0.34284874 0.2826746\n -0.41770645 0.47674479 0.21426539 0.72135939 2.41932669 -0.23203883\n 0.32549192 -0.99858767 -1.00270865 0.01281052 0.50507095 0.4107643\n 0.64248066 -0.3260234 0.87652222 -1.07318845 -0.0955651 -0.1059995\n 0.43294392 -2.75273846 0.08381457 -0.20769605 0.05330276 0.34260298\n 0.75050665 0.01217291 -0.88170625 -0.34603999 -0.76647721 -1.47359974\n -0.08534046 -0.50192779 1.40289497 -2.37618241 -1.40670998 0.7062895\n 0.36752632 1.9913155 0.4278721 0.57014159 -0.98087354 -1.53564191\n -0.83472914 -0.25432482 1.93663723 0.33851495 -0.17883038 -0.88782433\n -1.26227395 -0.39090793 -0.83597432 2.43509566 -1.28385385 0.67188589\n -0.30382091 -0.21858016 -0.44038565 1.96535295 0.17666942 1.57673968\n 0.93496532 -0.30029693 1.47397832 1.43872158 -0.43640247 0.5187453\n 0.86266746 0.80947124 0.25923412 0.0189863 -0.46212837 -1.33234516\n -1.68033912 -1.2579394 0.564451 -0.87452256 -0.67885468 0.02359229\n 1.77610082 1.01878578 0.05451306 0.05194913 -0.28976428 0.45124914\n 1.86150476 -0.11718844 0.78467436 0.68519158 -0.66257112 0.44038051\n -0.2678314 -0.2636233 -1.40891744 -0.37592289 0.52444636 -2.68875469\n 0.28257717 0.91719716 0.11611303 1.6835271 -1.03101234 1.18691191\n 1.27362555 0.95989182 -0.59217916 -0.1049146 1.04830654 -0.1967342\n 0.94057648 -1.29558974 0.43529339 1.51777237 0.07817532 -0.37100327\n 2.85885546 0.62178436 -0.19299101 -0.02464568 -0.26478711 -0.53034814\n 1.15452862 0.03023015 -0.18166217 0.42803472 -0.55355049 -1.06412876\n 0.76501006 0.44134338 -0.19750494 1.54293112 -0.1911823 -2.4582198\n 0.26592896 -0.82499026 1.51250465 -0.1935144 -0.73414461 0.48935829\n -1.43289387 -0.77055129 -1.39309467 -0.69066213 -0.74870051 -1.19690244\n -1.59806868 0.66631091 1.41062019 1.11965239 -0.34778778 -0.12351565\n 0.26707622 -0.08167269 0.25625628 0.10365456 -0.16546265 -1.0458382\n 0.23507325 0.0517782 -0.16110192 -0.87503303 0.37318971 -0.22448335\n -0.5880142 1.17517055 0.07055411 0.72727295 1.39790342 0.79575813\n -0.67769541 -1.00990614 0.06877186 0.41363478 -1.25689165 -0.45313471\n 0.14645274 -1.64158407 1.17344799 1.00870674 0.83086912 -1.20219302\n 1.27729154 -0.36795035 -0.37574463 -0.15076182 0.95824902 1.1403624\n 0.46554717 1.73263265 0.19278916 0.42909698 -0.37054964 1.63584331\n 0.23037314 -0.27905685 -0.56433865 -0.38486382 0.49369047 -1.39960878\n 0.14618188 0.29313808 -0.93955091 -0.06561327 -0.09969509 -0.29628194\n 0.14064006 -0.01432175 -0.43597951 -0.52217526 0.56937455 -1.1013863\n -1.31498826 -0.01736189 -1.73708197 -0.80822594 0.22389792 -0.44893354\n -0.02526708 -0.01471571 -1.21739481 0.20709959 -0.06014108 1.64327828] 0.0\n&quot; ] } ], &quot;source&quot;: [ &quot;#3층으로 이루어진 다층퍼셉트론의 파라미터 지금은 GPU에 있다\n&quot;, &quot;training_steps = 10000\n&quot;, &quot;x = T.matrix('x')\n&quot;, &quot;y = T.vector('y')\n&quot;, &quot;w_1 = theano.shared(rng.randn(784, 300), name = 'w1')\n&quot;, &quot;b_1 = theano.shared(numpy.zeros(300,), name = 'b1') # 입력층784-은닉층300 사이 가중치\n&quot;, &quot;w_2 = theano.shared(rng.randn(300,), name = 'w2')\n&quot;, &quot;b_2 = theano.shared(0., name = 'b2') # 은닉층-출력층 사이 가중치\n&quot;, &quot;\n&quot;, &quot;#get_value()란, GPU VRAM에 있는 데이터를 CPU RAM으로 가져와서 비주얼해줌\n&quot;, &quot;print (w_1.get_value(), b_1.get_value())\n&quot;, &quot;print (w_2.get_value(), b_2.get_value())&quot; ] }, { &quot;cell_type&quot;: &quot;code&quot;, &quot;execution_count&quot;: 22, &quot;metadata&quot;: {}, &quot;outputs&quot;: [], &quot;source&quot;: [ &quot;# 모델의 출력값을 출력\n&quot;, &quot;p_1 = T.nnet.sigmoid(T.dot(T.nnet.sigmoid(T.dot(x, w_1)+b_1), w_2)+b_2)\n&quot;, &quot;prediction = p_1 &gt; 0.5 # 0또는 1일텐데, 0.5보다크면 1로 분류하라\n&quot;, &quot;xent = -y*T.log(p_1) - (1-y)*T.log(1-p_1) #크로스엔트로피 정의\n&quot;, &quot;cost = xent.mean() + 0.01 * ((w_1**2).sum()+ (w_2**2).sum() + (b_1**2).sum() + (b_2**2).sum()) #에러값정의 모델의 파라미터값이 커지지 못하도록 미분\n&quot;, &quot;gw_1, gb_1, gw_2, gb_2 = T.grad(cost, [w_1, b_1, w_2, b_2])&quot; ] }, { &quot;cell_type&quot;: &quot;code&quot;, &quot;execution_count&quot;: 23, &quot;metadata&quot;: {}, &quot;outputs&quot;: [ { &quot;output_type&quot;: &quot;stream&quot;, &quot;name&quot;: &quot;stderr&quot;, &quot;text&quot;: [ &quot;:1: UserWarning: The parameter 'updates' of theano.function() expects an OrderedDict, got . Using a standard dictionary here results in non-deterministic behavior. You should use an OrderedDict if you are using Python 2.7 (theano.compat.OrderedDict for older python), or use a list of (shared, update) pairs. Do not just convert your dictionary to this type before the call as the conversion will still be non-deterministic.\n train = theano.function(inputs=[x,y],\n&quot; ] } ], &quot;source&quot;: [ &quot;train = theano.function(inputs=[x,y],\r\n&quot;, &quot; outputs= [prediction, xent],\r\n&quot;, &quot; updates= {w_1 : w_1-0.1*gw_1, b_1 : b_1-0.1*gb_1,\r\n&quot;, &quot; w_2: w_2-0.1*gw_2, b_2 : b_2-0.1*gb_2}) # GPU에서 CPU로 가져오기 update / running rate 0.1 학습률\r\n&quot;, &quot;predict = theano.function(inputs=[x], outputs=prediction) # 예측함수&quot; ] }, { &quot;cell_type&quot;: &quot;code&quot;, &quot;execution_count&quot;: 26, &quot;metadata&quot;: {}, &quot;outputs&quot;: [ { &quot;output_type&quot;: &quot;stream&quot;, &quot;name&quot;: &quot;stdout&quot;, &quot;text&quot;: [ &quot;Final model:\n[[-0.00250912 -0.00446023 0.00137025 ... -0.00192448 0.00369112\n 0.00242716]\n [-0.00353448 -0.00635199 0.00192308 ... -0.00270506 0.00523063\n 0.00341786]\n [ 0.00621797 0.01109977 -0.00339112 ... 0.00476536 -0.0091678\n -0.00601409]\n ...\n [ 0.00530576 0.00952523 -0.00288791 ... 0.00406158 -0.00784736\n -0.00513087]\n [ 0.00055254 0.00090462 -0.00031055 ... 0.00043094 -0.0007767\n -0.00053588]\n [ 0.00455305 0.00811802 -0.00248432 ... 0.00349036 -0.00670839\n -0.00440396]] [ 1.80210137e-04 9.82381217e-04 -2.85690117e-05 9.33848281e-04\n -1.21721973e-06 -2.52283786e-05 1.00483858e-03 -6.76835053e-04\n 1.14928243e-03 2.69155924e-04 2.99313868e-04 1.36353004e-03\n -3.72283151e-04 -8.62078821e-04 -1.63798854e-03 -1.38307546e-03\n 9.50266902e-04 -2.91169525e-07 -5.00489039e-05 -6.53918521e-04\n 8.01814238e-04 -4.52912678e-06 1.71377561e-03 1.07201084e-06\n 8.41103211e-05 -1.99142946e-04 2.10469734e-04 -7.71616702e-06\n 2.11799075e-07 1.55472370e-04 8.76165559e-04 1.82409072e-04\n 5.97624263e-07 -3.51530056e-05 -1.12641638e-03 2.89698106e-09\n 2.86257336e-05 1.36912067e-03 3.94124833e-04 2.03962877e-04\n -1.92956944e-03 3.56670151e-05 1.35528283e-03 -9.36589580e-04\n -7.37802423e-04 -8.34978625e-05 1.94327191e-04 -3.10773785e-05\n 1.72720180e-03 2.17846076e-05 -8.02093930e-07 7.84529869e-04\n 9.15062686e-04 -1.01160191e-03 -2.72917069e-04 1.57518570e-04\n -5.66054379e-04 -1.47934806e-07 3.06328719e-07 -3.10769675e-08\n -1.27405065e-03 -6.59201049e-04 5.05067695e-04 2.36801923e-04\n 1.14799714e-05 -5.14885841e-07 -5.05005342e-06 3.54324406e-04\n 5.38750796e-05 4.38819923e-06 -1.95690785e-04 1.64088395e-04\n 6.21208235e-04 -1.20844032e-04 1.01348351e-03 1.32503810e-04\n 4.40501171e-08 -1.09750797e-03 -6.56457749e-05 2.11119950e-08\n 2.95631385e-04 -1.95230313e-05 -4.02609987e-04 -1.09042039e-04\n 2.47370744e-05 2.79844325e-04 3.98237975e-05 1.08865431e-04\n -9.07488957e-04 -2.49908051e-05 1.48145714e-04 -9.02600396e-05\n -1.87204897e-03 4.77769829e-06 8.46982792e-06 2.41766033e-04\n -6.28493828e-05 1.89181080e-03 -1.66088919e-05 5.49870039e-05\n -4.68992389e-04 -1.52800918e-06 -5.36796608e-05 6.65867298e-04\n 1.48077034e-03 1.74396094e-05 1.10583937e-03 1.50234348e-05\n 3.27657053e-06 -1.05521715e-04 -1.99920906e-03 1.06834282e-03\n 1.17120475e-03 1.47488576e-07 -5.37265768e-05 -8.00931320e-04\n -1.33267796e-07 -2.79979139e-05 1.08642807e-06 1.31858895e-03\n -1.35554500e-07 -1.68771464e-06 -1.18771631e-03 -4.33068577e-05\n 2.10104096e-07 5.47466014e-04 1.16299684e-04 -2.55085821e-08\n 6.02385164e-04 -1.74430578e-03 2.03880940e-04 -5.17474858e-05\n 7.85228831e-04 -4.83644126e-07 1.75705837e-06 -9.77557931e-04\n -2.80569155e-05 -3.87219623e-04 1.17611231e-06 3.44215253e-04\n -5.55072702e-04 -2.16480263e-05 6.27786588e-04 -5.49738262e-04\n -6.90947400e-04 -1.94703642e-04 7.04456030e-06 -1.21107690e-05\n 1.36727862e-04 2.36736995e-04 3.58242288e-05 1.18202231e-07\n -4.55464243e-04 6.02961878e-05 -1.21296699e-05 -3.73175145e-04\n -1.69673372e-04 -1.42159542e-03 9.27543116e-06 -6.58427506e-05\n -1.17406536e-05 5.07911695e-04 -1.33036436e-03 2.04375254e-05\n -2.99724610e-04 -7.41522608e-07 -3.16017042e-06 -3.07527800e-04\n 5.92644725e-04 9.04179692e-04 1.88846577e-03 4.77726026e-05\n -4.78034484e-04 1.90499775e-03 -2.81480861e-04 -5.38375821e-06\n -3.61450645e-08 -7.79055024e-04 -1.45798936e-07 -3.52234823e-04\n -6.64323804e-04 -1.67700492e-03 2.16401959e-05 2.35490476e-04\n -1.13317204e-04 1.45058173e-07 -7.68512168e-04 9.03677038e-04\n -1.40931972e-03 -1.33582845e-04 2.17667685e-05 8.17414317e-04\n -4.16468186e-04 -5.99800242e-04 2.61025405e-04 -1.41835720e-06\n 3.13918461e-04 -8.96468662e-05 -6.83145685e-04 -3.39331705e-04\n 5.25999877e-05 -2.05424606e-05 1.10635376e-04 8.43792586e-04\n -2.56279658e-05 -1.02278316e-03 -8.07593765e-04 -7.13394505e-06\n 1.43690208e-04 1.39782814e-04 -8.48845920e-04 1.86111051e-04\n -1.31140563e-03 -1.44294661e-05 5.22363843e-04 -2.01075055e-07\n 1.41263084e-03 -2.32532840e-05 1.10217676e-04 5.62854159e-04\n -5.30374857e-08 1.07300472e-03 2.42708790e-06 -1.27630597e-04\n -1.19216404e-03 -3.69731556e-04 5.64997977e-05 3.57085796e-05\n 3.80153667e-04 9.35469675e-05 -6.61463611e-04 -4.32730480e-04\n -3.87306767e-04 3.65434302e-04 -1.35149477e-04 1.20427004e-04\n 5.16197468e-05 1.60721282e-04 -1.65297607e-04 3.81030726e-05\n 1.11880413e-03 -8.92423556e-05 -5.45442150e-08 -2.75407364e-05\n -1.34348307e-06 5.75088422e-06 4.06601874e-06 3.66103440e-06\n -6.10186399e-08 -1.25229066e-05 1.29949856e-04 2.74221201e-06\n -2.55933407e-06 1.37882551e-03 -1.03714385e-03 -6.38852862e-04\n -1.17832682e-03 7.67590476e-04 -1.04790422e-03 4.25836009e-04\n 8.67545109e-04 4.14872433e-05 1.48795007e-07 -2.75076873e-05\n -6.00657873e-04 -5.15878478e-04 -1.78826035e-04 -8.94073133e-04\n 5.81810395e-08 -1.04094114e-03 1.96013374e-04 5.01848394e-05\n 7.62899208e-04 -8.19656090e-05 -8.73451911e-05 6.84064819e-04\n -5.52927778e-04 -5.41307475e-05 9.71008392e-09 -6.95614142e-04\n 5.05844539e-05 8.16179916e-05 -2.13928902e-04 -1.07902931e-04\n -2.15391320e-06 5.94781058e-04 5.29085791e-06 3.72115643e-04\n 1.24476736e-03 2.63867038e-04 1.93223577e-03 5.88770003e-05\n 2.51231824e-05 9.48821914e-04 -1.53902225e-03 -7.09096134e-06\n 5.22262696e-05 8.10187346e-05 -5.65805693e-04 -1.63036068e-04]\n[-0.13881441 -0.24851605 0.07566882 -0.24411576 0.02988222 0.07269798\n -0.2505078 0.21817896 -0.26272175 -0.15894757 -0.1647828 -0.27925825\n 0.17757301 0.23741808 0.29841796 0.28075859 -0.24561947 0.02232241\n 0.09079839 0.21558276 -0.2313931 0.04271705 -0.30328681 -0.02889975\n -0.10764786 0.14363306 -0.14626281 0.0501069 -0.02122587 -0.13210151\n -0.23870171 -0.13938183 -0.02536066 0.08092137 0.26092295 -0.0176506\n -0.07564388 -0.27966844 -0.18099571 -0.14472231 0.31677101 -0.08123056\n -0.27865129 0.24443899 0.2248327 0.10746046 -0.14238211 0.0777543\n -0.30414859 -0.06928222 0.02709656 -0.22963525 -0.2423752 0.2511734\n 0.15976966 -0.13268207 0.20506889 -0.01050307 -0.02242134 -0.00140961\n 0.27262405 0.21618607 -0.19708686 -0.15220272 -0.05656793 0.02468901\n 0.04410983 -0.17452919 -0.09294368 -0.0422485 0.14278999 -0.13451296\n -0.21170575 0.12150005 -0.25126732 -0.12521977 0.00205991 0.25852636\n 0.09925685 0.00099001 -0.16409099 0.06696972 0.18239228 0.11741205\n -0.07216692 -0.16106118 -0.08419736 -0.11727611 0.24173869 0.07247683\n -0.12998223 0.11026813 0.31328263 -0.04331841 -0.05148211 -0.1532742\n 0.09784488 -0.31441786 0.06361584 -0.09356919 0.19219439 0.03163527\n 0.09290595 -0.21687185 -0.28766348 -0.06453471 -0.25915 -0.06155623\n -0.03882682 0.11613758 0.32091674 -0.25599906 -0.26449337 0.00940766\n 0.09293238 0.23137514 -0.01266732 0.07517744 -0.02899344 -0.27592425\n -0.01246968 0.03245753 0.26588578 0.0866049 -0.02120304 -0.20264496\n -0.1198854 -0.01697154 -0.20945945 0.30531119 -0.14470284 0.09179621\n -0.22970686 0.02439101 -0.03272524 0.24815574 0.07522864 0.17997644\n -0.02955507 -0.17281416 0.20368509 0.06921611 -0.21248088 0.20300689\n 0.21975095 0.14254731 -0.04866402 0.05759529 -0.12654022 -0.15218847\n -0.08134691 -0.01984071 0.1902714 -0.0964467 0.05762385 0.17771841\n 0.13610525 0.28354231 -0.05294341 0.09935485 0.05703994 -0.19746854\n 0.27687485 -0.0678814 0.16493181 0.02663069 0.03850465 0.16637876\n -0.20827995 -0.24135718 -0.31421433 -0.08935301 0.1934605 -0.31521816\n 0.16145241 0.04495511 -0.00164568 0.22914499 -0.00906674 0.17424944\n 0.21676837 0.30097677 -0.06913468 -0.15191736 0.11892461 0.01150788\n 0.22805635 -0.2413101 0.28266005 0.125632 -0.06926408 -0.23295965\n 0.18451835 0.20921907 -0.1573036 0.03104212 -0.1674744 0.11001933\n 0.21888444 0.17204617 -0.09221618 0.06806603 -0.11790754 -0.23556785\n 0.07306657 0.25215118 0.23204684 0.04892423 -0.12866025 -0.12747872\n 0.23613291 -0.14032689 0.27545584 0.06085061 -0.19938816 0.02115924\n -0.28282794 0.07081992 -0.1177591 -0.20459564 0.01877627 -0.25639449\n -0.03569688 0.1237346 0.2662399 0.1771565 -0.09440673 -0.08126141\n -0.17877506 -0.11151098 0.21644367 0.18695703 0.17999011 -0.17637867\n 0.1261223 -0.12128747 -0.09164908 -0.1335805 0.1349171 -0.08299479\n -0.26022463 0.10985452 -0.00252328 0.07477953 0.0306205 -0.04577449\n -0.04131809 -0.04008057 -0.01597525 0.05820192 -0.124408 -0.03692491\n 0.03629847 -0.28037821 0.25339746 0.21384497 0.26513572 -0.22788953\n 0.25432455 -0.18585833 -0.23787422 -0.08532806 0.01021225 0.07475056\n 0.20932279 0.19860247 0.13852761 0.24047614 -0.01878973 0.25372542\n -0.14279694 -0.09080622 -0.22740184 0.10680389 0.10907527 -0.21891534\n 0.20341292 0.09316087 -0.01780466 0.22026635 -0.09104243 -0.1065813\n 0.14714161 0.11700263 0.03462749 -0.20853976 -0.04464864 -0.17747381\n -0.27029921 -0.15788189 -0.31686121 -0.095694 -0.07252727 -0.24548785\n 0.2917659 0.0488352 -0.09200077 -0.10632164 0.20503777 0.13429535] 8.875979862972325e-05\ntarget values for D: [1. 1. 0. 0. 1. 1. 0. 1. 0. 0. 0. 0. 0. 0. 1. 1. 0. 1. 1. 1. 0. 1. 1. 1.\n 0. 0. 0. 0. 1. 1. 1. 1. 0. 0. 1. 0. 1. 1. 0. 0. 0. 1. 1. 1. 1. 0. 0. 0.\n 1. 1. 0. 0. 0. 0. 1. 1. 0. 1. 0. 1. 1. 0. 1. 1. 1. 1. 1. 1. 0. 0. 0. 1.\n 0. 0. 0. 1. 0. 1. 1. 0. 1. 0. 1. 1. 1. 0. 1. 1. 1. 1. 1. 1. 0. 1. 0. 1.\n 1. 0. 0. 1. 1. 1. 0. 0. 1. 1. 0. 0. 1. 0. 0. 0. 0. 0. 1. 1. 1. 0. 0. 0.\n 0. 0. 0. 0. 1. 1. 0. 1. 0. 1. 0. 1. 0. 0. 0. 0. 0. 1. 1. 1. 0. 0. 0. 1.\n 1. 1. 0. 1. 0. 1. 1. 0. 1. 1. 0. 0. 1. 1. 1. 1. 0. 1. 0. 0. 1. 1. 1. 1.\n 0. 0. 0. 0. 0. 1. 0. 1. 1. 0. 1. 0. 1. 1. 1. 1. 1. 1. 0. 1. 0. 0. 0. 0.\n 0. 1. 0. 1. 1. 0. 0. 1. 0. 0. 1. 0. 0. 1. 0. 1. 0. 0. 0. 1. 0. 0. 1. 0.\n 0. 0. 1. 1. 0. 1. 0. 0. 0. 0. 0. 0. 0. 1. 1. 0. 0. 0. 1. 0. 0. 0. 1. 0.\n 1. 0. 0. 1. 0. 1. 1. 1. 1. 1. 1. 0. 0. 1. 0. 1. 0. 1. 1. 1. 0. 1. 0. 0.\n 1. 0. 0. 1. 0. 0. 0. 1. 0. 0. 0. 0. 1. 1. 1. 0. 0. 1. 0. 1. 1. 0. 0. 0.\n 0. 1. 1. 0. 1. 0. 0. 1. 1. 0. 1. 0. 0. 1. 0. 0. 1. 1. 0. 1. 0. 0. 1. 0.\n 0. 0. 1. 1. 0. 1. 1. 0. 1. 0. 1. 0. 0. 1. 1. 0. 0. 0. 0. 0. 0. 1. 1. 0.\n 0. 1. 1. 1. 1. 0. 1. 1. 1. 1. 0. 0. 0. 0. 0. 1. 1. 0. 0. 0. 1. 1. 1. 1.\n 1. 1. 1. 0. 1. 1. 1. 1. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 1.\n 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 1. 1. 1. 1. 0. 0.]\npredictions on D: [ True True False False True True False True False False False False\n False False True True False True True True False True True True\n False False False False True True True True False False True False\n True True False False False True True True True False False False\n True True False False False False True True False True False True\n True False True True True True True True False False False True\n False False False True False True True False True False True True\n True False True True True True True True False True False True\n True False False True True True False False True True False False\n True False False False False False True True True False False False\n False False False False True True False True False True False True\n False False False False False True True True False False False True\n True True False True False True True False True True False False\n True True True True False True False False True True True True\n False False False False False True False True True False True False\n True True True True True True False True False False False False\n False True False True True False False True False False True False\n False True False True False False False True False False True False\n False False True True False True False False False False False False\n False True True False False False True False False False True False\n True False False True False True True True True True True False\n False True False True False True True True False True False False\n True False False True False False False True False False False False\n True True True False False True False True True False False False\n False True True False True False False True True False True False\n False True False False True True False True False False True False\n False False True True False True True False True False True False\n False True True False False False False False False True True False\n False True True True True False True True True True False False\n False False False True True False False False True True True True\n True True True False True True True True True False False False\n False False False False False False False False False True False True\n False False False False False False False False False True True True\n True True False False]\n&quot; ] } ], &quot;source&quot;: [ &quot;for i in range(training_steps):\n&quot;, &quot; pred, err = train(D[0], D[1])\n&quot;, &quot;\n&quot;, &quot;print (\&quot;Final model:\&quot;)\n&quot;, &quot;print (w_1.get_value(), b_1.get_value())\n&quot;, &quot;print (w_2.get_value(), b_2.get_value())\n&quot;, &quot;print (\&quot;target values for D: \&quot;, D[1])\n&quot;, &quot;print (\&quot;predictions on D: \&quot;, predict(D[0]))&quot; ] }, { &quot;cell_type&quot;: &quot;code&quot;, &quot;execution_count&quot;: 28, &quot;metadata&quot;: {}, &quot;outputs&quot;: [ { &quot;output_type&quot;: &quot;stream&quot;, &quot;name&quot;: &quot;stdout&quot;, &quot;text&quot;: [ &quot;1.0\n&quot; ] } ], &quot;source&quot;: [ &quot;# 정확도 측정 (무작위로 데이터를 넣엇기 때문에 특징을 잡기가 어려워서 정확도가 낮을듯)\n&quot;, &quot;import numpy as np\n&quot;, &quot;print (np.float(np.sum(D[1]==predict(D[0]))) / np.float(400))&quot; ] }, { &quot;cell_type&quot;: &quot;code&quot;, &quot;execution_count&quot;: null, &quot;metadata&quot;: {}, &quot;outputs&quot;: [], &quot;source&quot;: [] } ] }</summary></entry><entry><title type="html">GitHub Frofile 꾸미기</title><link href="https://egeg1212.github.io/Git_frofile" rel="alternate" type="text/html" title="GitHub Frofile 꾸미기" /><published>2021-05-18T01:40:00+09:00</published><updated>2021-05-18T01:40:00+09:00</updated><id>https://egeg1212.github.io/Git_frofile</id><content type="html" xml:base="https://egeg1212.github.io/Git_frofile">&lt;p&gt;깃허브 프로필 꾸미기
+REFERENCE
+&lt;a href=&quot;https://github.com/anuraghazra/github-readme-stats/blob/master/docs/readme_kr.md&quot;&gt;https://github.com/anuraghazra/github-readme-stats/blob/master/docs/readme_kr.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;이스터에그
+&lt;a href=&quot;https://blog.naver.com/zzang9ha/222042586337&quot;&gt;https://blog.naver.com/zzang9ha/222042586337&lt;/a&gt;
+&lt;a href=&quot;https://github.com/kyechan99/capsule-render&quot;&gt;https://github.com/kyechan99/capsule-render&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;참조 
+조길상님의 깃헙 &lt;a href=&quot;https://github.com/jogilsang&quot;&gt;https://github.com/jogilsang&lt;/a&gt;&lt;/p&gt;</content><author><name>egeg1212</name></author><category term="github" /><summary type="html">깃허브 프로필 꾸미기 REFERENCE https://github.com/anuraghazra/github-readme-stats/blob/master/docs/readme_kr.md</summary></entry><entry><title type="html">인공지능을 위한 머신러닝 알고리즘</title><link href="https://egeg1212.github.io/algorithm_ml" rel="alternate" type="text/html" title="인공지능을 위한 머신러닝 알고리즘" /><published>2021-05-11T01:40:00+09:00</published><updated>2021-05-11T01:40:00+09:00</updated><id>https://egeg1212.github.io/algorithm_ml</id><content type="html" xml:base="https://egeg1212.github.io/algorithm_ml">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Algorithm LIST &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm_comprehension&quot;&gt;컴퓨터 알고리즘 이해&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm_beginning&quot;&gt;컴퓨터 알고리즘 초급&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm_intermediate&quot;&gt;컴퓨터 알고리즘 중급&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm_pythoncoding&quot;&gt;기초 알고리즘과 파이썬코딩&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algorithm_ml&quot;&gt;인공지능을 위한 머신러닝 알고리즘&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./blockchain&quot;&gt;블록체인 기술적 특징과 비즈니스 이해&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;인공지능을-위한-머신러닝-알고리즘&quot;&gt;인공지능을 위한 머신러닝 알고리즘&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;머신러닝 그래도 구면이라 다행이다ㅎㅎ &lt;br /&gt;알고리즘은..계속 듣다보면 언젠간 알게되겠지.. 하하하&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강좌정보&lt;/strong&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;&lt;a href=&quot;https://tacademy.skplanet.com/live/player/onlineLectureDetail.action?seq=103&quot;&gt;Tacademy강좌링크&lt;/a&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습내용&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;인공지능의 개념을 이해하여 머신러닝과 딥러닝을 알 수 있습니다.&lt;br /&gt;머신러닝과 딥러닝의 기본 개념과 적용 사례, 알고리즘 실습을 통해 이해할 수 있습니다.&lt;br /&gt;지도학습과 비지도 학습의 이론과 알고리즘을 이해할 수 있습니다.&lt;br /&gt;Weka와 Theano및 Keras를 통한 실습으로 머신러닝, 딥러닝 알고리즘을 구현할 수 있습니다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강사&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;김경민&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습기간&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;2021.05.10~2021.05.22 + 평가&lt;strong&gt;이수완료&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습시간&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;strong&gt;07:01:42&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강의목록&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[1강] 머신러닝 개요&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[2강] 선형 회귀 모델&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[3강] 로지스틱 회귀 모델&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[4강] 결정 트리&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[5강] 서포트 벡터 머신&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[6강] 신경망&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[7강] 역전파&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[8강] 비지도 학습&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[9강] 컨볼루션 신경망&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[10강] 재현 신경망&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[11강] 메모리 네트워크&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[12강] 딥러닝 응용사례&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[13강] Weka를 이용한 머신러닝 실습&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[14강] Theano를 통한 머신러닝 구현&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[15강] Keras를 통한 딥러닝 구현 및 실습&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;GitHub&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;None&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h1 id=&quot;1강-머신러닝-개요&quot;&gt;[1강] 머신러닝 개요&lt;/h1&gt;
+
+&lt;h3 id=&quot;인공지능과-머신러닝&quot;&gt;인공지능과 머신러닝&lt;/h3&gt;
+
+&lt;p&gt;머신러닝은 인공지능을 구현하기 위한 하나의 방법
+지식을 구현하기 위한 두 가지 대립적 방법&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;지식공학(합리주의자/이성주의자): 지식을 사람이 직접 컴퓨터에게 제공&lt;/li&gt;
+  &lt;li&gt;머신러닝(경험주의자): 컴퓨터가 데이터로부터 지식을 직접 학습(현재의 딥러닝)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;머신러닝-알고리즘의-분류&quot;&gt;머신러닝 알고리즘의 분류&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;지도학습(Supervised Learnig): 학습 데이터마다 레이블을 가지고 있음&lt;/strong&gt;
+분류(Classification):이산적(Discrete)일때
+회귀(regression):연속적(Continuous)일때
+추정(Estimation):확률일때
+&lt;strong&gt;특징1&lt;/strong&gt; 딥러닝이 대표적인 예
+&lt;strong&gt;특징2&lt;/strong&gt; 사용할 수 있는 데이터에 한계가 있음
+&lt;strong&gt;특징3&lt;/strong&gt; 데이터를 생성하는데 비용이 많이 듦&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;비지도학습(Unsupervised Learning): 학습 데이터마다 레이블을 가지고 있지 않음&lt;/strong&gt;
+입력만 있고 출력은 없는 상태.
+클러스터링이 주로 사용됨
+지도학습에 비해서 학습하기 어려움
+유튜브 추천
+비디오 항목 자동 분류기&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;준지도학습(Semi-Supervised Learning): 학습 데이터가 약간의 레이블을 가지고 있음&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;강화학습(Reinforcement Learning): 최종 출력이 바로 주어지지 않고 시간이 지나서 주어지는 경우&lt;/strong&gt;
+바둑: 승/패의 결과
+게임, 미로찾기
+대화-상점에서 주문, 고객상담 등..
+좋은대학에 입학하기 위한 전략은?
+축구를 잘하는 로봇을 만들려면?&lt;/p&gt;
+
+&lt;h3 id=&quot;머신러닝의-구성요소&quot;&gt;머신러닝의 구성요소&lt;/h3&gt;
+
+&lt;p&gt;데이터준비: 훈련/검증/테스트 데이터 집합으로 분리
+모델 표현: 기호/신경망/유추/베이지안/유전 기반 알고리즘 존재
+모델 평가 방법: 정확도/에러제곱/우도 등 각 상황에 맞는 평가 방법 선택&lt;/p&gt;
+
+&lt;h1 id=&quot;2강-선형-회귀-모델&quot;&gt;[2강] 선형 회귀 모델&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;선형회귀모델&lt;/strong&gt;
+한 개의 종속 변수와 다수의 설명 변수들 사이의 관계를 선형 방정식으로 모델링
+계단함수를 사용하여 선형문제를 해결한다.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;선형 문제로는 풀리지 않는 문제들&lt;/strong&gt;
+종속변수와 설명변수 사이 비선형 관계 존재&lt;/p&gt;
+
+&lt;h1 id=&quot;3강-로지스틱-회귀-모델&quot;&gt;[3강] 로지스틱 회귀 모델&lt;/h1&gt;
+
+&lt;h3 id=&quot;로지logit함수&quot;&gt;로지(logit)함수&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;오즈(odds)&lt;/strong&gt;
+어떠한 사건의 확률이 p일 때, 그 사건의 오즈는
+\(odds = p / (1-p)\)
+&lt;strong&gt;로짓은 오즈의 자연로그&lt;/strong&gt;
+\(logit(p)=In(odds)=In(p/(1-p))\)&lt;/p&gt;
+
+&lt;h3 id=&quot;로지스틱-회귀-모델&quot;&gt;로지스틱 회귀 모델&lt;/h3&gt;
+
+&lt;p&gt;(시그모이드함수) 0 또는 1
+오즈의 로그(로짓)은 설명변수 x와 선형적인 관계
+일반적 선형 회귀 문제처럼 접근 가능
+종속변수 p와 X는 비선형 관계&lt;/p&gt;
+
+&lt;h3 id=&quot;로지스틱-회귀-모델의-파라미터-추정&quot;&gt;로지스틱 회귀 모델의 파라미터 추정&lt;/h3&gt;
+
+&lt;p&gt;우도함수 사용
+ex) 동전 던지기 문제&lt;/p&gt;
+
+&lt;h1 id=&quot;4강-결정-트리&quot;&gt;[4강] 결정 트리&lt;/h1&gt;
+
+&lt;h3 id=&quot;의사-결정-트리와-분류-문제&quot;&gt;의사 결정 트리와 분류 문제&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;의사결정 트리는 구조의 분류기&lt;/strong&gt;
+노드: 단일 특성에 대해 데이터를 테스트
+말단 노드: 클래스를 나타냄(데이터의 개수)
+엣지: 하나의 특성 값을 분류
+경로: 최종 분류 결정을 하기 위한 룰들의 논리합&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;분류(classification)&lt;/strong&gt;
+특성 값, 클래스 정보를 학습한 뒤, 새롭게 주어지는 테스트 데이터에 특성 값만으로 클래스를 예측하는것
+ex) 날씨 정보를 바탕으로 상대방의 데이트 허락 Yes or No&lt;/p&gt;
+
+&lt;h3 id=&quot;결정-트리-구축-원칙&quot;&gt;결정 트리 구축 원칙&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;정보 획득량은 결정 트리 구축 과정에서 테스트할 후보 특성의 순서를 결정할 때 사용&lt;/strong&gt;
+&lt;strong&gt;각 노드에서 테스트할 특성 선택&lt;/strong&gt; : 분류할 떄 가장 유용한 특성 순서대로 선택
+&lt;strong&gt;정보 획득량&lt;/strong&gt; : 각 특성들이 훈련 예제들을 얼만큼 잘 분류할 수 있는가를 측정
+&lt;strong&gt;엔트로피&lt;/strong&gt; : 확률 변수의 불확실성을 수치로 나타냄
+&lt;strong&gt;정보 획득량&lt;/strong&gt; : 엔트로피(불확시리성)의 감소량&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;어떤 노드가 먼저 선택되어야할까?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;시간 특성 값&lt;/strong&gt;을 알 때가, 장소 특성 값을 알 때보다 더 많은 정보를 줌&lt;/li&gt;
+  &lt;li&gt;시간 특성 값을 장소 특성 값보다 먼저 테스트 해야함&lt;/li&gt;
+  &lt;li&gt;이와 같이, 다른 특성들에 대해서 정복 획득량을 계산&lt;/li&gt;
+  &lt;li&gt;결정 트리의 각 노드에서 가장 큰 정보 획득량을 갖는 특성을 선택&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;얼마나 노드를 만들어야 할까?(Stopping rule)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;모든 특성들이 트리의 경로에 모두 포함되어 있는 경우&lt;/li&gt;
+  &lt;li&gt;말단 노드와 연관되어 있는 모든 훈련 예제들이 같은 클래스에 해당하는 경우
+&lt;strong&gt;즉, 엔트로피가 0일 때&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;가장 적합한 트리는?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;모델을 구축하기 위해 ‘bias’가 필요
+ex) 크기가 가장 작은 트리를 선호, 또는 깊이가 가장 높은 트리, 노드 갯수가 가장 많은 트리&lt;/li&gt;
+  &lt;li&gt;어떠한 트리가 새로운 데이터를 가장 잘 분류할 수 있을까?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Occam의 면도날&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;면도날은 필요하지 않은 가설은 잘라내 버린다는 비유&lt;/li&gt;
+  &lt;li&gt;데이터의 특성과 부합하는 가장 간단한 가설을 선호&lt;/li&gt;
+  &lt;li&gt;모든 것이 똑같은 조건일 때, 가장 쉬운 설명이 가장 옳은 것&lt;/li&gt;
+  &lt;li&gt;과학자의 가설 선호도&lt;/li&gt;
+  &lt;li&gt;많은 데이터를 설명할 수 있으면서 가장 간단한 가설을 선택
+ex) F=ma
+&lt;strong&gt;결정 트리는 데이터의 특성과 부합하면서도 가능한 가장 작은 트리여야 함.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;결정 트리 분류의 특징&lt;/strong&gt;
+&lt;strong&gt;장점&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;다른 분류 방법에 비해서 상대적으로 빠름(계산량 적음)&lt;/li&gt;
+  &lt;li&gt;간단하고 모델 구축 원리를 이해하기 쉬움&lt;/li&gt;
+  &lt;li&gt;모델의 분류 룰(rule)을 사람이 직관적으로 이해하기 쉬움(어느 특성이 분류에 가장 중요한지 명확히 나타냄)&lt;/li&gt;
+  &lt;li&gt;다른 모델들에 비해서 더 좋은 성능이 나타날 때가 있음
+&lt;strong&gt;단점&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;연속적인 특성 값을 갖는 데이터에 적합하지 않음&lt;/li&gt;
+  &lt;li&gt;클래스의 개수가 많고 데이터가 적을 때 성능이 좋지 않음&lt;/li&gt;
+  &lt;li&gt;훈련과정에서 계산량이 많음&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;bagging&quot;&gt;Bagging&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Bagging이란&lt;/strong&gt; &lt;strong&gt;b&lt;/strong&gt;ootstrap &lt;strong&gt;agg&lt;/strong&gt;regat&lt;strong&gt;ing&lt;/strong&gt;
+다수의 분류기를 결합하는 앙상블 방법 중 하나(주로 결정 트리 분류기에 많이 쓰임)
+k개의 bootstrap 샘플 $X_1…_k$를 훈련시켜 얻은 k개의 분류기를 투표, 평균 등의 방법을 사용하여 결합.
+많은 데이터로부터 더 많은 특징(feature)을 얻을 수 있음.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Bootstrap&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;데이터의 개수가 부족할 때 사용할 수 있음&lt;/li&gt;
+  &lt;li&gt;값들을 사용하여 표준 편차 또는 확신 구간 등 설정&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;5강-서포트-벡터-머신-support-vectors&quot;&gt;[5강] 서포트 벡터 머신 support vectors&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;초평면이란?&lt;/strong&gt;
+데이터 임베딩 공간에서 한 차원 낮은 부분 공간(subspace)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;최적의 초평면의 조건&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;초평면과 결정영역 근처에 있는 ‘분류하기 애매한’ 데이터의 거리가 최대가 되어야 함&lt;/li&gt;
+  &lt;li&gt;직관적인 이해: 만약 결정 영역 근처에 데이터가 없어야함&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;결정 영역의 초평면을 둘러싸고 있는 마진(margin)을 최대화시킴 (기능적 마진의 합)
+서포트 벡터 가중치의 합을 최대화 시키려고 한다.
+왜? 결정영역이 넓어야 좋으니까.&lt;/p&gt;
+
+&lt;p&gt;서포트벡터머신이 분류를 위해 사용하는 식
+wx+b&amp;gt;=1 인 경우 양의 레이블&lt;/p&gt;
+
+&lt;h1 id=&quot;6강-신경망&quot;&gt;[6강] 신경망&lt;/h1&gt;
+
+&lt;p&gt;뇌와 컴퓨터
+|뇌|컴퓨터|
+|:-:|:-:|
+|분산처리|중앙처리|
+|병렬처리|순차처리|
+|처리속도$10^-3 $초|10-9초|&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;퍼셉트론&lt;/strong&gt; : 뇌를 모사한 신경망 알고리즘
+입력 유닛들의 가중치의 합과 임계치를 사용하여 뉴런의 발화과정을 모사 선형 분리 문제를 해결하지 못하는 문제가 있다(예)XOR&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;다층 신경망의 분류 원리&lt;/strong&gt;
+다층 신경망은 입력층 - 은닉층 - 출력층 구조를 가지며 각 층의 유닛들은 퍼셉트론이다.
+레이어를 쌓을수록 다양한 결정 영역이 추가로 생김으로써 선형 분리 문제를 극본한다.&lt;/p&gt;
+
+&lt;h1 id=&quot;7강-역전파&quot;&gt;[7강] 역전파&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;다층 퍼셉트론&lt;/strong&gt;
+적절한 가중치를 찾기 위해 경사 하강법(Gradient Descent)을 사용&lt;/p&gt;
+
+&lt;h1 id=&quot;8강-비지도학습unsupervised-learning&quot;&gt;[8강] 비지도학습Unsupervised Learning&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;클러스터링Clusters&lt;/strong&gt; (데이터마이닝 기법 중 하나로, 가장많이 사용)&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;옷사이즈 : S M L&lt;/li&gt;
+  &lt;li&gt;고객타입별구분 마케팅전략에 도움&lt;/li&gt;
+  &lt;li&gt;문서의 내용을 비슷한 정도에 따라 파일로 묶음&lt;/li&gt;
+  &lt;li&gt;동영상을 색감에 따라 구분
+데이터 그룹을 묶을 수 있는 어떠한 사전 정보도 주어지지 않기 때문에 비지도학습과 동의어로 사용됨&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;K-means클러스터링&lt;/strong&gt;
+데이터 포인트들을 무작위로 K개 선택하여 Centroid계산 후,
+클러스터 배정과 Centroid 재계산(수렴조건이 만족될 때까지 반복)
+아웃라이어에 약한점에도 불구하고 단순함과 효율성으로 인해 널리 사용됨
+클러스터, 데이터, 클러스터 재배정 반복 횟수에 따라 선형적인 계산 복잡도를 가진다.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;거리측정함수들&lt;/strong&gt;
+수치적 특성과 이산적 특성에 따라 다양한 거리 함수 사용
+수치적 특성: 유클리디안, 제곱유클리디안, 맨허튼, Chebychev거리측정
+이산적 특성: 단순 계수 비교, Jaccard계수비교&lt;/p&gt;
+
+&lt;h1 id=&quot;9강-컨볼루션-신경망-convolutional-neural-network-cnn&quot;&gt;[9강] 컨볼루션 신경망 (Convolutional neural network, CNN)&lt;/h1&gt;
+
+&lt;p&gt;신경생물학적 관찰이 컨볼루션 신경망 구조 설계에 동기를 부여함.
+&lt;strong&gt;컨볼루션 층&lt;/strong&gt;이란,
+입력 이미지 속 다양한 위치에서 동일한 특징들을 탐색. 피처맵을 입력에 대해 슬라이딩 시킴.
+같은 피처 맵은 동일한 가중치 사용.
+이미지분류에 많이 쓰이나,
+문제점은 이미지의 위치, 크기, 각도 변화 등에 취약함.
+해결방법으로 &lt;strong&gt;풀링층(물체의 위치, 각도 변화에 잘 대처할 수 있게)&lt;/strong&gt;을 이용한다.
+?? 물체의 위치와 방향에 관계없이 물체의 고유한 특징을 학습할 수 있다???
+역전파 알고리즘을 사용하여 학습이 가능하다.&lt;/p&gt;
+
+&lt;p&gt;컨볼루션 신경망과 일반 신경망의 차이
+우리 뇌의 시각 피질이 물체를 이해하는 메커니즘 모사,
+신경 세포들이 물체의 방향과 장소가 바뀌어도 별문제 없이 인식할 수 있었던 이유인 &lt;strong&gt;‘컨볼루션’개념을 신경망 모델에 적용&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;ImageNet Challenge: 이미지를 자동 분류하라
+8층-&amp;gt;152층 깊어지고 있음
+컨볼루션 신경망에서 주로 사용하는 활성함수 &lt;strong&gt;Relu&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;단점&lt;/strong&gt;
+일반적인 다층퍼셉츠론보다 더 많은 메모리 용량을 차지한다.
+컨볼루션 과정에서 많은 계산비용을 요구한다.
+같은 개수의 파라미터를 갖는 신경망보다 더 느리다.&lt;/p&gt;
+
+&lt;h1 id=&quot;10강-재현-신경망-recurrent-neural-networks&quot;&gt;[10강] 재현 신경망( Recurrent Neural Networks)&lt;/h1&gt;
+
+&lt;p&gt;시계열 데이터를 확률적으로 모델링&lt;/p&gt;
+
+&lt;p&gt;재현신경망의 한계를 넘은
+&lt;strong&gt;GRU(Gated Recurrnt Units)&lt;/strong&gt;
+&lt;strong&gt;LSTM(Long Short-Term Memory)&lt;/strong&gt;
+&lt;strong&gt;ESN(Echo State Networks)&lt;/strong&gt; : 그리디언트 손실을 막기위한 전략은 입력과 은닉, 은닉과 은닉 사이의 가중치는 학습하지 않는다.&lt;/p&gt;
+
+&lt;h1 id=&quot;11강-메모리-네트워크&quot;&gt;[11강] 메모리 네트워크&lt;/h1&gt;
+
+&lt;p&gt;기존 재현 신경망의 단점: 은닉 유닛 벡터가 제한된 공간에 많은 입력 정보를 저장해야 함
+메모리 네트워크: 재현 신경망의 저장 공간 한계 문제를 극복하기 위해 제안되었으며 스토리 선택 모듈G와 답선택모듈H로 구성됨&lt;/p&gt;
+
+&lt;p&gt;종단메모리네트워크(End-to-End)
+필요한이유: 기존 메무리 네트워크는 스토리 선택 모듈G를 학습시키기 위해서 질의에 대한 적절한 스토리 정보를 사람이 추가로 작성해야 함.
+여러 번의 메모리 접근을 위해 ‘파라미터 공유’라는 재현 신경망의 특징을 가짐
+&lt;strong&gt;종단학습모델&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;카메라의 이미지로부터 핸들 방향을 조절할 수 있는 모델을 만든다.&lt;/li&gt;
+  &lt;li&gt;질의를 주면 응답을 주는 모델을 만들고, 사람이 응답을 검토한다.&lt;/li&gt;
+  &lt;li&gt;이미지로부터 다양한 형태의 물체를 인식하는 분류기는 만든다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;나와 질의 응답하는 메모리네트워크 &lt;strong&gt;bAbl Task&lt;/strong&gt;
+모델의 언어 이해 및 추론 능력을 20가지로 나누어 테스트하려는 문제
+기존 룰 기반 방식에서 메모리 네트워크를 활용하는 머신러닝 방식의 해결책이 제시됨&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;딥러닝에서 메모리를 명시적으로 활용하게 된 이유&lt;/strong&gt;
+입력 데이터의 길이가 길어질 경우 인코딩해야할 정보가 많아졌기 때문.
+최근에 입력된 정보는 잘 기억하지만, 오래 전에 입력된 정보는 손실될 수 있기 떄문.
+인코더 재현 신경망의 경우 가장 마지막 시간의 은닉 유닛이 입력 문장의 모든 정보를 담고 있어야 하기 때문.&lt;/p&gt;
+
+&lt;h1 id=&quot;12강-딥러닝-응용사례&quot;&gt;[12강] 딥러닝 응용사례&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;딥러닝과 신경망&lt;/strong&gt;
+딥러닝은 신경망의 층을 여러 개 쌓은 것으로 결정영역을 복잡하게 만들었다
+신경망의 층을 이해하는 것은 거의 불가능하지만, 딥러닝에서는 각 층은 올라갈수록 보다 추상적인 정보들을 담고 있다.
+딥러닝은 신경망에 비해 층이 많으므로 학습을 용이하게 해주는 정규화, 오버피팅 방지 기법이 필요하다.&lt;/p&gt;
+
+&lt;p&gt;구글 번역기 어떤 원리일까? 인코더-디코더 모델 사용&lt;/p&gt;
+
+&lt;p&gt;메모리와 Attention is all you need(2017.구글)
+재현 신경망의 은닉 유닛의 크기가 한정되어 있기 때문에 오래전 입력으로 들어온 단어의 정보가 손실됨
+인코더 재현 신경망의 은닉 유닛들을 메모리에 저자하고 선형 조합(주의집중기작)&lt;/p&gt;
+
+&lt;p&gt;이미지를 자동으로 설명해주는 기계
+이미지를 여러 등분으로 나눈 뒤, 부분 이미지들을 컨볼루션 신경망으로 인코딩시킹
+인코딩된 벡터들은 순서대로 디코더 재현 신경망에 입력됨&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;신경망을 이용한 기계번역의 특징&lt;/strong&gt;
+원본 문장과 타겟 문장을 분산 표현으로 나타낸다.
+통계적 기계학습에 비해 적은 모델 파라미터 개수를 사용한다.
+번역 문제를 의미적 공간을 사용하여 학습할 수 있다.
+경사 하강법을 이용하여 입력층부터 출력층까지 한꺼번에 종단 학습 가능.&lt;/p&gt;
+
+&lt;h1 id=&quot;13강-weka를-이용한-머신러닝-실습&quot;&gt;[13강] Weka를 이용한 머신러닝 실습&lt;/h1&gt;
+
+&lt;p&gt;Weka란? Waikato Environment for Knowledge Analysis
+뉴질랜드의 Waikato 대학교 컴퓨터공학부에서 제작
+Weka는 뉴질랜드에서만 발견되는 새이기도 함
+대표적인 기계학습 알고리즘 모음, 데이터 마이닝 도구&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Weka에서 제공하는 전처리기능&lt;/strong&gt;
+데이터 샘플링, 이산화, 차원축소&lt;/p&gt;
+
+&lt;h1 id=&quot;14강-theano를-통한-머신러닝-구현&quot;&gt;[14강] Theano를 통한 머신러닝 구현&lt;/h1&gt;
+
+&lt;p&gt;LISA Lab(mila.umontreal.ca/en/)에서 만든 Python 기반 오픈소스 Package
+deeplearning.net/software/theano&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;장점&lt;/strong&gt;
+Symbolic 연산 철학으로 간결하고 빠르게 모델 구현 가능
+Symbolic 미분이 가능하므로 역전파 등을 직접 구현할 필요가 없음(grade함수 사용)
+동일한 코드를 CPU와 GPN에서 모두 사용 가능
+Python기반이므로, numpy, scipy 등 다양한 Python 패키지와 연동할 수 있음&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;단점&lt;/strong&gt;
+복잡하고 알기 어려운 에러메시지
+RAM과 GPU의 VRAM사이 데이터 전송에서 많은 시간이 소모된다.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Thano로 GPU 프로그래밍 실습&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;shared variables: RAM에서 GPU VRAM으로 데이터를 옮겨줌&lt;/li&gt;
+  &lt;li&gt;givens: symbolic 변수에 shared variables르 ㄹ대입&lt;/li&gt;
+  &lt;li&gt;updates: GPU연산 결과를 이용해 shared variables의 값을 수정&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Theano로 신경망 구현하기&lt;/strong&gt;
+Theano를 사용하여 머신러닝 알고리즘을 구현할 경우, GPU를 사용하여 빠른 학습 가능.
+간결한 코드 작성 가능, 미분의 자동 계산으로 프로그래머의 일을 줄여줌&lt;/p&gt;
+
+&lt;h1 id=&quot;15강-keras를-통한-딥러닝-구현-및-실습&quot;&gt;[15강] Keras를 통한 딥러닝 구현 및 실습&lt;/h1&gt;
+
+&lt;p&gt;Keras는 고수준의 다양한 모델 층, 활성함수, 목표함수 등을 제공하여 손쉽게 딥러닝 모델을 구현하게 해주는 라이브러리.
+사용할 입력/출력 데이터를 모델의 처음과 마지막 층에 설정하고 가운데 층을 목정에 맞게 선택가능&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;장점&lt;/strong&gt;
+쉬운 모델 구현
+다양한 함수 제공
+손쉽게 커스터마이징 가능
+GPU를 활용한 빠른 계산
+직관적인 함수 제공
+활발한 커뮤니티&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;단점&lt;/strong&gt;
+생성 모델의 부족
+고수준 라이브러리
+Theano사용에 따른 에러 분석의 어려움&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Keras로 컨볼루션 신경망 구현하기&lt;/strong&gt;
+Sequential모델의
+ZeroPadding2D / Convolution2D / MaxPooling2D 함수를 사용하여 VGG-16모델구현&lt;/p&gt;</content><author><name>egeg1212</name></author><category term="algorithm" /><summary type="html">Algorithm LIST 컴퓨터 알고리즘 이해 컴퓨터 알고리즘 초급 컴퓨터 알고리즘 중급 기초 알고리즘과 파이썬코딩 인공지능을 위한 머신러닝 알고리즘 블록체인 기술적 특징과 비즈니스 이해</summary></entry><entry><title type="html">Dfs</title><link href="https://egeg1212.github.io/DFS" rel="alternate" type="text/html" title="Dfs" /><published>2021-05-08T00:00:00+09:00</published><updated>2021-05-08T00:00:00+09:00</updated><id>https://egeg1212.github.io/DFS</id><content type="html" xml:base="https://egeg1212.github.io/DFS">N = int(input())
+
+A = [list(map(int, list(input()))) for _ in range(N)]
+ck = [0 for _ in range(N)]
+dx, dy = [1, 0, -1, 0], dy[0, 1, 0, -1]
+# 방향벡터: 동서남북??
+
+
+def dfs(i, j):
+    for way in range(4):
+        ii, jj = i + dx[way], j + dy[way]
+        if A[ii][jj] == 1:
+            dfs(ii, jj)
+
+
+for i in range(N):
+    for j in range(N):
+        if Ap[i][j] == 1:
+            dfs(i, j)</content><author><name></name></author><summary type="html">N = int(input())</summary></entry><entry><title type="html">Binarytree</title><link href="https://egeg1212.github.io/binarytree" rel="alternate" type="text/html" title="Binarytree" /><published>2021-05-08T00:00:00+09:00</published><updated>2021-05-08T00:00:00+09:00</updated><id>https://egeg1212.github.io/binarytree</id><content type="html" xml:base="https://egeg1212.github.io/binarytree">while not a == b:
+    if a &gt; b:
+        a //= 2
+    else:
+        b //= 2
+print(a)</content><author><name></name></author><summary type="html">while not a == b: if a &gt; b: a //= 2 else: b //= 2 print(a)</summary></entry></feed>

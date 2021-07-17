@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" >
+  <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
+  <link href="https://egeg1212.github.io/tag/daily/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="https://egeg1212.github.io/" rel="alternate" type="text/html" />
+  <updated>2021-07-17T10:28:30+09:00</updated>
+  <id>https://egeg1212.github.io/tag/daily/feed.xml</id>
+
+  
+  
+  
+
+  
+    <title type="html">2021 정은경의 코딩일지 | </title>
+  
+
+  
+    <subtitle>A person who studies voice chatbots.</subtitle>
+  
+
+  
+
+  
+    
+      
+    
+  
+
+  
+  
+
+  
+    <entry>
+      <title type="html">markdown</title>
+      <link href="https://egeg1212.github.io/Markdown" rel="alternate" type="text/html" title="markdown" />
+      <published>2021-03-21T01:40:00+09:00</published>
+      <updated>2021-03-21T01:40:00+09:00</updated>
+      <id>https://egeg1212.github.io/Markdown</id>
+      <content type="html" xml:base="https://egeg1212.github.io/Markdown">&lt;!-- 마크다운이란 --&gt;
+
+&lt;h1 id=&quot;마크다운이란&quot;&gt;마크다운이란&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;마크다운(markdown)은 일반 텍스트 문서의 양식을 편집하는 문법이다. README 파일이나 온라인 문서, 혹은 일반 텍스트 편집기로 문서 양식을 편집할 때 쓰인다. 마크다운을 이용해 작성된 문서는 쉽게 HTML 등 다른 문서형태로 변환이 가능하다. &lt;br /&gt; -&lt;em&gt;위키백과&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;제목hearder&quot;&gt;🤔제목(Hearder)&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;h1&lt;/code&gt;부터 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;h6&lt;/code&gt;까지 표현할 수 있으며, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#&lt;/code&gt;의 개수로 표현 가능합니다.&lt;br /&gt;
+==, –, ——– 로도 표현 가능합니다.&lt;br /&gt;
+✍작성코드(.md)&lt;br /&gt;
+&lt;img src=&quot;https://github.com/EGEG1212/egeg1212.github.io/blob/main/_img/2021-03-20-1.png&quot; alt=&quot;코드&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;👉결과&lt;/p&gt;
+
+&lt;h1 id=&quot;h1-태그&quot;&gt;H1 태그&lt;/h1&gt;
+
+&lt;h2 id=&quot;h2-태그&quot;&gt;H2 태그&lt;/h2&gt;
+
+&lt;h3 id=&quot;h3-tag&quot;&gt;H3 Tag&lt;/h3&gt;
+
+&lt;h4 id=&quot;h4-tag&quot;&gt;H4 Tag&lt;/h4&gt;
+
+&lt;h1 id=&quot;헤더처럼-크고-진하게&quot;&gt;헤더처럼 크고 진하게&lt;/h1&gt;
+
+&lt;h2 id=&quot;헤더처럼-크고-진하게-1&quot;&gt;헤더처럼 크고 진하게&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;수평선&quot;&gt;🤔수평선&lt;/h2&gt;
+
+&lt;p&gt;
+
+`*`이나 `-`, `_`등을 3개 이상 입력하면 구분선, 수평선이 됩니다.&lt;br /&gt;
+띄어쓰기를 중간에 삽입해도 가능합니다.&lt;br /&gt;
+다만, 하이픈 `-`은 헤더로 인식할 수도 있으니 주의해서 사용할 필요가 있습니다.
+&lt;br /&gt;✍작성코드(.md)
+
+```
+***
+---
+-- -- -- --
+```
+
+👉결과&lt;br /&gt;
+
+---
+
+---
+
+---
+
+&lt;br /&gt;
+
+---
+
+&lt;/p&gt;
+&lt;h2 id=&quot;리스트&quot;&gt;🤔리스트&lt;/h2&gt;
+&lt;h4 id=&quot;1-순서가-없는-리스트&quot;&gt;1. 순서가 없는 리스트&lt;/h4&gt;
+
+&lt;p&gt;특징을 나열할 때 사용합니다.&lt;br /&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;+&lt;/code&gt; 을 사용하여 ✨한칸 띄어서 작성합니다.(모두 동일하게 적용)&lt;br /&gt;
+인라인코드, 블럭코드를 작성할 수 있으며 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Tab&lt;/code&gt;키나 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;space 바&lt;/code&gt;를 이용해 들여쓰기가 가능합니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;✍작성코드(.md)&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- list 1 (찐동그라미)
+- list 2
+- list 3
+    - A (한번 Tab 흰동그라미)
+        - B (두번 Tab 찐네모)
+- **무결성** : 특징정리는 리스트와 진하기를 함께 사용하면 좋다
+- **간결성** : 특징소개
+* list
+    * list
+        * list
++ list
+    + list
+        + list
+        두번 Tab하면 코드 블럭을 만들 수 있어요.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;👉결과&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;list 1&lt;/li&gt;
+  &lt;li&gt;list 2&lt;/li&gt;
+  &lt;li&gt;list 3
+    &lt;ul&gt;
+      &lt;li&gt;A
+        &lt;ul&gt;
+          &lt;li&gt;B&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;무결성&lt;/strong&gt; : 특징정리는 리스트와 진하기를 섞어서 쓰면 좋다.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;간결성&lt;/strong&gt; : 특징소개&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;list
+    &lt;ul&gt;
+      &lt;li&gt;list
+        &lt;ul&gt;
+          &lt;li&gt;list&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;list
+    &lt;ul&gt;
+      &lt;li&gt;list
+        &lt;ul&gt;
+          &lt;li&gt;list&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;2-순서가-있는-리스트&quot;&gt;2. 순서가 있는 리스트&lt;/h4&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1.&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2.&lt;/code&gt;와 같이 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;숫자&lt;/code&gt;와 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.&lt;/code&gt;을 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;띄어써서&lt;/code&gt; 작성합니다.
+&lt;br /&gt;✍작성코드(.md)&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1. list 1
+3. list 2
+3. list 3
+    1. A
+        1. B
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;👉결과&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;list 1&lt;/li&gt;
+  &lt;li&gt;list 2&lt;/li&gt;
+  &lt;li&gt;list 3
+    &lt;ol&gt;
+      &lt;li&gt;A
+        &lt;ol&gt;
+          &lt;li&gt;B&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;문단간격&quot;&gt;🤔문단간격&lt;/h2&gt;
+
+&lt;p&gt;
+문단의 간격은 `줄 바꿈`으로 나타내며, `&lt;br /&gt;`을 사용합니다.
+&lt;br /&gt;✍작성코드(.md)
+
+```
+첫 번째 문단&lt;br /&gt;&lt;br /&gt;
+두 번째 문단
+```
+
+👉결과
+첫 번째 문단&lt;br /&gt;&lt;br /&gt;
+두 번째 문단
+
+---
+
+&lt;/p&gt;
+&lt;h2 id=&quot;폰트-스타일&quot;&gt;🤔폰트 스타일&lt;/h2&gt;
+&lt;p&gt;
+컬러는 html 태그를 이용하여 작성합니다.
+&lt;br /&gt;✍작성코드(.md)
+
+```
+*기울임이탤릭*
+_기울임이탤릭_
+**진하게**
+__진하게__
+**_이탤릭+진하게_**
+~~취소선~~
+&lt;u&gt;밑줄&lt;/u&gt;
+
+~글씨작게~
+&lt;span style=&quot;color:red&quot;&gt;red&lt;/span&gt;
+&lt;span style=&quot;color:#d3d3d3&quot;&gt;#d3d3d3&lt;/span&gt;
+&lt;span style=&quot;color:rgb(245, 235, 13)&quot;&gt;rgb(245, 235, 13)&lt;/span&gt;
+```
+
+👉결과&lt;br /&gt;
+_기울임이탤릭_ &lt;br /&gt;
+_기울임이탤릭_&lt;br /&gt;
+**진하게**&lt;br /&gt;
+**진하게**&lt;br /&gt;
+**_이탤릭+진하게_**&lt;br /&gt;
+~~취소선~~&lt;br /&gt;
+&lt;u&gt;밑줄&lt;/u&gt;
+~글씨작게~&lt;br /&gt;
+
+&lt;span style=&quot;color:red&quot;&gt;red&lt;/span&gt;&lt;br /&gt;
+&lt;span style=&quot;color:#d3d3d3&quot;&gt;#d3d3d3&lt;/span&gt;&lt;br /&gt;
+&lt;span style=&quot;color:rgb(245, 235, 13)&quot;&gt;rgb(245, 235, 13)&lt;/span&gt;&lt;br /&gt;
+
+---
+
+&lt;/p&gt;
+
+&lt;h2 id=&quot;인용문quote&quot;&gt;🤔인용문Quote&lt;/h2&gt;
+
+&lt;p&gt;
+인용문을 작성할 때에는 `&amp;gt;`를 사용합니다.
+&lt;br /&gt;✍작성코드(.md)
+
+```
+&amp;gt;인용문작성하기
+-작성자
+&amp;gt;&amp;gt; 인용문작성하기
+&amp;gt;&amp;gt;&amp;gt;인용문작성하기
+&amp;gt;&amp;gt;&amp;gt;&amp;gt;인용문작성하기
+&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;몇개까지가능한가(5개;)
+```
+
+👉결과
+
+&amp;gt; 인용문Quote작성하기 -작성자
+&amp;gt;
+&amp;gt; &amp;gt; 인용문작성하기
+&amp;gt; &amp;gt;
+&amp;gt; &amp;gt; &amp;gt; 인용문작성하기
+&amp;gt; &amp;gt; &amp;gt;
+&amp;gt; &amp;gt; &amp;gt; &amp;gt; 인용문작성하기
+&amp;gt; &amp;gt; &amp;gt; &amp;gt;
+&amp;gt; &amp;gt; &amp;gt; &amp;gt; &amp;gt; 몇개까지가능한가
+
+---
+
+&lt;/p&gt;
+
+&lt;h2 id=&quot;인라인-코드&quot;&gt;🤔인라인 코드&lt;/h2&gt;
+
+&lt;p&gt;
+`` 백틱( ` ) ``을 사용하여 인라인 코드를 작성합니다.
+&lt;br /&gt;✍작성코드(.md)
+
+```
+`인라인 코드 작성은 백틱 한개씩`
+```
+
+👉결과&lt;br /&gt;
+`인라인 코드 작성은 백틱 한개씩`
+
+---
+
+&lt;/p&gt;
+&lt;h2 id=&quot;코드-블럭코드-여러-줄--하이라이트&quot;&gt;🤔코드 블럭(코드 여러 줄) &amp;amp; 하이라이트&lt;/h2&gt;
+&lt;p&gt;
+`` 백틱( ` ) ``을 3개 사용하여 코드블럭을 작성합니다.&lt;br /&gt;
+첫번째줄 백틱3개 옆에 원하는 문법을 입력하면 색을 입혀줍니다.&lt;br /&gt;
+예) python cpp sh쉘 javascript&lt;br /&gt;
+[carbon.now.sh](carbon.now.sh) 코드스샷툴✨을 사용하기도 합니다.
+&lt;br /&gt;✍작성코드(.md)
+
+````
+``` python
+#include &lt;stdio.h&gt;
+
+int main(){
+    printf(&quot;hello world&quot;);
+    return 0;
+}
+```
+``` sh
+결과는 보통 sh로 합니다.
+```
+````
+
+👉결과
+
+```python
+#include &lt;stdio.h&gt;
+
+int main(){
+    printf(&quot;hello world&quot;);
+    return 0;
+}
+```
+
+```sh
+결과는 보통 sh로 합니다.
+```
+
+---
+
+&amp;lt;/p&amp;gt;
+
+## 🤔링크(Link)
+
+&lt;p&gt;
+&lt;br /&gt;✍작성코드(.md)
+
+```
+1.인라인 링크는 아래처럼
+[네이버](https://never.com/)
+&lt;a href=&quot;naver.com&quot;&gt;네이버 바로가기&lt;/a&gt;
+
+2.url링크는 아래처럼
+&amp;lt;https://never.com/&amp;gt;
+
+3.참조링크는 아래처럼
+[참조링크]:(https://never.com/)
+```
+
+👉결과 &lt;br /&gt; 1.인라인 링크는 아래처럼
+[네이버](https://never.com/)
+&lt;a href=&quot;naver.com&quot;&gt;네이버 바로가기&lt;/a&gt;
+
+2.url링크는 아래처럼
+&amp;lt;https://never.com/&amp;gt;
+
+3.참조링크는 아래처럼
+[참조링크]:(https://never.com/)
+
+---
+
+&lt;/p&gt;
+
+## 🤔이미지 &amp;amp; 링크추가
+
+&lt;p&gt;
+이미지 크기는 10MB 이하만 가능합니다. (gif 포함)&lt;br /&gt;
+자동중앙정렬 와이드100%로 삽입됩니다.&lt;br /&gt;
+✨사이즈를 조절하고 싶다면 img태그 `&lt;img src=&quot;&quot; width=&quot;1000&quot; /&gt;`로 작성합니다.&lt;br /&gt;
+`![알트태그이미지엑박대신보이는글](이미지링크주소)`&lt;br /&gt;
+`[![이미지 설명](이미지 링크)](연결하고자하는 url &quot;마우스 오버 시 나타낼 링크 title&quot;)`
+&lt;br /&gt;✍작성코드(.md)
+
+```
+![랜덤이미지](https://picsum.photos/300/200)
+
+![이미지깨졌을때alt태그같은거임](https://github.com/EGEG1212/Flask-web/blob/main/04.MachineLearning/static/gallery/10_%EC%9E%90%EC%97%B0%EC%96%B4/a2_%ED%85%8D%EC%8A%A4%ED%8A%B8%EC%9D%BD%EA%B8%B0_1.jpg)
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/EGEG1212//Machine-Learning-2020/blob/main/08.AI-Site/04_KAKAO_언어감지.ipynb)
+```
+
+👉결과&lt;br /&gt;
+![랜덤이미지](https://picsum.photos/300/200)
+
+![이미지깨졌을때alt태그같은거임](https://github.com/EGEG1212/Flask-web/blob/main/04.MachineLearning/static/gallery/10_%EC%9E%90%EC%97%B0%EC%96%B4/a2_%ED%85%8D%EC%8A%A4%ED%8A%B8%EC%9D%BD%EA%B8%B0_1.jpg)
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/EGEG1212//Machine-Learning-2020/blob/main/08.AI-Site/04_KAKAO_언어감지.ipynb)
+
+---
+
+&lt;/p&gt;
+## 🤔테이블(Table)
+&lt;p&gt;
+`|`로 셀을 구분하며 폰트의 기본적인 스타일이 모두 적용 가능합니다.&lt;br /&gt;
+`-`하이픈으로 구분된 셀 왼쪽, 양쪽, 오른쪽에 `:`콜론을 붙일 경우&lt;br /&gt;
+왼쪽정렬, 가운데정렬, 오른쪽정렬이 가능합니다.
+
+&lt;br /&gt;✍작성코드(.md)
+
+```
+| 드라마 제목 | 주연 배우 | 방영일 |
+|:--|:--:|--:|
+| **호텔 델루나** | 이지은, 여진구 | ~~2019.07.13. ~ 2019.09.01.~~ |
+| 타인은 지옥이다 | 임시완, 이동욱, 이현욱, 이정은 | 2019.08.31. ~ |
+| 멜로가 체질 | 천우희, 안재홍, 전여빈, 공명 | 2019.08.09. ~ |
+```
+
+👉결과&lt;br /&gt;
+| 드라마 제목 | 주연 배우 | 방영일 |
+|:--|:--:|--:|
+| **호텔 델루나** | 이지은, 여진구 | ~~2019.07.13. ~ 2019.09.01.~~ |
+| 타인은 지옥이다 | 임시완, 이동욱, 이현욱, 이정은 | 2019.08.31. ~ |
+| 멜로가 체질 | 천우희, 안재홍, 전여빈, 공명 | 2019.08.09. ~ |
+
+---
+
+&lt;/p&gt;
+
+## 🤔체크박스(Check Box)
+
+&lt;p&gt;
+`-`, `*`, `+` 뒤에 띄어쓰기 후 `[ ]`대괄호를 넣어 또 한칸띄고 작성합니다.
+
+&lt;br /&gt;✍작성코드(.md)
+
+```
+- [ ] 체크박스
+- [x] 체크박스
+* [ ] 체크박스
+* [X] 체크박스
++ [ ] 체크박스
++ [x] 체크박스
+```
+
+👉결과
+
+- [ ] 체크박스
+- [x] 체크박스
+
+* [ ] 체크박스
+* [x] 체크박스
+
+- [ ] 체크박스
+- [x] 체크박스
+
+---
+
+&lt;/p&gt;
+
+## 🤔레이택문법(LaTex)
+
+[위키피디아 참조](https://ko.wikipedia.org/wiki/%EC%9C%84%ED%82%A4%EB%B0%B1%EA%B3%BC:TeX_%EB%AC%B8%EB%B2%95)
+&amp;lt;http://tomoyo.ivyro.net/123/wiki.php/TeX_%EB%B0%8F_LaTeX_%EC%88%98%EC%8B%9D_%EB%AC%B8%EB%B2%95&amp;gt;
+
+&lt;p&gt;
+`$`는 인라인, 왼쪽정렬&lt;br /&gt;
+`$$`는 블럭, 가운데정렬 입니다.
+&lt;br /&gt;✍작성코드(.md)
+
+```
+$a+b=c$
+$a^2_1 + b^2 = c^2$
+$\alpha \beta \frac{1}{2}$
+다음 중 $N$개를 고르시오.
+$M_i$
+$M_{ij}$
+달러표시2개는 한줄에 써도 블럭처리되며, 가운데정렬입니다. $$(\alpha + \beta)^2 = \alpha^2 + 2 \alpha \beta + \beta^2$$
+
+$$min_Gmax_D$$
+```
+
+👉결과&lt;br /&gt;
+$a+b=c$
+$a^2_1 + b^2 = c^2$
+$\alpha \beta \frac{1}{2}$
+다음 중 $N$개를 고르시오.
+$M_i$
+$M_{ij}$
+달러표시2개는 한줄에 써도 블럭처리되며, 가운데정렬입니다. $$(\alpha + \beta)^2 = \alpha^2 + 2 \alpha \beta + \beta^2$$
+
+$$min_Gmax_D$$
+
+---
+
+&lt;/p&gt;
+
+## 🤔다이어그램
+
+&lt;p&gt;
+texpad 검색하면 더 많은 문법 확인가능합니다.
+&lt;br /&gt;✍작성코드(.md)
+
+````
+```mermaid
+graph LR
+    1--&amp;gt;2
+    1--&amp;gt;4
+    2--&amp;gt;3
+    3--&amp;gt;2
+```
+````
+
+👉결과
+
+```mermaid
+graph LR
+    1--&amp;gt;2
+    1--&amp;gt;4
+    2--&amp;gt;3
+    3--&amp;gt;2
+```
+
+---
+
+&lt;/p&gt;
+
+## 🤔이모지
+
+#### 1. 단축키
+
+window10: `윈도우 키` + `.`온점
+mac: `Command` + `Control` + `space 바`
+
+#### 2. 트위터이모지
+
+&amp;lt;https://kr.piliapp.com/twitter-symbols/&amp;gt; 의 이모지를 복사-&amp;gt;붙여넣기
+
+---
+
+# 마치며...
+
+짧게, 부분적으로 알고 있던 마크다운을 한곳에 모아 보기 편하게 정리했습니다.&lt;br /&gt;
+역시나 내가 보기 편하게 :-)
+
+---
+
+&lt;br /&gt;참고: T아카데미- 안수빈 &amp;lt;https://tacademy.skplanet.com/live/player/onlineLectureDetail.action?seq=171&amp;gt;
+깃허브 &amp;lt;https://github.com/subinium&amp;gt;
+블로그 &amp;lt;https://subinium.github.io/&amp;gt;
+
+&lt;br /&gt;참고: T아카데미- 이수진 &amp;lt;https://tacademy.skplanet.com/live/player/onlineLectureDetail.action?seq=130&amp;gt;
+&amp;lt;https://sujinlee.me/professional-github/&amp;gt;
+&lt;br /&gt;참고: &amp;lt;http://nblog.syszone.co.kr/archives/9917&amp;gt;
+&lt;/stdio.h&gt;&lt;/stdio.h&gt;&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>egeg1212</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="daily" />
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">My First Post</title>
+      <link href="https://egeg1212.github.io/hello" rel="alternate" type="text/html" title="My First Post" />
+      <published>2021-03-18T01:40:00+09:00</published>
+      <updated>2021-03-18T01:40:00+09:00</updated>
+      <id>https://egeg1212.github.io/hello</id>
+      <content type="html" xml:base="https://egeg1212.github.io/hello">&lt;p&gt;나에게 필요하고, 만들고 싶은 것이 있어서 배우기 시작했습니다.
+느리겠지만, 꼭 해낼 것입니다 😋&lt;/p&gt;
+
+&lt;p&gt;✍몇년전부터 사놓은 Python 책은; 절반 이후부터 진도가 그렇게 안나갔습니다..(느림의 독학;)&lt;br /&gt;
+✍코로나로 정신없는 해’ 2020년 08월 부터 6개월간의 교육을 빡세게 수료.&lt;br /&gt;
+✍지금은 유튜브와 다양한 매체로 공부중.&lt;/p&gt;
+
+&lt;p&gt;이곳에 정리해봅니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+🌱git잔디를 열심히 심어보려합니다!&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/EGEG1212/egeg1212.github.io/blob/main/_img/2021-03-17-git.PNG&quot; alt=&quot;gitcommit&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;…허허헣ㅎ나자신화이팅🤸‍♀️&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>egeg1212</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="daily" />
+      
+
+      
+        <summary type="html">나에게 필요하고, 만들고 싶은 것이 있어서 배우기 시작했습니다. 느리겠지만, 꼭 해낼 것입니다 😋</summary>
+      
+
+      
+      
+    </entry>
+  
+</feed>

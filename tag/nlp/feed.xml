@@ -1,0 +1,1467 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" >
+  <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
+  <link href="https://egeg1212.github.io/tag/nlp/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="https://egeg1212.github.io/" rel="alternate" type="text/html" />
+  <updated>2021-07-17T10:28:30+09:00</updated>
+  <id>https://egeg1212.github.io/tag/nlp/feed.xml</id>
+
+  
+  
+  
+
+  
+    <title type="html">2021 정은경의 코딩일지 | </title>
+  
+
+  
+    <subtitle>A person who studies voice chatbots.</subtitle>
+  
+
+  
+
+  
+    
+      
+    
+  
+
+  
+  
+
+  
+    <entry>
+      <title type="html">딥러닝 기반 음성합성(1)</title>
+      <link href="https://egeg1212.github.io/tacotron" rel="alternate" type="text/html" title="딥러닝 기반 음성합성(1)" />
+      <published>2021-06-16T01:40:00+09:00</published>
+      <updated>2021-06-16T01:40:00+09:00</updated>
+      <id>https://egeg1212.github.io/tacotron</id>
+      <content type="html" xml:base="https://egeg1212.github.io/tacotron">&lt;h2 id=&quot;딥러닝-기반-음성합성1&quot;&gt;딥러닝 기반 음성합성(1)&lt;/h2&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강좌정보&lt;/strong&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;&lt;a href=&quot;https://tacademy.skplanet.com/live/player/onlineLectureDetail.action?seq=184&quot;&gt;Tacademy강좌링크&lt;/a&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습내용&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;음성생성 과정 및 기존 통계적 파라미터 방식부터&lt;br /&gt; 딥러닝을 활용한 음성합성 기법까지 음성합성 모델링 전반에 대해 알아봅니다.&lt;br /&gt;또한 Tacotron2를 이용한 음성합성 과정에 대해 이해하도록 합니다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강사&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;이준엽 박사과정 (서울대 Human Interface Lab)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습기간&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;2021.06.15~2021.06.24 &lt;strong&gt;이수완료&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습시간&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;strong&gt;03:31:59&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강의목록&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[1강] 음성 모델링 I - DSP for Speech Signal Processing&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[2강] 음성 모델링 II - Speech Production (Source-Filter Model)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[3강] 음성합성 입문 I - Unit-Selection, HMM&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[4강] 음성합성 입문 II - Deep learning, End to End (Tacotron/Tacotron2/Transformer)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[5강] 음성합성 입문 III - 개인화(Multi-Speaker, Style Modeling)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[6강] 음성합성 모델 실습I - Tacotron2&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;1강-음성-모델링-i---dsp-for-speech-signal-processing&quot;&gt;[1강] 음성 모델링 I - DSP for Speech Signal Processing&lt;/h3&gt;
+
+&lt;p&gt;idea -&amp;gt; Speech formulaltion -&amp;gt; Human vocal Mechanism
+–&amp;gt; Wave propagation
+-&amp;gt; Perception of the ear -&amp;gt; Speech comprehension&lt;/p&gt;
+
+&lt;p&gt;인간의 귀는 &lt;strong&gt;저주파&lt;/strong&gt;를 듣는다.
+일정이상의 고주파는 안들림&lt;/p&gt;
+
+&lt;h4 id=&quot;speech-analog-signal&quot;&gt;Speech. Analog signal.&lt;/h4&gt;
+
+&lt;p&gt;Analog to digital conversion&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Sampling
+&lt;strong&gt;Sampling rate&lt;/strong&gt;
+높을수록 품질이 좋아지나 용량도 같이 커짐;
+그래서 적정선에서 끊어 노이즈섞인 저품질로 함. - Telephone(통화음)8kHz - Volp 16kHz - CD 44,100Kz&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Quantization
+8bit : 64개의 값 (손실많음)
+64bit : 118개의 값&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;aliasing-주의-11p&quot;&gt;Aliasing 주의 (11p)&lt;/h4&gt;
+
+&lt;p&gt;아날로그 신호의 표본화 시 표본화 주파수가 신호의 최대 주파수의 2배보다 작거나 필터링이 부적절하여 인접한 스펙트럼들이 서로 겹쳐 생기는 신호 왜곡 현상. 이 현상을 피하기 위해서는 표본화 주파수를 신호의 최대 주파수의 2배 이상으로 높이고, 샘플링하기 전에 저주파 통과 여파기를 사용하여 최대 주파수 이상의 신호들을 제거해야 한다. 영화에서 선풍기의 날개가 천천히 회전하거나 반대로 돌아가는 것처럼 보이는 현상도 표본화 주파수가 부적절하여 느끼게 되는 것이다.
+[네이버 지식백과] 에일리어싱 [aliasing] (IT용어사전, 한국정보통신기술협회)&lt;/p&gt;
+
+&lt;h4 id=&quot;fourier-analysis&quot;&gt;Fourier analysis&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;주파수 도메인으로 시간축에서 주파수축으로 바꾸는 방법인 푸리에&lt;/strong&gt;
+모든 파동은 다양한 주파수를 가지는 sine wave의 값들로 표현할 수 있다.&lt;/p&gt;
+
+&lt;h4 id=&quot;discrete-time-fourier-transform-dtft&quot;&gt;Discrete-time Fourier Transform (DTFT)&lt;/h4&gt;
+
+&lt;p&gt;신호의 비슷한 정도를 확인
+&lt;strong&gt;magnitude&lt;/strong&gt;의 변화는 사람이 민감하게 인지함.(중요)&lt;/p&gt;
+
+&lt;h4 id=&quot;z-transform&quot;&gt;Z-transform&lt;/h4&gt;
+
+&lt;p&gt;DTFT 보다 만족하기 쉬운 형태!!&lt;/p&gt;
+
+&lt;h4 id=&quot;discrete-fourier-transform-dft&quot;&gt;Discrete Fourier Transform (DFT)&lt;/h4&gt;
+
+&lt;p&gt;시간을 마이너스무한대~무한대까지 모두; 실용적이진않다;&lt;/p&gt;
+
+&lt;h4 id=&quot;fast-fourier-transform-fft&quot;&gt;Fast Fourier Transform (FFT)&lt;/h4&gt;
+
+&lt;p&gt;높은 연산량.
+DFT를 소형 DFT모듈로 분해하여 연산&lt;/p&gt;
+
+&lt;h3 id=&quot;dsp-for-speech-signal-processing&quot;&gt;DSP for Speech Signal Processing&lt;/h3&gt;
+
+&lt;p&gt;Analog Signal
+-&amp;gt; Anti-Aliasing lowpass filter(Aliasing방지.고주파날리기)
+-&amp;gt; Samplig (연속적인값을 개별적으로 만들기)
+-&amp;gt; Quantization (디지털신호로 바꾸기)
+-&amp;gt; Window (Short-Time Analysis를위해 윈도우를 매프레임마다 곱하기)
+-&amp;gt; DFT (주파수변환된 값=윈도우 취한 값을 원하는 형태로 사용.)&lt;/p&gt;
+
+&lt;h3 id=&quot;2강-음성-모델링-ii---speech-production-source-filter-model&quot;&gt;[2강] 음성 모델링 II - Speech Production (Source-Filter Model)&lt;/h3&gt;
+
+&lt;p&gt;… 수학 공식으로 분석 😲 …
+나는 분명 봤지만 잘 모르겠다..
+나중에 궁금할 때 다시 볼 것 ㅋㅋ&lt;/p&gt;
+
+&lt;h3 id=&quot;3강-음성합성-입문-i---unit-selection-hmm&quot;&gt;[3강] 음성합성 입문 I - Unit-Selection, HMM&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Comparison of TTS techniques&lt;/strong&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Class&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Approach&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Audio quality&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Naturalness&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Flexibility&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Size of footprint&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Runtime simplicity&lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Concatenative&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Unit-Selection&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;★★★★★&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;★★★★&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;★&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;★★★&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;★★★★&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Statistical Parametric&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;HMM&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;★★★&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;★★★&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;★★★★&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;★★★★★&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;★★★★&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Neural Net&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;★★★★&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;★★★&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;★★★&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;★★★★&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;★★★★&lt;/td&gt;
+      &lt;td&gt;★★★&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;End-to-End&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Deep- Learning&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;★★★★&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;★★★★&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;★★★★&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;★★★★&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;★★★&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;자연스러움엔 End-to-End 겠지만
+내가 원하는건 Unit-Selection정도만으로도 가능할 수 있겠다!! &lt;strong&gt;53p.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;4강-음성합성-입문-ii---deep-learning-end-to-end-tacotrontacotron2transformer&quot;&gt;[4강] 음성합성 입문 II - Deep learning, End to End (Tacotron/Tacotron2/Transformer)&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Tacotron&lt;/strong&gt;
+CBHG module&lt;/p&gt;
+
+&lt;p&gt;Tacotron1 보다 나아진 Tacotron2
+&lt;strong&gt;Stop token&lt;/strong&gt; 최대길이설정해놓고 최대길이 이후 잘라서 합성했었는데(계산량 비효율적),
+언제 합성이 끝났는지 알려주는 Stop token으로 원하는 만큼만 계산하는 장점이 있다.
+&lt;strong&gt;WaveNet vocoder&lt;/strong&gt;사용&lt;/p&gt;
+
+&lt;p&gt;Tacotron2와 Transformer비교
+training속도 Transfomer가 4.25배 빠름
+학습은 빠르지만 테스트시 합성할때, inference가 느리다.
+Transformer는 batch size가 중요하다.
+서버 소용량으로 Tacotron2를 사용하는 것이 낫다 ~~&lt;/p&gt;
+
+&lt;h3 id=&quot;5강-음성합성-입문-iii---개인화multi-speaker-style-modeling&quot;&gt;[5강] 음성합성 입문 III - 개인화(Multi-Speaker, Style Modeling)&lt;/h3&gt;
+
+&lt;h3 id=&quot;6강-음성합성-모델-실습i---tacotron2&quot;&gt;[6강] 음성합성 모델 실습I - Tacotron2&lt;/h3&gt;
+
+&lt;p&gt;Colab실습&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>egeg1212</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="NLP" />
+      
+
+      
+        <summary type="html">딥러닝 기반 음성합성(1)</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">디지털 신호처리(DSP)이해</title>
+      <link href="https://egeg1212.github.io/DSP" rel="alternate" type="text/html" title="디지털 신호처리(DSP)이해" />
+      <published>2021-05-30T01:40:00+09:00</published>
+      <updated>2021-05-30T01:40:00+09:00</updated>
+      <id>https://egeg1212.github.io/DSP</id>
+      <content type="html" xml:base="https://egeg1212.github.io/DSP">&lt;h2 id=&quot;디지털-신호처리digital-signal-processor이해&quot;&gt;디지털 신호처리(Digital Signal Processor)이해&lt;/h2&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강좌정보&lt;/strong&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;&lt;a href=&quot;https://tacademy.skplanet.com/live/player/onlineLectureDetail.action?seq=178&quot;&gt;Tacademy강좌링크&lt;/a&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습내용&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;1. 오디오 데이터의 특징 및 Fourier Transform, Spectrogram 등 디지털 신호처리 기초 개념에 대해 알아봅니다.&lt;br /&gt;2. Librosa와 Torch Audio를 이용한 디지털신호처리(DSP)에 대해 학습해 봅니다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강사&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;도승헌(KAIST Music and Audio computing Lab) T아카데미&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습기간&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;2021.05.29~2021.06.14 &lt;strong&gt;이수완료&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습시간&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;strong&gt;02:07:21&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강의목록&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[1강] 디지털신호처리(DSP) 기초 I - Sampling, Quantization&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[2강] 디지털신호처리(DSP) 기초 II - STFT, Spectrogram, Mel-Specrtogram&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[3강] 디지털신호처리(DSP) 기초 III - MFCC, Auditory Filterbank&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[4강] 디지털신호처리(DSP) 실습 I - Data augmentation&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[5강] 디지털신호처리(DSP) 실습 II - DataLoader&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Colab으로 실습&lt;/p&gt;
+
+&lt;h3 id=&quot;2강-디지털신호처리dsp-기초-ii---stft-spectrogram-mel-specrtogram&quot;&gt;[2강] 디지털신호처리(DSP) 기초 II - STFT, Spectrogram, Mel-Specrtogram&lt;/h3&gt;
+
+&lt;p&gt;n_fft=1024 보통 1024사용.&lt;/p&gt;
+
+&lt;p&gt;허수를 날리기 위해 &lt;strong&gt;2
+$D = np.abs(S)&lt;/strong&gt;2$&lt;/p&gt;
+
+&lt;p&gt;인간의 청각경로특성상 &lt;strong&gt;저주파&lt;/strong&gt;의 정보를 더 많이 인지한다.
+Mel-Filter bank
+40(음성) 92(음악) 128&lt;/p&gt;
+
+&lt;p&gt;스펙토그렘의 계단현상: &lt;strong&gt;압축되었고 그만큼 노이즈감소&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;3강-디지털신호처리dsp-기초-iii---mfcc-auditory-filterbank&quot;&gt;[3강] 디지털신호처리(DSP) 기초 III - MFCC, Auditory Filterbank&lt;/h3&gt;
+
+&lt;p&gt;Spectrogram : 시간축과 주파수축 변화에 따라 진폭차이를 색상을 통해 보여줍니다.
+MFCC : 노래의 음색을 잡거나, 고유한 화자를 분리할때 보통 쓰인다.&lt;/p&gt;
+
+&lt;h3 id=&quot;4강-디지털신호처리dsp-실습-i---data-augmentation&quot;&gt;[4강] 디지털신호처리(DSP) 실습 I - Data augmentation&lt;/h3&gt;
+
+&lt;p&gt;(전처리)
+방법1. 웨이브폼에서 노이즈를 섞는다던지, 피치를 바꾸던지
+방법2. 스펙트로그램에서 마스킹을 주기
+방법3. 데이터를&lt;/p&gt;
+
+&lt;p&gt;옥타브를 낮춰도 같은노래 librosa.effects.pitch_shift
+FrequencyMasking(freq_mask_param 보통15~35 준다. 논문따라서)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;주의 20:32&lt;/strong&gt;
+벨리데이션, 테스트할때 마스킹하면 안되고 함수따로 짜기.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;torchaudio&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;transforms&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MelSpectogram&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sample_rate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;16000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n_mels&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;128&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;5강-디지털신호처리dsp-실습-ii---dataloader&quot;&gt;[5강] 디지털신호처리(DSP) 실습 II - DataLoader&lt;/h3&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;torchaudio&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;transforms&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;FrequencyMasking&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;freq_mask_param&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;torchaudio&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;transforms&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;TimeMasking&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;time_mask_param&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;35&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>egeg1212</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="NLP" />
+      
+
+      
+        <summary type="html">디지털 신호처리(Digital Signal Processor)이해</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">딥러닝 기반의 음성인식 기술</title>
+      <link href="https://egeg1212.github.io/deep_voice" rel="alternate" type="text/html" title="딥러닝 기반의 음성인식 기술" />
+      <published>2021-05-27T01:40:00+09:00</published>
+      <updated>2021-05-27T01:40:00+09:00</updated>
+      <id>https://egeg1212.github.io/deep_voice</id>
+      <content type="html" xml:base="https://egeg1212.github.io/deep_voice">&lt;h2 id=&quot;음성인식-음성언어분야-ai-기술산업-현황-및-구현기술의-이해&quot;&gt;음성인식-음성언어분야 AI 기술/산업 현황 및 구현기술의 이해&lt;/h2&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강좌정보&lt;/strong&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;&lt;a href=&quot;https://tacademy.skplanet.com/live/player/onlineLectureDetail.action?seq=110&quot;&gt;Tacademy강좌링크&lt;/a&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습내용&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;음성언어분야의 인공지능(AI) 기술 현황 및 음성인식/대화처리/자동통역/질의응답 등 주요 음성인식 기반 산업 현황을 이해하고, 음성인식 모델별(HMM/DNN/LSTM 등) 적용원리 및 알고리즘을 통해 딥러닝 기반 음성인식 요소 기술에 대해 알아봅니다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강사&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;이윤근, 김승희 (ETRI 음성지능연구그룹)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습기간&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;2021.05.25~2021.05.27 &lt;strong&gt;이수완료&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습시간&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;strong&gt;02:46:30&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강의목록&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[1강] 음성언어분야 인공지능(AI) 기술 / 산업현황&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[2강] 딥러닝 기반 음성인식 기술&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;1강-음성언어분야-인공지능ai-기술--산업현황&quot;&gt;[1강] 음성언어분야 인공지능(AI) 기술 / 산업현황&lt;/h3&gt;
+
+&lt;p&gt;잡음이나 음향간섭등에 의해 음성입력이 왜곡.
+해결방법:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;잡음필터링(Kalman filter, Wiener filter 등),
+채널보상(channel compensation),
+음원분리 (source separation)
+빔포밍( beam forming) 등 다양항 잡음처리 방법 적용.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;다양한 왜곡 신호를 음향모델에 포함하여 훈련시키는 방법 적용(multi-condition training)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;운율 []
+Emotional TTS(엄마가 아이게 동화책읽어주는)&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;합성음에 감정을 구현하는 기술&lt;/li&gt;
+  &lt;li&gt;음의 높낮이, 세기, 음색 등의 변화가 심해 음질이 저하되며 제어하기가 어려움&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Voice Conversion&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;특정인의 목소리로 변환하는 기술&lt;/li&gt;
+  &lt;li&gt;특정인의 목소리를 나타내기 위해서는 음색 뿐만 아니라 발음, 억양 등 복합적인 요소가 작용&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;대화처리&quot;&gt;대화처리&lt;/h4&gt;
+
+&lt;p&gt;Finite-State Machine
+조금 더 나은 방법 Form-based model
+information State model
+|대화처리방법론|정의|특징||
+|:-:|:-:|:-:|:-:|
+|Topic-oriented Dialogue(주제 제한, 지식 처리)|구체적인 Topic에 대한 대화처리(ex.티켓예약, 상품구매/조회)|시스템주도형으로 대화흐름 제한, 특정Topic에 대한 대화흐름의 수동 지식화|혼합 주도형(mixed-initiative)대화관리: 시스템주도 및 사용자 주도 대화 가능, 대화 자유도 증가, |
+|Chat-oriented Dialoque(주제 무세한, 패턴 처리)|목적없는 대화chat-bot/ Data-driven 방식의 예제 매칭 대화처리|문맥유지 없이 단순 반복 응답만 가능, 대화/응답 패턴의 수동 지식화|&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Switchboard Cellular&lt;/strong&gt;
+예전부터 전화통화하는 부분은 음성인식이 잘 안됐다리 ㅠㅠㅠ
+(출처: By Li Deng, Auedong, Communications of the ACM, 2004)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;자유대화 이해의 오류 사례(Apple SIRI)&lt;/strong&gt;
+순서변경시 이해불가
+2개 명령을 한꺼번에 발화시 이해불가
+정해진 대화 시나리오 진행(정확한 사용자 응답 요구)
+앞전 문맥을 유지하지 못함
+특정 주제의 대화 진행 중, 다른 주제 대화 삽입시, 문맥 유지 오류 발생&lt;/p&gt;
+
+&lt;p&gt;…개인비서 불가능.
+Apple SIRI
+Google Assistant
+MS Cortana
+Amazon Echo 알렉사
+삼성 S보이스
+SKT NUGU
+KT 기가지니
+롯데 샬롯&lt;/p&gt;
+
+&lt;h3 id=&quot;2강-딥러닝-기반-음성인식-기술&quot;&gt;[2강] 딥러닝 기반 음성인식 기술&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Hidden Markov Model(HMM)&lt;/strong&gt;
+Markov chainL 미래상태(state)의 조건부 확률 분포가 현재 상태에 의해서만 결정
+음성신호의 dynamics는 HMM으로 모델링, 각 state에서의 관측확률은 GMM, DNN, LSTM등으로 모델링&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;GMM-HMM&lt;/strong&gt;
+특징(feature) 추출(extraction)
+Gaussian Mixture Modeling : 각state에서, 특징 벡터의 관측확률 분포를, Gaussian들의 weighted summation으로 모델링&lt;/p&gt;
+
+&lt;p&gt;특징추출과정&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Waveform(Frame단위)&lt;/li&gt;
+  &lt;li&gt;Spectrum&lt;/li&gt;
+  &lt;li&gt;Mel-scaled filterbank energy&lt;/li&gt;
+  &lt;li&gt;Mel-scaled sepstral coefficient(MFCC)&lt;/li&gt;
+  &lt;li&gt;Dynamics를 고려: Static MFCC + Delta + Acc + $a$&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;LSTM-HMM&lt;/strong&gt;
+&lt;strong&gt;End-to-end AM&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;기존 hybrid모델&lt;/li&gt;
+&lt;/ul&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>egeg1212</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="NLP" />
+      
+
+      
+        <summary type="html">음성인식-음성언어분야 AI 기술/산업 현황 및 구현기술의 이해</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">NAVER AI NOW</title>
+      <link href="https://egeg1212.github.io/NAVERaiNOW" rel="alternate" type="text/html" title="NAVER AI NOW" />
+      <published>2021-05-25T22:40:00+09:00</published>
+      <updated>2021-05-25T22:40:00+09:00</updated>
+      <id>https://egeg1212.github.io/NAVERaiNOW</id>
+      <content type="html" xml:base="https://egeg1212.github.io/NAVERaiNOW">&lt;h2 id=&quot;naver-ai-now-20210525&quot;&gt;NAVER AI NOW 2021.05.25&lt;/h2&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;strong&gt;온라인 컨퍼런스&lt;/strong&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;[NAVER TV_NAVER AI NOW]](https://tv.naver.com/v/20349478)&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;모두를 위한 AI&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;a href=&quot;https://naver-ai-now.kr/&quot;&gt;https://naver-ai-now.kr/&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;PART1.&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;strong&gt;HyperCLOVA 커다란 카능성을 열다.&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;성낙호&lt;br /&gt;NAVER CLOVA Biz AI 책임리더&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;새로운 AI의 시작, HyperCLOVA&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;황인용&lt;br /&gt;NAVER Cloud 리더&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;HyperCLOVA를 위한 슈퍼 컴퓨팅 인프라&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;강인호&lt;br /&gt;NAVER Search CIC 책임리더&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;HyperCLOVA를 위한 Big Data&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;하정우&lt;br /&gt;NAVER AI LAB 책임리더&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;새로운 글로벌 AI R&amp;amp;D 리더십&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;송대섭&lt;br /&gt;NAVER 책임리더&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;AI, 사람을 위한 일상의 도구&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;PART2.&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;strong&gt;HyperCLOVA테크놀로지&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;박우명, 김보섭, 김형석&lt;br /&gt;CLOVA Conversation&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;HyperCLOVA의 한국어 모델&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;장민석&lt;br /&gt;NAVER AI LAB&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;HyperCLOVA Studio 나에게 필요한 인공지능, 내 손으로 쉽게 만들기&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;김선훈&lt;br /&gt;NAVER Search NLP&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;HyperCLOVA의 활용 (1) 검색 어플리케이션&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;김경덕&lt;br /&gt;NAVER AI Assistatnt&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;HyperCLOVA의 활용 (2) AI 어시스턴트&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;강재욱,이상우&lt;br /&gt;CLOVA Conversation&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;HyperCLOVA의 활용 (3) 대화(Conversation)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;유강민&lt;br /&gt;NAVER AI LAB&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;HyperCLOVA의 활용 (4) 데이터 증강(Data Augmentation)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;인수교&lt;br /&gt;CLOVA AI Assistant&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;HyperCLOVA의 조율 (Controllability)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;서동필&lt;br /&gt;CLOVA ML System&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;HyperCLOVA를 위한 서비스 기반(Service Infrastructure)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;새로운-ai의-시작-hyperclova&quot;&gt;새로운 AI의 시작, HyperCLOVA&lt;/h3&gt;
+
+&lt;p&gt;GTP-3한국어 데이터 대비 6,500배
+기존NAVER언어모델 데이터 대비 3,000배
+뉴스 50년치에 해당하는 크기
+네이버블로그 9년치에 해당하는 크기
+=&lt;strong&gt;한국어 데이터 5,600억 토큰&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;비지도학습&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;인공지능의 성능&lt;/strong&gt;은
+학습에 사용되는 데이터의 양,
+연산의 규모,
+모델의 파라미터 수.
+3가지요소 모두 서로에게 병목이 되지 않는다는 전제 하에서
+그 성능이 무한히 향상될 수 있음. (참조: Scaling Laws)
+많은양의 데이터를 효과적으로 사용하기 위해&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;맥락을 이해하는 자연스러운 대화&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;이전 질문/응답 내용 이해하여 다음 대답&lt;/li&gt;
+      &lt;li&gt;사용자의 만족도 인지, 호응, 감정표시&lt;/li&gt;
+      &lt;li&gt;20회이상 주고 받는 대화&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;창작을 도와주는 글쓰기&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;정보요약&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;주제에 대한 여러 의견 요약하여 빠르게 이해하도록 도와줌&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;데이터 생성
+    &lt;ul&gt;
+      &lt;li&gt;전화를 대신 받아주는 CLOVA AiCall을 만들기 위해 HyperCLOVA가 쓰임.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;대화 시나리오 구축 생산성 x10배&lt;/p&gt;
+
+&lt;p&gt;의도 기반 검색하기/영화제목 맞추기/시,소설 쓰기/ 번역하기/캐릭터와 대화하기/앱디자인하기/법률문서간소화/엔티티인식하기/셀럽말투따라하기/웹페이지만들기/콘텐츠분류하기/마케팅문구생성하기/가사쓰기/의료증상구분하기/토론질문생성하기/끝말잇기게임하기/자동으로 메일으씩/레시피만들기/비속어필터하기/백과사전묻고답하기.문법교정하기/사투리변환하기/역사적인물과대화하기&lt;/p&gt;
+
+&lt;p&gt;확장예정
+글 음악 그림 음성 비디오 코드&lt;/p&gt;
+
+&lt;h3 id=&quot;hyperclova를-위한-슈퍼-컴퓨팅-인프라&quot;&gt;HyperCLOVA를 위한 슈퍼 컴퓨팅 인프라&lt;/h3&gt;
+
+&lt;p&gt;Big Model을 위해 구축된 슈퍼 컴퓨팅 인프라의 소개와 향후계획
+(현.날씨예보, 과학시뮬레이션)
+CLOVA Chatbot
+CLOVA OCR
+CLOVA AiCall
+슈퍼컴퓨터 병렬 학습을 통한 문제해결
+BIG AI를 위한 핵심 컴퓨팅 자원인 슈퍼컴퓨터&lt;/p&gt;
+
+&lt;p&gt;인프라규모 :
+Computing node140개, GPU 1120개, 케이블3800개&lt;/p&gt;
+
+&lt;p&gt;기술요소 :&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;고성능의 병렬 GPU클러스터&lt;/strong&gt;와 초저지연 인피니 밴드 네트워크 &amp;amp; 스토리지 기술로 Big Model의 복잡하고 긴 학습 시간을 단축시키고, 빠르게 모델을 구축하도록 도와줌.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;초저지연 고대역폭 네트워크&lt;/strong&gt;
+인피니티밴드 기술(많은 슈퍼컴퓨터들이 사용하는 네트워크기술. 분산컴퓨팅 환경에서 OS를 통하지 않고 네트워크를 통해 노드간 메모리를 직접 읽고 쓸 수 있게 한(RDMA)오버헤드 없이 초저지역 고대역폭을 극대화.)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;고성능 병렬 아키텍처 기반의 스토리지&lt;/strong&gt;
+고대역폭의 대규모 서버에서 동시 데이터 엑세스가 가능함으로써 대규모 워크 로드 처리가 가능.
+데이터를 GPU 메모리로 직접 전송(GDS)하여 성능을 더욱 높일 수 있다.
+일반 네트워크 스토리지보다 2배 이상의 성능을 갖고 있으며, 확장에 따라 성능을 더울 높일 수 있다.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;인프라 운영 노하우&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;클라우드 인프라 운영 역랑 :
+슈퍼컴퓨팅 클러스터가 내부 인프라 운영 표준 환경과 연계될 수 있도록 빠르게 최적화.&lt;/li&gt;
+  &lt;li&gt;자체 데이터센터 구축 노하우 :
+랙 설비, 네트워크 구성, 관리 시스템 연동 등 전체적인 인프라 구축 일정을 단축&lt;/li&gt;
+  &lt;li&gt;모니터링 플랫폼과 운영자동화 :
+최소한의 서비스중단, 연속성 보장을 위해, 모니터링을 비롯한 자체 관리 플랫폼과 운영 자동화 솔루션&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;hyperclova를-위한-big-data&quot;&gt;HyperCLOVA를 위한 Big Data&lt;/h3&gt;
+
+&lt;p&gt;대용량 데이터 준비시 고민해본 부분 4가지.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;다양한 내용(일상생활에서 접할 수 있는 뉴스,카페,블로그,지식인,웹문서, 오픈된 리소스, 전문지식)
+문서 내용이 유사한 경우 중복 제거(치우치지 않기위해)
+개인정보(전번,메일)는 제거하거나 비식별화 처리&lt;/li&gt;
+  &lt;li&gt;범용의 구성(검색, 대화, Q&amp;amp;A, 요약등 여러 생성 작업 포함)
+메타정보 추가(대화문에서의 화자ID)(문서의 카페명, 블로그명 같은 출처정보, 카테고리정보 추가)&lt;/li&gt;
+  &lt;li&gt;양질의 정보
+영역선별-정보성이 있으면서 신뢰도 있고, 인기 있는 공식 사이트 출처가 상위 품질에 포함되도록 함.
+상위 품질의 문서에서도 정보의 가치나 유용성에 따라 선별작업 진행(웹 페이지 내 핵심 영역만 사용 - &lt;strong&gt;행심 영역을 판정하는 기계학습 모델을 만듦&lt;/strong&gt;)
+저품질 문서 필터링 : 의미없는 단어의 나열, 비속어나 유해 정보 제거, 서비스별 홍보 또는 스팸판별 결과 활용&lt;/li&gt;
+  &lt;li&gt;충분한 크기
+1.96TB 데이터셋
+한국어데이터 5,600억 토큰 = 뉴스 50년치에 해당하는 크기 = 네이버블로그 9년치에 해당하는 크기 = 한국어 위키피디어 2,900배&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;한국의 지식과 한국어의 특성을 잘 반영한 좋은 구성이다.
+텍스트 위주의 데이터 구축에 이어,
+앞으로 문서와 관련된 그림, 음성, 비디오 등 멀티모달리티 측면에서도 데이터 구축을 준비하고 있다.&lt;/p&gt;
+
+&lt;h3 id=&quot;새로운-글로벌-ai-rd-리더십&quot;&gt;새로운 글로벌 AI R&amp;amp;D 리더십&lt;/h3&gt;
+
+&lt;p&gt;구글, 페이스북, OpenAI등과 같은 글로벌 기업들은
+지난 수년간 의미있는 기술들을 공개 해왔고
+많은 기업들이 이런 기술들을 잘 활용하고 있다.&lt;/p&gt;
+
+&lt;p&gt;그러나 글로벌 빅테크 기업들이 공개한 기술들을 그냥 적용하는 것 중심으로 하는 전략도 효율성이 있겠지만,
+기술경쟁력 관점에서의 한계도 존재.&lt;/p&gt;
+
+&lt;p&gt;서울대 X NAVER SNU
+KAIST X NAVER
+그 외&lt;/p&gt;
+
+&lt;h3 id=&quot;ai-사람을-위한-일상의-도구&quot;&gt;AI, 사람을 위한 일상의 도구&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;사용자의 일상을 편리하게 만들어 줄 수 있는 도구&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;NAVER AI 윤리 준칙 5개 조항 1. 사람을 위한 AI 개발 Developing Human-centered AI 2. 다양성의 존중 Respecting Diversity 3. 합리적인 설명과 편리성의 조화 Balancing Reasonable Explainability with Convenience 4. 안전을 고려한 서비스 설계 Accounting for Safety in Service Design 5. 프라이버시 보호와 정보 보안 Protecting Privacy and Data Security&lt;/p&gt;
+
+&lt;p&gt;ex1)
+코로나일상에서 국민의 건강과 안전을 케어하는 도구
+(&lt;strong&gt;클로바 케어콜&lt;/strong&gt;. 성남시10만건2020.03-2021.02)
+(그 외 10개 지방자치단체 도입. 서울, 고양, 의정부, 춘천, 인천, 성남, 화성, 수원, 전주 부산)
+SME(도메인전문가)의 사업을 돕는 CLOVA AiCall 전화예약
+AI기술의 집약체 &lt;strong&gt;CLOVA AiCall&lt;/strong&gt; - 자연어처리 - 음성인식 - 음성합성 - 텍스트 분석&lt;/p&gt;
+
+&lt;p&gt;ex2)
+즐거운 독서 경험을 제공하는 도구 &lt;strong&gt;클로바램프&lt;/strong&gt; - 문자인식 - 이미지인식 - 음성합성 - 음성인식 - 자연어 처리&lt;/p&gt;
+
+&lt;h3 id=&quot;hyperclova의-한국어-모델&quot;&gt;HyperCLOVA의 한국어 모델&lt;/h3&gt;
+
+&lt;h4 id=&quot;language-model-네이버에서-한국어-모델을-만든-이유---박우명conversation&quot;&gt;[Language Model] 네이버에서 한국어 모델을 만든 이유 - 박우명Conversation&lt;/h4&gt;
+
+&lt;p&gt;현 GPT-3는 학습 데이터 구성상 한국어 성능이 제한적이다.
+인터넷언어 분포 :
+&lt;strong&gt;영어60.3%&lt;/strong&gt; &amp;gt; 기타,독일어,프랑스어,중국어,일본어,스페인어,러시아어 &amp;gt; &lt;strong&gt;한국어 0.6%&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;GPT-3 언어 분포
+&lt;strong&gt;영어92.7%&lt;/strong&gt; &amp;gt; 기타,독일어,프랑스어,중국어,일본어,스페인어,러시아어 &amp;gt; &lt;strong&gt;한국어0.1%&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;비중은 작아도 과거 하지 못했던 일부 난이도 높은 태스크가 동작하기도 하는 등 뛰어난 성능을 보이고 있다.
+이러한 상황에서
+&lt;strong&gt;만약 한국어에 맞는 Big Model을 확보하지 못한다면,
+글로벌 기업들이 강력한 영어 모델을 기반으로 다양한 서비스를 만들어 낼 때
+우리는 그들이 제공하는 제한적인 한국어 성능의 모델을 사용할 수밖에 없게 되고
+이는 기술이 종속되는 현상뿐 아니라 한국어 기반 서비스의 성장에 명확한 한계로 작용하게 될 것이다..ㅠㅠㅠ&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;GPT-3와 비슷한 규모로 데이터를 학습함.
+&lt;strong&gt;데이터 처리 파이프라인&lt;/strong&gt;
+데이터 전체560B토큰 중 300B 토큰학습함.
+어휘 집합 학습: 한국어에 최적인 토크나이징Tokenizing방법 학습.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;전처리를 효율적으로&lt;/strong&gt;
+코퍼스믹서Corpus Mixer : 전처리 시 데이터 종류별 비율 자동 조절
+(뉴스, 구어체 등등 )
+시리얼라이저Sericalizer : 하둡 스트리밍 적용/ 처리속도 약 170배 개선(7일이 1시간으로 줄어듦)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;모델의 크기를 키우려면&lt;/strong&gt;
+생성 모델로 다양한 태스크에 활용 가능성
+모델 크기 증가에 따라 GPU 1장으로 학습 불가
+3중 병렬화 적용 : 데이터, 모델, 파이프라인&lt;/p&gt;
+
+&lt;p&gt;성능테스트 :다운스트림 태스크
+NSMC
+KorQuAD1.0 한국어 Machine Reading Comprehension데이터셋&lt;/p&gt;
+
+&lt;h4 id=&quot;tokenization-hyperclova가-한국어를-읽는-방법토큰화tokenization---김보섭conversation-1030&quot;&gt;[Tokenization] HyperCLOVA가 한국어를 읽는 방법:토큰화(Tokenization) - 김보섭Conversation 10:30&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;기계가 글을 이해하려면?
+기계가 문장을 이해하기 위해 단위Token으로 문장을 끊어 읽는 능력이 필요함.
+방법1- 어절단위의 경우: 문장을 적은 토큰 개수로 처리할 수 있지만 어휘집합(Vocabulary)을 크기를 만들지 못해서 토큰이 다양하지 못해 처리할 수 없는 문장이 발생하기도 함.
+방법2- 문자단위의 경우: 문장을 처리할 때, 어절 단위에 비해서 더 많은 토큰 개수를 요구하지만 처리할수없는 문장이 덜 발생함 ㅋ - 방법 1,2의 장단점을 보완할 수 있는 방법은?
+&lt;strong&gt;서브워드Subword(어떤단어의부분)로 끊어 읽으면&lt;/strong&gt; 규칙 기반의 장점들을 취하면서 단점을 줄일 수 있으며, 데이터를 기반한 알고리즘&lt;strong&gt;BPE&lt;/strong&gt;을 통해 학습가능함.
+&lt;strong&gt;BPE(Byte-pair encoding) 정보 압축 알고리즘.&lt;/strong&gt;메모리를 많이 필요로 하는 작업;
+자주 등장하는 문자열을 하나의 문자열로 병합해 가면서 어휘 집합을 구성하는 방법. - 말뭉치로부터 병합의 대상이 되는 문자열에 적절한 전처리를 수행함으로써 서브워드를 학습하는 방식에 변화를 줄 수 있음
+character-&amp;gt;Byte-&amp;gt;Morpheme-Aware Byte&lt;/li&gt;
+  &lt;li&gt;대용량 말뭉치로 서브워드 토크나이저 학습하기
+2TB말뭉치를 모두 사용하는건 현실적으로 불가능하다.
+&lt;strong&gt;전체 말뭉치를 대표할 수 있도록 샘플링Sampling해서 서브워드 토크나이저학습에 사용하는 것이 중요함&lt;/strong&gt; - 적절한 양의 말뭉치를 결정하기 위해 2가지 가설을 토대로 말뭉치선정함. 1. 일반적으로 자연어 말뭉치에 사용된 단어를 빈도순으로 나열했을 경우 지프의 법칙(Zipf’s Law)을 따름(and, the, I, to, a, of, my, is, that) 2. 1에 따라 학습에 사용한 말뭉치 양에 차이가 있어도 서브워드 토크나이저(Subword Tokenizer)의 어휘집합(Vocabulary)에는 중복되는 토큰(Token)이 많을 것이다.
+&lt;strong&gt;&lt;em&gt;말뭉치의 양을 줄여가면서 서브워드 토크나이저를 학습하고,
+중복되는 토큰의 비율을 검사하여 최종적으로 사용할 말뭉치의 양을 결정함.&lt;/em&gt;&lt;/strong&gt;
+최종적으로 전체 말뭉치의 1%(20G)를 사용하여 서브워드 토크나이저를 학습함.
+그래도!!!!!!! 메모리부족(OUT of Memory)과 같은 이슈들이 발생…..전처리를 통해 해결!!&lt;/li&gt;
+  &lt;li&gt;언어모델을 위한 서브워드 토크나이저
+    &lt;ul&gt;
+      &lt;li&gt;3가지 BPE를 테스트한 결과
+미등록 단어 문제가 발생하지 않으며, 고빈도 형태소를 기반으로 학습하는 Morpheme-Aware Byte-Lavel BPE가 적합할 것이라고 판단함.&lt;/li&gt;
+      &lt;li&gt;좋은 서브워드 토크나이저로 만든 언어모델이 생성한 문장은 사람의 문장과 비슷하다고 가정 -&amp;gt; 지표화를 통해 &lt;strong&gt;판별 모델&lt;/strong&gt;을 도입.(토큰화의 방식이 달라지면, 언어모델을 비교할때 많이 사용하는 퍼플렉시티Perplexity지표를 사용할 수없다.)&lt;/li&gt;
+      &lt;li&gt;‘더 좋은 서브워드 토크나이저로 만든 언어 모델은 더 사람이 쓴 것 같은 문장을 생성한다’고 가정&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;HyperCLOVA가 글을 읽는 방법(한 문장으로 정리)
+언어모델은 학습용 말뭉치의 1%로부터 학습된 Morpheme-Aware Byte-Level BPE Tokenizer로 문장을 처리함&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;metrics-hyperclova-한국어-능력-평가---김형석conversation1739&quot;&gt;[Metrics] HyperCLOVA 한국어 능력 평가 - 김형석Conversation17:39&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;설계목적
+“모델이 생성한 문장은 얼마나 유창한가Fluency”
+이를 측정하기 위해, 정량화 수치화&lt;/li&gt;
+  &lt;li&gt;문제점들
+    &lt;ul&gt;
+      &lt;li&gt;생성 문장과 레퍼런스 문장 간의 유사성이 문장 품질을 보장하지 않음&lt;/li&gt;
+      &lt;li&gt;서로 다른 설정(특히 어휘 집합)에서 학습한 모델들을 Preplexity(PPL)로 비교하는것이 부적절함&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;개선 아이디어
+    &lt;ul&gt;
+      &lt;li&gt;래퍼런스 없는 평가지표
+레퍼런스 의존성이 없으면서 loss가 아닌 생성텍스트에 기반한 품질 평가 지표여야 함.&lt;/li&gt;
+      &lt;li&gt;생성 문장 기반 평가지표&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;평가결과&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;hyperclova-studio&quot;&gt;HyperCLOVA Studio&lt;/h3&gt;
+
+&lt;p&gt;코드없이 ML/AI기반으로 개발, 실행 할 수 있는 도구.(개발환경)&lt;/p&gt;
+
+&lt;p&gt;보통 5 STEP. 1.문제정의, 사용자 리서치 (User Researcher) 2.데이터수집, 데이터분석, 데이터Annotation, 데이터검증 (ML Researcher/Engineer) 3.모델구조, 모델학습, 파라미터 튜딩, 모델평가
+4.ML인프라/Ops 프로덕션 서빙 (ML Ops Researcher/Engineer/ Data Engineer) 5.에러분석, 모니터링, 사용자분석 (SME도메인전문가/Product Service Manager)&lt;/p&gt;
+
+&lt;p&gt;NAVER생태계안에 사용 가능.&lt;/p&gt;
+
+&lt;p&gt;웹 전화 스마트스피커 모바일디바이스 등등으로 바로 배포하거나 사용이 가능.&lt;/p&gt;
+
+&lt;h3 id=&quot;hyperclova의-활용-1-검색-어플리케이션&quot;&gt;HyperCLOVA의 활용 (1) 검색 어플리케이션&lt;/h3&gt;
+
+&lt;p&gt;1.Null 검색 질의 재작성 (Null-Query Rewriting)
+‘검색결과가 없는 경우’ 질의를 재 작성하는 것.
+Null-Query유형 : 오타, 띄어쓰기가 잘 안되었거나, 자소단위가 많이 섞여 있는 경우, 잘못된 정보를 사용하는 경우 등..
+[Few-Shot] 학습데이터셋
+[Prev-Query]이전 클릭, 이전 검색어를 추가정보로 제공&lt;/p&gt;
+
+&lt;p&gt;2.쇼핑 리뷰 요약 (Shopping Review Summarization)
+&lt;strong&gt;Faithfulness Evaluation&lt;/strong&gt;
+&lt;strong&gt;방식1)&lt;/strong&gt; ROUGE(Recall-Oriented Understudy for Gisting Evaluation)
+Word Overlap을 이용하는 방식.
+쇼핑 리뷰와 한 줄 요약이 상호간에 얼마나 단어들이 겹치는지를 계산
+&lt;strong&gt;방식2)&lt;/strong&gt; Natural Language Inference
+두 문장의 Entailment를 비교하는 방식.
+쇼핑리뷰(premise)가 한 줄 요약(Hypothesis)을 entailment하는지로 평가
+-&amp;gt; NLI로 faithfulness를 체크하는 방법이 성능 우위.
+단, 멀티 리뷰 요약 특성 상 단일 문장 간의 NLI 비교보다는 복수개 리뷰 문장을 premise로 하는 경우 성능 우위&lt;/p&gt;
+
+&lt;p&gt;3.자유 질의 응답 (Free-Form Question Answering)
+&lt;strong&gt;지식백과 기반의 Question Answering&lt;/strong&gt;
+Subject + Predicate Question 한글 만든 사람이 누구야?
+Multi-hop Question 미국 대통령 중 그래미 상을 받은 사람은?
+Boolean Question 해파리는 뇌가 있어?
+Long-form Question(How/Why) 시서스가 다이어트에 왜 도움이 되니?&lt;/p&gt;
+
+&lt;p&gt;Q&amp;amp;A 프로세스
+(생략)&lt;/p&gt;
+
+&lt;h3 id=&quot;hyperclova의-활용-2-ai-어시스턴트&quot;&gt;HyperCLOVA의 활용 (2) AI 어시스턴트&lt;/h3&gt;
+
+&lt;p&gt;목적지향형대화 Goal Oriented Dialogs (사용자의 특정 목적을 만족시키기 위한)
+질의응답 Question Answering (사용자의 질문에 전문 지식으로 응답하기 위한)
+일상대화 Chit-Chat Dialogs (목적성이 없는 일상 대화를 수행하기 위한)&lt;/p&gt;
+
+&lt;p&gt;사용자의 질문에 대해 위 3가지의 답변을 만들고, Selector에서 최적의 응답을 선택하는 형태.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;AI Assistant가 얻고자 하는 것.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;여러턴의 대화를 자연스럽게 응답하는 능력.&lt;/li&gt;
+  &lt;li&gt;비정형화된 수많은 텍스트로부터 학습한 여러 지식들에도 응답할 수 있는 능력.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;ex. 질문, 응답 + 요약형 설명 + 관련 질문 설명 + 쉬운설명 + 인물 비교 + 관련답변 +&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;대화 이해 :
+대화 이해를 위한 컨텍스트 주입 Context Injection
+    &lt;ul&gt;
+      &lt;li&gt;대화 전체를 이용하여 사용자의 의도를 이해하기 위해&lt;/li&gt;
+      &lt;li&gt;보통 대명사나 지시 표현(그때, 그다음)의 원래의 표현을 찾아내기 위해, 이전의 대화 내용을 참고하는 &lt;strong&gt;대용어 해소 및 생략 복원 기술, 대화 상태 추적 기술&lt;/strong&gt;이 활용 됨.&lt;/li&gt;
+      &lt;li&gt;
+        &lt;dl&gt;
+          &lt;dt&gt;&lt;strong&gt;Transfomer기반의 문장 인코더&lt;/strong&gt;를 사용하여 대화 검색 모듈을 구현함.&lt;/dt&gt;
+          &lt;dt&gt;모듈의 성능은 출력 문장과 정답 문장과의 BLUE스코어(Bilingual Evaluation Understudy Score)를 계산.&lt;/dt&gt;
+          &lt;dd&gt;Few-Shot을 추출하는 대화 검색 모듈의 규현방식도 품질에 영향을 미쳤으나&lt;/dd&gt;
+          &lt;dd&gt;무엇보다 &lt;strong&gt;LM(Language Model)의 크기&lt;/strong&gt;가 최종 성능과 큰 연관성 있음.&lt;/dd&gt;
+        &lt;/dl&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;시스템 응답 선택 :
+시멘틱 검색을 이용한 응답 선택
+    &lt;ul&gt;
+      &lt;li&gt;여러 시스템 응답 후보들 중 가장 맥락에 맞는 응답을 서낵하기 위해 시맨틱 서치를 이용하는 기술.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;시스템 응답 생성 :
+적절한 시스템 응답 생성을 위한 조율 방법
+    &lt;ul&gt;
+      &lt;li&gt;생성모델의 결과를 조율하기 위한 기술.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;hyperclova의-활용-3-대화conversation&quot;&gt;HyperCLOVA의 활용 (3) 대화(Conversation)&lt;/h3&gt;
+
+&lt;h4 id=&quot;hyperclova가-만드는-캐릭터-대화---강재욱conversation&quot;&gt;HyperCLOVA가 만드는 캐릭터 대화 - 강재욱Conversation&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;일관적 캐릭터 대화체 유지 + 유창성&lt;/li&gt;
+  &lt;li&gt;캐릭터 세계관 유지(캐릭터의 기본 프로필, 배경, 철학 내포)
+-&amp;gt; PCU(Prompt Control Unit) 캐릭터 대화를 위한 제어 장치&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;캐릭터 대화체의 퓨샷 러닝(Few-Shot Learning)&lt;/strong&gt;
+‘안나는 매사가 행복하고 기운이 넘친다. 공감 능력이 뛰어나고 긍정적이며 리액션이 좋은 편이다.’
+캐릭터 페르소나 모니터링하는 탐지 모델을 별도로 훈련시켜 언어모델 보조.&lt;/p&gt;
+
+&lt;h4 id=&quot;aicall의-미래와-hyperclova---이상우conversation-1050&quot;&gt;AiCall의 미래와 HyperCLOVA - 이상우Conversation 10:50&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;클로바 챗봇 2018~&lt;/strong&gt;
+&lt;strong&gt;클로바 고객센터 2019~&lt;/strong&gt; - AiCall(문의응대 및 예약을 대화형으로), - HappyCall(보험,증권,리서치 등의 업종에서 고객만족도조사, 불완전판매모니터링 업무 수행.) - (케어콜)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;멀티턴Multi-Turn형태의 목표지향적 대화 시스템&lt;/strong&gt;
+사람 -&amp;gt; (음성입력) -&amp;gt; 음성인식 -&amp;gt; (텍스트입력)
+-&amp;gt; &lt;strong&gt;자연어 이해 모델(NLU)&lt;/strong&gt; Domain Identification/ User Intent Detection/ Slot Filling -&amp;gt; (사용자 의도 추출)
+-&amp;gt; &lt;strong&gt;대화 관리 모델(DM)&lt;/strong&gt; Dialogue State Tracking/ Dialogue Policy -&amp;gt; (답변 분기 결정)
+-&amp;gt; &lt;strong&gt;자연어 생성 모델&lt;/strong&gt; System utterance generation/ Answer Recommendation -&amp;gt; (자연어 답변 출력) -&amp;gt; 사람&lt;/p&gt;
+
+&lt;p&gt;기존 QA pair 형태로도 데이터를 넣어줄 수 있는
+single-Turn FAQ 시스템이나 자유 대화 시스템과 달리
+많은 데이터, 다양한 시나리오가 필요하기 때문에 더 복잡하다…😥&lt;/p&gt;
+
+&lt;p&gt;목표 지향 대화 구축의 어려움&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;유저와 점원이 나눈 대화 로그가 많이 있어도 이를 그대로 대화 구축에 사용할 수는 없음&lt;/li&gt;
+  &lt;li&gt;대화 상태 별(State) 대화 분기를 포함하는 대화 설계를 시나리오 별로 진행하여야&lt;/li&gt;
+  &lt;li&gt;시나리오에 맞는 대화를 데이터 수집가들을 섭외하여 채워나가야 함&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;예시1 : 사용자 의도에 맞는 발화생성
+기존 난점 : 의도별 발화를 구상하고 수집하는 점에 대한 어려움
+해결책 : 의도별 발화를 의도 예제 없이도 보강할 수 있음
+사용자 인텐트-예약질의(방으로예약될까요?자리없으면밖에앉아도괜찮아요.단체석가능한가요?등등..)
+사용자 인텐트-1인식사가능한지물어보기(혼자먹어도될까요?여기혼밥돼요?저혼자먹을건데주문되나요?점심때사람많아요?등등..)
+이것이 &lt;strong&gt;Data Augmentation 중 Zero-Shot Learning&lt;/strong&gt;에 해당&lt;/p&gt;
+
+&lt;p&gt;예시2 : 시스템 응답 추천
+앞의 문맥에 맞는 시스템 응답을 추천해 줌
+더 나아가, 대화 분기를 추천해줌
+긍정 -&amp;gt; 진행
+부정 -&amp;gt; 종료&lt;/p&gt;
+
+&lt;p&gt;예시3 : HyperCLOVA 연속대화 생성
+한차례의 대화를 기술하는 설명문(Goal Script)»올해 ACL에서 확인가능
+대화에 대한 간단한 기술만으로 가상 대화를 조절하여 생성할 수 있음.
+대화 설계에 참고할 수 있음
+대화 시스템 평가에 사용될 수 있음
+BERT기반 대화 시스템 성능 향상에 사용될 수있음.&lt;/p&gt;
+
+&lt;p&gt;연예인챗봇/메타버스챗봇/친구챗봇/캐릭터어시스턴트
+금융전화AI/전화예약시스템/더강력한FAQ봇/AI콜센터/의료복지전화AI&lt;/p&gt;
+
+&lt;h3 id=&quot;hyperclova의-활용-4-데이터-증강data-augmentation&quot;&gt;HyperCLOVA의 활용 (4) 데이터 증강(Data Augmentation)&lt;/h3&gt;
+
+&lt;p&gt;효율적인 NLP모델학습을 가능하게하는 데이터증강 기법.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;자연어처리 패러다임의 변화
+사전학습된 언어모델(PLM:Pretrained Language Model)을 이용한 파인튜닝Fine-tuning
+특정 도메인 혹은 문제를 푸는 NLP 모델로 파인튜닝하는 방법이다.
+PLM의 대표적인 사례로 LaRva라바가 있다.
+[데이터설계 -&amp;gt; 데이터수집 -&amp;gt; (PLM)NLP모델학습 -&amp;gt; 성능평가 –&amp;gt; 데이터개선 또는 모델개선]
+LaRva는 클로바다 언어 모델 기술을 한국어에 적용하여 개발한 새로운 라이브러리.
+&lt;strong&gt;프롬프트를 활용한 방안&lt;/strong&gt; 3:10&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;HyperMix : HyperCLOVA를 이용한 텍스트 증강 기법&lt;/li&gt;
+  &lt;li&gt;HyperMix의 효용성&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;hyperclova의-조율-controllability&quot;&gt;HyperCLOVA의 조율 (Controllability)&lt;/h3&gt;
+
+&lt;p&gt;요약하면
+프롬프트 엔지니어링Prompt Design 대비 프롬프트 튜닝Prompt Tuning의 성능이 높고
+10B 기준, 파인 튜닝(Model Tuning)과 프롬프트 튜닝(Prompt Tuning)성능이 동일.&lt;/p&gt;
+
+&lt;p&gt;HyperCLOVA의 조율하기 위해
+&lt;strong&gt;이산공간Discrete에서의 프롬프트 엔지니어링&lt;/strong&gt; - 적절한 설명문과 적절한 수의 예시의 중요성 - 편향Bias 다루기
+&lt;strong&gt;연속공간Continuous에서의 프롬프트 엔지니어링&lt;/strong&gt; - P-튜닝 - 프롬프트 튜닝&lt;/p&gt;
+
+&lt;h3 id=&quot;hyperclova를-위한-서비스-기반service-infrastructure&quot;&gt;HyperCLOVA를 위한 서비스 기반(Service Infrastructure)&lt;/h3&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>egeg1212</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="NLP" />
+      
+
+      
+        <summary type="html">NAVER AI NOW 2021.05.25</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Python과 Tensorflow를 활용한 Al 챗봇 개발</title>
+      <link href="https://egeg1212.github.io/python_Tensorflow" rel="alternate" type="text/html" title="Python과 Tensorflow를 활용한 Al 챗봇 개발" />
+      <published>2021-02-15T01:40:00+09:00</published>
+      <updated>2021-02-15T01:40:00+09:00</updated>
+      <id>https://egeg1212.github.io/python_Tensorflow</id>
+      <content type="html" xml:base="https://egeg1212.github.io/python_Tensorflow">&lt;h1 id=&quot;python과-tensorflow를-활용한-al-챗봇-개발&quot;&gt;Python과 Tensorflow를 활용한 Al 챗봇 개발&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;시나리오짜는게 관건이다. &lt;br /&gt; 대화하면서 나오는 다양한 변수들이 있기 마련..&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강좌정보&lt;/strong&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;&lt;a href=&quot;https://tacademy.skplanet.com/live/player/onlineLectureDetail.action?seq=120&quot;&gt;Tacademy강좌링크&lt;/a&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습내용&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;AI 챗봇과 Rule Base 챗봇을 이해하고, AI 챗봇 개발을 위해 필요한 개념인 자연어처리(NLP), 챗봇 아키텍처 및 AI 사용요소 등에 대해서도 예제 실습을 통해 자세히 알아봅니다. 이를 바탕으로 스토리 구성부터 데이터 구성 및 서비스 실행까지 챗봇 개발 전 과정을 수행해볼 수 있도록 챗봇 만들기 개발 실습이 진행됩니다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강사&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;김승우,김수상(포스코ICT)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습기간&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;2021.02.13~2021.03.15 &lt;strong&gt;이수완료&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습시간&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;strong&gt;04:36:56&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강의목록&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[1강] 챗봇, AI, NLP에 대한 이해 1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[2강] 챗봇, AI, NLP에 대한 이해 2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[3강] 챗봇 만들기 1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[4강] 챗봇 만들기 2&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>egeg1212</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="NLP" />
+      
+
+      
+        <summary type="html">Python과 Tensorflow를 활용한 Al 챗봇 개발</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">NUGU developers로 쉽게 만드는 AI 서비스, NUGU Play 제작</title>
+      <link href="https://egeg1212.github.io/NUGU-developers" rel="alternate" type="text/html" title="NUGU developers로 쉽게 만드는 AI 서비스, NUGU Play 제작" />
+      <published>2021-02-14T01:40:00+09:00</published>
+      <updated>2021-02-14T01:40:00+09:00</updated>
+      <id>https://egeg1212.github.io/NUGU-developers</id>
+      <content type="html" xml:base="https://egeg1212.github.io/NUGU-developers">&lt;h1 id=&quot;nugu-developers로-쉽게-만드는-ai-서비스-nugu-play-제작&quot;&gt;NUGU developers로 쉽게 만드는 AI 서비스, NUGU Play 제작&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;시나리오에 대한 중요성. &lt;br /&gt; ai스피커의 인식방법을 고려해야한다는 점이 독특했다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강좌정보&lt;/strong&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;&lt;a href=&quot;https://tacademy.skplanet.com/live/player/onlineLectureDetail.action?seq=148&quot;&gt;Tacademy강좌링크&lt;/a&gt;&lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습내용&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;NUGU developers는 여러분의 서비스와 콘텐츠를 NUGU 플랫폼에 연결 시킬 수 있는 도구입니다. NUGU developers는 Play를 제작할 수 있는 NUGU Play Kit과 Private Play 관리를 위한 NUGU Biz로 구성됩니다. 또한 Play 제작에 필요한 상세한 개발 문서를 제공해드립니다.&lt;/td&gt;
+      &lt;td&gt;이번 세미나를 통해 NUGU 플랫폼 및 NUGU developers를 소개하고 NUGU Play Kit &amp;amp; NUGU Biz를 통해 A.I. 서비스인 Play를 손쉽게 제작하는 방법을 살펴보겠습니다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강사&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;권세영, 조남서 (SK텔레콤)&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습기간&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;2021.02.13~2021.03.15 &lt;strong&gt;이수완료&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습시간&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;strong&gt;02:32:09&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강의목록&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[1강] NUGU developers 이해&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[2강] NUGU 음성서비스 디자인 가이드라인&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[3강] NUGU Play build 소개&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[4강] NUGU play builder 활용 실습&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[5강] Q&amp;amp;A&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>egeg1212</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="NLP" />
+      
+
+      
+        <summary type="html">NUGU developers로 쉽게 만드는 AI 서비스, NUGU Play 제작</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">자연어 언어모델 ‘BERT’</title>
+      <link href="https://egeg1212.github.io/BERT" rel="alternate" type="text/html" title="자연어 언어모델 ‘BERT’" />
+      <published>2021-01-15T01:40:00+09:00</published>
+      <updated>2021-01-15T01:40:00+09:00</updated>
+      <id>https://egeg1212.github.io/BERT</id>
+      <content type="html" xml:base="https://egeg1212.github.io/BERT">&lt;p&gt;&lt;img src=&quot;https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20120220_241%2F7ambivalenc_13296645616134lQzp_JPEG%2Fhow-to-draw-bert-and-ernie-tutorial-drawing.jpg&amp;amp;type=sc960_832&quot; alt=&quot;BERT는이렇게생겼습니다.&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;자연어-언어모델-bert&quot;&gt;자연어 언어모델 ‘BERT’&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;자연어 언어모델에 대해 관심이 생겼다. &lt;br /&gt; 어릴때 봤었던 세서미스트리트의 친숙한 형아 ‘버트’(이미지에서 오른쪽)… 역시나 똑똑한 친구&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강좌정보&lt;/strong&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;&lt;a href=&quot;https://tacademy.skplanet.com/live/player/onlineLectureDetail.action?seq=164&quot;&gt;Tacademy강좌링크&lt;/a&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습내용&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;1. 자연어의 개념과 다양한 언어모델에 대해 알아본다. &lt;br /&gt;2. BERT 모델의 개념 및 메커니즘에 대해 이해하고, 한국어의 BERT 학습 방법에 대해 알아본다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강사&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;김성현 (솔트룩스)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습기간&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;2021.01.14~2021.02.13 &lt;strong&gt;이수완료&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습시간&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;strong&gt;02:40:11&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강의목록&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[1강] 자연어 처리(NLP)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[2강] 언어 모델(Language Model)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[3강] BERT&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[4강] 한국어BERT&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[5강] BERT실습&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;GitHub&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;a href=&quot;https://github.com/EGEG1212/z_research/tree/main/NLP-Transfomer_BERT__Wikidosc_Tacademy&quot;&gt;https://github.com/EGEG1212/z_research/tree/main/NLP-Transfomer_BERT__Wikidosc_Tacademy&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>egeg1212</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="NLP" />
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Scikit-Learn으로 다지는 머신러닝 기초</title>
+      <link href="https://egeg1212.github.io/Scikit-Learn" rel="alternate" type="text/html" title="Scikit-Learn으로 다지는 머신러닝 기초" />
+      <published>2021-01-10T01:40:00+09:00</published>
+      <updated>2021-01-10T01:40:00+09:00</updated>
+      <id>https://egeg1212.github.io/Scikit-Learn</id>
+      <content type="html" xml:base="https://egeg1212.github.io/Scikit-Learn">&lt;h1 id=&quot;scikit-learn으로-다지는-머신러닝-기초&quot;&gt;Scikit-Learn으로 다지는 머신러닝 기초&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Scikit Learn이란 Numpy, SciPy 및 matplotlib기반으로 예측 데이터 분석을 위한 간단하고 효율적인 도구이다. &lt;br /&gt; -&lt;em&gt;&lt;a href=&quot;https://scikit-learn.org/stable/index.html&quot;&gt;Scikit Learn공홈&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;설치&quot;&gt;설치&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pip install scikei-learn&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;설치-확인&quot;&gt;설치 확인&lt;/h2&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;sklearn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;__version__&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강좌정보&lt;/strong&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;&lt;a href=&quot;https://tacademy.skplanet.com/live/player/onlineLectureDetail.action&quot;&gt;Tacademy강좌링크&lt;/a&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습내용&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;1. Scikit-Learn(사이킷런)을 이용한 데이터 전처리, 모델링, 모델 검증 방법에 대해 알아본다. &lt;br /&gt; 2. Kaggle 속 Scikit-Learn(사이킷런) 활용 방법에 대해 알아본다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강사&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;강천성(캐글코리아)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습기간&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;2021.01.09~2021.01.18 &lt;strong&gt;이수완료&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;학습시간&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;strong&gt;04:09:52&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;강의목록&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[1강] 데이터전처리(Preprocessing)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[2강] 군집화(Clustering)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[3강] 회귀(Regression&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[4강] 분류(Classification)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[5강] 검증(Validation)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;[6강] Kaggle 속 사이킷런 활용&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;GitHub&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;a href=&quot;https://github.com/EGEG1212/Machine-Learning-2020/tree/main/99.scikit%20learn&quot;&gt;https://github.com/EGEG1212/Machine-Learning-2020/tree/main/99.scikit%20learn&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>egeg1212</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="NLP" />
+      
+
+      
+        <summary type="html">Scikit-Learn으로 다지는 머신러닝 기초</summary>
+      
+
+      
+      
+    </entry>
+  
+</feed>
